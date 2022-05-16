@@ -12,10 +12,13 @@
   margin-top: -50vh;
 }
 .parallax-group.second {
-  margin-top: -50vh;
+  margin-top: -30vh;
+}
+.parallax-group.second-support {
+  margin-top: -100vh;
 }
 .parallax-group.third {
-  /*margin-top: -5vh;*/
+  /*margin-top: -40vh;*/
 }
 .parallax-group.third-support {
   margin-top: -75vh;
@@ -26,12 +29,21 @@
 .parallax-group.fourth {
   margin-top: -25vh;
 }
+.parallax-group.fourth-support1 {
+  margin-top: -70vh;
+}
+.parallax-group.fourth-support {
+  margin-top: -100vh;
+}
+.parallax-group.fourth-support2 {
+  margin-top: -100vh;
+}
+.parallax-group.fifth {
+  margin-top: -30vh;
+}
 
 /* this will eventually go away */
-.parallax-group.second .background-visual div {
-  height: 160vh;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0, white 30%);
-}
+
 .parallax-group.third .background-visual div {
   background-image: var(--gradient-gold);
 }

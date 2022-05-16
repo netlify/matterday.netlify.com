@@ -24,13 +24,16 @@
                                                          transparent 1px,
                                                          transparent var(--slot));
   background-position: center var(--start);
-  border-left: 1px solid var(--color-gray-L400);
   font-family: var(--font-headline);
   font-size: .75rem;
   font-weight: 500;
   color: var(--color-gray-L700);
   text-align: center;
   text-transform: uppercase;
+}
+
+.calendar-day:not(:first-of-type) {
+  border-left: 1px solid var(--color-gray-L400);
 }
 
 .calendar-day span {
@@ -45,7 +48,8 @@
   height: calc(var(--slot) - var(--spacer) * 2);
   margin: 0 var(--spacer) calc(var(--spacer) * 2);
   display: block;
-  background-image: var(--gradient-red);
+  /*background-image: var(--gradient-red);*/
+  background-image: var(--gradient-teal);
   border-radius: var(--radius);
 }
 
@@ -95,7 +99,7 @@
   box-shadow: 0 .5em 1em rgba(0,0,0,.1),
               0 2em 2em rgba(0,0,0,.1);
   line-height: 1;
-  color: var(--color-gray-L700);
+  color: var(--color-gray-L800);
 }
 
 .intro-support .event-detailed.tall {

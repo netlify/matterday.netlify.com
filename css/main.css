@@ -31,10 +31,22 @@
   --overlay-h: 60vh;
   --header-h: 10vh;
   --gradient-red: linear-gradient(to bottom, #ff6e63, #ffb49d);
-  --gradient-teal: linear-gradient(to bottom, #5aebdf, #bffee8);
+  --gradient-teal: linear-gradient(to bottom, var(--teal-medium), var(--teal-light));
   --gradient-gold: linear-gradient(to bottom, #ffb916, #ffeba2);
-  --gradient-purple: linear-gradient(to bottom, #7b3ffa, #a483fd);
-  --gradient-blue: linear-gradient(to bottom, #2652f4, #7499fb);
+  --gradient-purple: linear-gradient(to bottom, var(--purple-dark), var(--purple-medium));
+  --gradient-blue: linear-gradient(to bottom, var(--blue-dark), var(--blue-medium));
+  --teal-dark: var(--color-teal-T800);
+  --teal-dark-RGB: 15,106,128;
+  --teal-medium: var(--color-teal-T600);
+  --teal-medium-RGB: 48,200,201;
+  --teal-light: var(--color-teal-T400);
+  --teal-light-RGB: 132,243,223;
+  --blue-dark: var(--color-blue-B600);
+  --blue-medium: var(--color-blue-B400);
+  --blue-light: var(--color-blue-B200);
+  --purple-dark: #6e2ff4;
+  --purple-medium: #9973fd;
+  --purple-light: #b7a6fc;
 }
 
 body {

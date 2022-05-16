@@ -1,6 +1,58 @@
 /* Second
 ----------------------*/
 
+.parallax-group.second {
+  /*height: 200vh;*/
+}
 .parallax-group.second .background-visual div {
-  margin-top: -30vh;
+  /*margin-top: -30vh;*/
+}
+
+.parallax-group.second .background-visual div {
+  /*height: 160vh;*/
+  background-image: linear-gradient(to bottom, rgba(var(--teal-medium-RGB), 0),
+                                               rgba(var(--teal-medium-RGB), 1) 20%,
+                                               var(--teal-dark) 100%);
+}
+
+.parallax-group.second-support {
+
+}
+
+.parallax-group.second-support .watch {
+  display: grid;
+  place-content: center;
+}
+
+.parallax-group.second-support .watch img {
+  width: 22vw;
+  margin-right: -4vw;
+}
+
+.parallax-group.second-support .rose img {
+  width: 8vw;
+  position: absolute;
+  left: calc(50% - 14vw);
+  top: 0;
+}
+
+.parallax-group.second-support .rose2 img {
+  width: 10vw;
+  position: absolute;
+  left: calc(50% + 14vw);
+  top: 40%;
+}
+
+.parallax-group.second-support .rose3 img {
+  width: 8vw;
+  position: absolute;
+  left: calc(50% - 3vw);
+  top: 80%;
+}
+
+.parallax-group.second-support .rose4 img {
+  width: 8vw;
+  position: absolute;
+  left: calc(50%);
+  top: 100%;
 }

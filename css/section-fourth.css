@@ -1,0 +1,40 @@
+/* Fourth
+----------------------*/
+
+.parallax-group.fourth-support2 .addition-front img{
+	width: 20vw;
+	position: absolute;
+	left: calc(50% - 8vw);
+}
+.parallax-group.fourth-support1 .addition-back img{
+	width: 20vw;
+	position: absolute;
+	left: calc(50% - 8vw);
+}
+
+.parallax-group.fourth-support .addition-total {
+	/*z-index: 0;*/
+}
+
+.parallax-group.fourth-support .addition-receipt {
+	width: 13vw;
+	padding: 1em;
+	position: absolute;
+	left: calc(50% - 1.9vw);
+	top: -45vh;
+	background-color: white;
+	color: var(--color-gray-L800);
+	font-family: var(--font-monospace);
+}
+
+.parallax-group.fourth-support .addition-receipt span {
+	display: block;
+	text-align: right;
+	font-size: .5em;
+}
+
+.parallax-group.fourth-support .addition-receipt span.total {
+	margin: .2em 0 .5em;
+	padding-top: .2em;
+	border-top: 1px dotted var(--color-gray-L400);
+}

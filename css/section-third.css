@@ -7,9 +7,10 @@
   display: flex;
   justify-content: center;
 }
+
 .parallax-group.third .background-visual div img {
   width: calc(var(--overlay-w) + 100px);
-  filter: blur(.5em);
+  filter: blur(.6em);
   transform: scale(1.1);
 }
 
@@ -17,18 +18,40 @@
   z-index: 0;
 }
 
-.parallax-group.third-support .layer-1 div,
+.parallax-group.third-support {
+  transform: translateZ(-100px) scale(1.4123);
+}
+
+.parallax-group.third-support .layer-1 {
+  transform-origin: center center;
+}
+
+.parallax-group.third-support .layer-1 div {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: calc(50% - 10vw);
+  top: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .parallax-group.third-support2 .layer-1 div {
   position: absolute;
   width: 20vw;
   height: 20vw;
-  left: calc(50% - 8vw);
+  left: calc(50% - 10vw);
   top: 0;
   display: grid;
   place-content: center;
   overflow: hidden;
   border-radius: 50%;
 }
+
+.parallax-group.third-support2 .layer-1 {
+  transform: translateZ(0);
+}
+
 .parallax-group.third-support2 .layer-1 div {
   /*border: 5px solid white;*/
   box-shadow: 0 0 0 1px rgba(255,255,255,.4),

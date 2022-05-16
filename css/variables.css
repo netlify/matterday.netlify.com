@@ -83,16 +83,6 @@
   --color-yellow: #ffad43;
   --color-yellow-dark: #cc801f;
 
-  /* Plan colors */
-  --color-plan-starter: var(--color-teal-T900);
-  --color-plan-pro: var(--color-pink-dark);
-  --color-plan-pro-accessible: var(--color-pink-accessible);
-  --color-plan-business: var(--color-blue-dark);
-  --color-plan-enterprise: var(--color-gray-L700);
-
-  /* Gradients */
-  --gradient-1: linear-gradient(to bottom, #230a5c 0%, #3e119c 100%);
-
   /* Fonts */
   --font-headline: Pacaembu, sans-serif;
   --font-headline-feature-settings: "salt" 1;

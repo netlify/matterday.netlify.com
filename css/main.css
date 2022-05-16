@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--color-teal-T300);
+  color: black;
+}
+
+@font-face {
+  font-family: Pacaembu;
+  src: url(../fonts/PacaembuVar-subset.woff2) format("woff2");
+  unicode-range: U+5,U+20,U+21,U+24,U+25,U+27,U+2B-2E,U+30-3A,U+3F,U+41-5A,U+61-7A,U+D7,U+2019;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url(../fonts/MulishVar-subset.woff2) format("woff2");
+  unicode-range: U+5,U+20,U+21,U+24,U+25,U+27,U+2B-2E,U+30-3A,U+3F,U+41-5A,U+61-7A,U+D7,U+2019;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+:root {
+  --body-bg: var(--color-gray-L800);
+  --overlay-w: 35vw;
+  --overlay-h: 60vh;
+  --header-h: 10vh;
+  --gradient-red: linear-gradient(to bottom, #ff6e63, #ffb49d);
+  --gradient-teal: linear-gradient(to bottom, #5aebdf, #bffee8);
+  --gradient-gold: linear-gradient(to bottom, #ffb916, #ffeba2);
+  --gradient-purple: linear-gradient(to bottom, #7b3ffa, #a483fd);
+  --gradient-blue: linear-gradient(to bottom, #2652f4, #7499fb);
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--body-bg);
+  font-family: var(--font-secondary);
+  font-size: 100%;
+  line-height: 1.4;
+  color: white;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  z-index: 0;
+}
+
+body::after {
+  width: 40vw;
+  height: 40vw;
+  aspect-ratio: 1;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(20%);
+  background-image: linear-gradient(140deg, #783AFA 20%, #0076D1);
+  border-radius: 50%;
+  filter: blur(7rem) opacity(.7);
+}
+
+body::before {
+  content: '';
+  width: 53vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat, repeat, repeat-y;
+  background-image: linear-gradient(to right, rgba(21,26,30,.7) 20%,
+                                              rgba(21,26,30, 0) 30%,
+                                              rgba(21,26,30, 0) 70%,
+                                              rgba(21,26,30,.7) 80%),
+                    url(../images/grid-dot.svg),
+                    url(../images/grid-lines.svg);
+  background-size: 100% 100%, 60px auto, 959px auto;
+  background-position: center center, left center, 4vw center;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: .6em;
+  font-family: var(--font-headline);
+  font-weight: 680;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+/*
+img {
+  max-width: 100%;
+}*/
+
+.content > :last-child {
+  margin-bottom: 0;
+}
+

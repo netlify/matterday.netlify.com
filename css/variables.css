@@ -1,0 +1,131 @@
+:root {
+  --color-white: #ffffff;
+
+  /* Bonus stage Color Palette */
+  --color-teal-T900: #054861;
+  --color-teal-T800: #0f6a80;
+  --color-teal-T700: #139cab;
+  --color-teal-T600: #30c8c9;
+  --color-teal-T500: #5cebdf;
+  --color-teal-T400: #84f3df;
+  --color-teal-T300: #9ef9e0;
+  --color-teal-T200: #bffde7;
+  --color-teal-T100: #dffef0;
+  --color-teal-T050: #f2fef5;
+
+  --color-blue-B900: #061475;
+  --color-blue-B800: #0a1e8d;
+  --color-blue-B700: #112caf;
+  --color-blue-B600: #183dd1;
+  --color-blue-B500: #2250f4;
+  --color-blue-B400: #587ef8;
+  --color-blue-B300: #799cfb;
+  --color-blue-B200: #a6bffd;
+  --color-blue-B100: #d2e0fe;
+  --color-blue-B050: #e5edff;
+
+  --color-gray-L800: #151a1e;
+  --color-gray-L700: #33373b;
+  --color-gray-L600: #676c70;
+  --color-gray-L500: #80858a;
+  --color-gray-L400: #a3a7ac;
+  --color-gray-L300: #e7eaed;
+  --color-gray-L200: #f2f5f8;
+  --color-gray-L100: #fafbfb;
+  --color-gray-L000: #ffffff;
+
+  --color-gray-D800: #151a1e;
+  --color-gray-D700: #1c2126;
+  --color-gray-D600: #22262a;
+  --color-gray-D500: #2a2e32;
+  --color-gray-D400: #4c5257;
+  --color-gray-D300: #80858a;
+  --color-gray-D200: #a3a8ac;
+  --color-gray-D100: #e7eaed;
+  --color-gray-D000: #ffffff;
+
+  --color-yellow-Y900: #7a4804;
+  --color-yellow-Y800: #935c07;
+  --color-yellow-Y700: #b7790b;
+  --color-yellow-Y600: #db9710;
+  --color-yellow-Y500: #ffb916;
+  --color-yellow-Y400: #ffcf50;
+  --color-yellow-Y300: #ffdd73;
+  --color-yellow-Y200: #ffeba1;
+  --color-yellow-Y100: #fff6d0;
+  --color-yellow-Y050: #fffcec;
+
+  --color-red-R900: #7a122d;
+  --color-red-R800: #931e33;
+  --color-red-R700: #b7303d;
+  --color-red-R600: #db4648;
+  --color-red-R500: #ff6b60;
+  --color-red-R400: #ff9987;
+  --color-red-R300: #ffb59f;
+  --color-red-R200: #ffd3bf;
+  --color-red-R100: #ffebdf;
+  --color-red-R050: #fff5eb;
+
+  /* Primary colors */
+  --color-pink: #ff6969;
+  --color-pink-dark: #ff1154;
+  --color-pink-accessible: #e8114e;
+  --color-orange: #f86816;
+  --color-orange-dark: #b74808;
+
+  /* Secondary colors */
+  --color-blue: #43b4d8;
+  --color-blue-dark: #146396;
+  --color-blue-dark-b: #133857;
+  --color-violet: #c57aa2;
+  --color-violet-dark: #7c0c64;
+  --color-gold: #f6bc00;
+  --color-yellow: #ffad43;
+  --color-yellow-dark: #cc801f;
+
+  /* Plan colors */
+  --color-plan-starter: var(--color-teal-T900);
+  --color-plan-pro: var(--color-pink-dark);
+  --color-plan-pro-accessible: var(--color-pink-accessible);
+  --color-plan-business: var(--color-blue-dark);
+  --color-plan-enterprise: var(--color-gray-L700);
+
+  /* Gradients */
+  --gradient-1: linear-gradient(to bottom, #230a5c 0%, #3e119c 100%);
+
+  /* Fonts */
+  --font-headline: Pacaembu, sans-serif;
+  --font-headline-feature-settings: "salt" 1;
+  --font-primary: Pacaembu, sans-serif;
+  --font-primary-feature-settings: "salt" 1;
+  --font-secondary: Mulish, sans-serif;
+  --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+
+  /* Border radius */
+  --radius-1: 0.125rem;
+  --radius-2: 0.25rem;
+  --radius-3: 0.5rem;
+  --radius-4: 1rem;
+  --radius-circle: 50%;
+  --radius-pill: 360px;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 2rem;
+
+  /* Functional */
+  --border-radius: 6px;
+  --border-radius-large: 12px;
+  --color-focus-ring: var(--color-teal-T500);
+  --grid-gutter: 2.5rem; /* 40px / 16 */
+  --shadow-light: 0px 2px 4px rgba(14, 30, 37, 0.12);
+  --shadow-heavy: -10px 10px 80px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-deep: 0px 16px 24px rgba(0, 0, 0, 0.07), 0px 6px 30px rgba(0, 0, 0, 0.06), 0px 8px 10px rgba(0, 0, 0, 0.1);
+  --shadow-coheeze-shallow: 0px 2px 4px rgba(51, 55, 59, 0.08), 0px 1px 10px rgba(51, 55, 59, 0.06);
+  --shadow-coheeze-deepest: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.04);
+  --shadow-coheeze-shallow-filter: drop-shadow(0px 1px 10px rgba(51, 55, 59, 0.06)) drop-shadow(0px 2px 4px rgba(51, 55, 59, 0.08));
+  --shadow-coheeze-deep-filter: drop-shadow(0px 6px 30px rgba(51, 55, 59, 0.04)) drop-shadow(0px 8px 24px rgba(51, 55, 59, 0.04)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+}

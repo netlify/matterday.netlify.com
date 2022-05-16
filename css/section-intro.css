@@ -1,0 +1,150 @@
+/* Intro
+----------------------*/
+
+/* Calendar for intro */
+.calendar {
+  --start: 2vh;
+  --slot: 8vh;
+  --spacer: .4vh;
+  --radius: 4px;
+  width: var(--overlay-w);
+  height: var(--overlay-h);
+  overflow-x: hidden;
+  background-color: white;
+  display: grid;
+  grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
+  list-style: none;
+}
+
+.calendar-day {
+  margin-top: 3.5em;
+  position: relative;
+  background-image: repeating-linear-gradient(to bottom, var(--color-gray-L400),
+                                                         var(--color-gray-L400) 1px,
+                                                         transparent 1px,
+                                                         transparent var(--slot));
+  background-position: center var(--start);
+  border-left: 1px solid var(--color-gray-L400);
+  font-family: var(--font-headline);
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--color-gray-L700);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-day span {
+  width: 100%;
+  position: absolute;
+  top: -1.5em;
+  display: block;
+}
+
+.calendar-event {
+  width: calc(100% - (var(--spacer) * 2));
+  height: calc(var(--slot) - var(--spacer) * 2);
+  margin: 0 var(--spacer) calc(var(--spacer) * 2);
+  display: block;
+  background-image: var(--gradient-red);
+  border-radius: var(--radius);
+}
+
+.calendar-event.short {
+  height: calc((var(--slot) - var(--spacer) * 3) / 2);
+}
+.calendar-event.short + .short {
+  margin-top: calc(var(--spacer) * -1);
+}
+
+.calendar-event.tall {
+  height: calc((var(--slot) * 2) - (var(--spacer) * 2));
+}
+
+.calendar-event:first-of-type {
+  margin-top: calc(var(--start) + var(--spacer));
+}
+
+.calendar-day:first-of-type .calendar-event {
+  width: calc(100% - var(--spacer));
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-left: 0;
+}
+.calendar-day:last-of-type .calendar-event {
+  width: calc(100% - var(--spacer));
+  border-radius: var(--radius) 0 0 var(--radius);
+  margin-right: 0;
+}
+
+.intro .content {
+  place-self: start;
+  height: var(--overlay-h);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Floating events */
+.intro-support .event-detailed {
+  width: 14vw;
+  height: 6vw;
+  padding: .6em;
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  /*box-shadow: var(--shadow-coheeze-deepest);*/
+  box-shadow: 0 .5em 1em rgba(0,0,0,.1),
+              0 2em 2em rgba(0,0,0,.1);
+  line-height: 1;
+  color: var(--color-gray-L700);
+}
+
+.intro-support .event-detailed.tall {
+  height: 12vw;
+}
+.intro-support .event-detailed.short {
+  height: auto;
+}
+
+.intro-support .event-detailed.teal {
+  background-image: var(--gradient-teal);
+}
+.intro-support .event-detailed.gold {
+  background-image: var(--gradient-gold);
+}
+.intro-support .event-detailed.blue {
+  background-image: var(--gradient-blue);
+  color: white;
+}
+.intro-support .event-detailed.purple {
+  background-image: var(--gradient-purple);
+  color: white;
+}
+
+.intro-support .event-detailed:not(.short) strong {
+  margin-bottom: .4em;
+  display: block;
+}
+.intro-support .event-1 {
+  left: calc(50% - 18vw);
+  top: 0;
+}
+.intro-support .event-2 {
+  left: calc(50% + 10vw);
+  top: 0;
+}
+.intro-support .event-3 {
+  left: 50%;
+  top: 30%;
+}
+.intro-support .event-4 {
+  left: calc(50% + 12vw);
+  top: 50%;
+}
+.intro-support .event-5 {
+  left: calc(50% - 10vw);
+  top: 50%;
+}
+.intro-support .event-6 {
+  left: calc(50% + 5vw);
+  top: 80%;
+}

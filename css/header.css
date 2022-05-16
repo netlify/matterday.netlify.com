@@ -1,0 +1,24 @@
+.header-main {
+  height: var(--header-h);
+  padding: 0 2em;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .7rem;
+  font-family: var(--font-headline);
+  font-weight: 680;
+  line-height: 1;
+  z-index: 10;
+}
+
+.header-main > :first-child {
+  margin-right: auto;
+}
+
+.header-main a {
+  transition: transform .2s ease-in-out;
+}
+.header-main a:hover {
+  transform: scale(1.2);
+}

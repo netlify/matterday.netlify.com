@@ -1,0 +1,79 @@
+/* Custom page
+----------------------*/
+
+.your-matterday .content {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 2em;
+  z-index: 2;
+}
+
+.your-matterday:not(.grid) .content {
+  height: calc(100vh - var(--header-h));
+  display: grid;
+  place-content: center;
+}
+
+.your-matterday.grid .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2em 4em;
+}
+
+.your-matterday .eyebrow {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  font-family: var(--font-headline);
+  font-size: clamp(1.1em, 2vw, 1.5em);
+  font-weight: 600;
+}
+
+.your-matterday .gh-username {
+  font-weight: 400;
+  color: var(--teal-medium);
+}
+
+.your-matterday .gh-avatar {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.your-matterday .prompt {
+  max-width: 18ch;
+  display: block;
+}
+
+.your-matterday .answer {
+  margin-top: .6em;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: var(--gradient-teal);
+  background-size: 100% 1px;
+  background-position: center bottom 25%;
+  font-family: adobe-handwriting-frank, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-style: normal;
+  text-align: center;
+}
+
+.your-matterday .matter-item {
+  font-size: 60%;
+}
+
+.your-matterday .matter-item .gh-avatar {
+  width: 40px;
+}
+
+.your-matterday .matter-item .answer {
+  margin-top: .7em;
+  font-size: 1.5em;
+}
+
+.your-matterday.grid h1 {
+  text-align: center;
+  grid-column: 1 / -1;
+}

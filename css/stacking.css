@@ -55,13 +55,3 @@
 .parallax-group.tenth .background-visual div {
   background-image: var(--gradient-teal);
 }
-.parallax-group.cta {
-  background-image: var(--gradient-purple);
-  z-index: 2;
-  display: grid;
-  place-content: center;
-  text-align: center;
-}
-.parallax-group.cta .content {
-  padding: 0;
-}

@@ -7,6 +7,7 @@
   <title>Matterday</title>
   <meta name="description" content="">
 
+  <!-- TODO: favicon -->
   <link rel="shortcut icon" href="/images/squid-icon.png">
   <!-- TODO: consolidate CSS files -->
   <link rel="stylesheet" href="/css/variables.css">
@@ -21,8 +22,9 @@
   <link rel="stylesheet" href="/css/section-adds-up.css">
   <link rel="stylesheet" href="/css/section-the-office.css">
   <link rel="stylesheet" href="/css/section-space-mountain.css">
+  <link rel="stylesheet" href="/css/section-cta.css">
 
-
+  <!-- TODO: default OG image -->
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta content="@netlify" name="twitter:site">
@@ -38,11 +40,11 @@
 <body class="no-js">
   <div class="parallax">
     <header class="header-main">
-      <span>Matterday</span>
-      <a href="https://netlify.com">
+      <a href="/">Matterday</a>
+      <a href="https://netlify.com" class="logo">
         <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
       </a>
-      <a href="https://supabase.com/">
+      <a href="https://supabase.com/" class="logo">
         <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
       </a>
     </header>
@@ -342,8 +344,23 @@
     </section>
     <section class="parallax-group cta">
       <div class="content">
-        <h2>So for real, what would your Matterday look like?</h2>
-        <p>[Add CTA + form here]</p>
+        <!-- Logged out CTA  -->
+        <div class="not-logged-in">
+          <h2>So tell us, what would your Matterday look like?</h2>
+          <p>[Some text explaining things + why they need to log in]</p>
+          <button class="button">Log in with GitHub</button>
+        </div>
+        <!-- Logged in form -->
+        <!-- <div class="logged-in">
+          <form>
+            <fieldset>
+              <label for="matter">If I had an extra day per week I could...</label>
+              <input type="text" id="matter" />
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+          <p>[Some text]</p>
+        </div> -->
       </div>
     </section>
   </div>

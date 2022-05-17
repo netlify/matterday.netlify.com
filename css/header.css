@@ -17,8 +17,18 @@
 }
 
 .header-main a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-main a:not(.logo):hover {
+  text-decoration: underline;
+}
+
+.header-main a.logo {
   transition: transform .2s ease-in-out;
 }
-.header-main a:hover {
+
+.header-main a.logo:hover {
   transform: scale(1.2);
 }

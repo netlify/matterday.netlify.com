@@ -1,32 +1,32 @@
-/* Third
+/* Focus section
 ----------------------*/
 
-.parallax-group.third .background-visual div {
+.parallax-group.focus .background-visual div {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.parallax-group.third .background-visual div img {
+.parallax-group.focus .background-visual div img {
   width: calc(var(--overlay-w) + 100px);
   filter: blur(.6em);
   transform: scale(1.1);
 }
 
-.parallax-group.third-support {
+.parallax-group.focus-pieces {
   z-index: 0;
 }
 
-.parallax-group.third-support {
+.parallax-group.focus-pieces {
   transform: translateZ(-100px) scale(1.4123);
 }
 
-.parallax-group.third-support .layer-1 {
+.parallax-group.focus-pieces .layer-1 {
   transform-origin: center center;
 }
 
-.parallax-group.third-support .layer-1 div {
+.parallax-group.focus-pieces .layer-1 div {
   position: absolute;
   width: 20vw;
   height: 20vw;
@@ -36,7 +36,7 @@
   border-radius: 50%;
 }
 
-.parallax-group.third-support2 .layer-1 div {
+.parallax-group.focus-pieces2 .layer-1 div {
   position: absolute;
   width: 20vw;
   height: 20vw;
@@ -48,11 +48,11 @@
   border-radius: 50%;
 }
 
-.parallax-group.third-support2 .layer-1 {
+.parallax-group.focus-pieces2 .layer-1 {
   transform: translateZ(0);
 }
 
-.parallax-group.third-support2 .layer-1 div {
+.parallax-group.focus-pieces2 .layer-1 div {
   /*border: 5px solid white;*/
   box-shadow: 0 0 0 1px rgba(255,255,255,.4),
               0 0 20px rgba(0,0,0,.2);
@@ -60,7 +60,7 @@
               inset 2em 2em 2em rgba(255,255,255,.1),
               -2em -2em 1em rgba(0,0,0,.4);*/
 }
-.parallax-group.third-support .layer-1 div img {
+.parallax-group.focus-pieces .layer-1 div img {
   width: calc(var(--overlay-w) * 2);
   position: absolute;
   left: 50%;

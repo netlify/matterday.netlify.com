@@ -11,51 +11,38 @@
 .parallax-group.intro-support {
   margin-top: -50vh;
 }
-.parallax-group.second {
+.parallax-group.slow-down {
   margin-top: -30vh;
 }
-.parallax-group.second-support {
+.parallax-group.slow-down-pieces {
   margin-top: -100vh;
 }
-.parallax-group.third {
+.parallax-group.focus {
   /*margin-top: -40vh;*/
 }
-.parallax-group.third-support {
+.parallax-group.focus-pieces {
   margin-top: -75vh;
 }
-.parallax-group.third-support2 {
+.parallax-group.focus-pieces2 {
   margin-top: -100vh;
 }
-.parallax-group.fourth {
+.parallax-group.adds-up {
   margin-top: -25vh;
 }
-.parallax-group.fourth-support1 {
+.parallax-group.adds-up-pieces1 {
   margin-top: -70vh;
 }
-.parallax-group.fourth-support {
+.parallax-group.adds-up-pieces {
   margin-top: -100vh;
 }
-.parallax-group.fourth-support2 {
+.parallax-group.adds-up-pieces2 {
   margin-top: -100vh;
 }
-.parallax-group.fifth {
+.parallax-group.the-office {
   margin-top: -30vh;
 }
 
 /* this will eventually go away */
-
-.parallax-group.third .background-visual div {
-  background-image: var(--gradient-gold);
-}
-.parallax-group.fourth .background-visual div {
-  background-image: var(--gradient-purple);
-}
-.parallax-group.fifth .background-visual div {
-  background-image: var(--gradient-teal);
-}
-.parallax-group.sixth .background-visual div {
-  background-image: var(--gradient-blue);
-}
 .parallax-group.seventh .background-visual div {
   background-image: var(--gradient-red);
 }

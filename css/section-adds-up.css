@@ -1,22 +1,22 @@
-/* Fourth
+/* Adds up section
 ----------------------*/
+.parallax-group.adds-up .background-visual div {
+	/*background-repeat: no-repeat;*/
+  background-image: linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
+}
 
-.parallax-group.fourth-support2 .addition-front img{
+.parallax-group.adds-up-pieces2 .addition-front img{
 	width: 20vw;
 	position: absolute;
 	left: calc(50% - 8vw);
 }
-.parallax-group.fourth-support1 .addition-back img{
+.parallax-group.adds-up-pieces1 .addition-back img{
 	width: 20vw;
 	position: absolute;
 	left: calc(50% - 8vw);
 }
 
-.parallax-group.fourth-support .addition-total {
-	/*z-index: 0;*/
-}
-
-.parallax-group.fourth-support .addition-receipt {
+.parallax-group.adds-up-pieces .addition-receipt {
 	width: 13vw;
 	padding: 1em;
 	position: absolute;
@@ -27,13 +27,13 @@
 	font-family: var(--font-monospace);
 }
 
-.parallax-group.fourth-support .addition-receipt span {
+.parallax-group.adds-up-pieces .addition-receipt span {
 	display: block;
 	text-align: right;
 	font-size: .5em;
 }
 
-.parallax-group.fourth-support .addition-receipt span.total {
+.parallax-group.adds-up-pieces .addition-receipt span.total {
 	margin: .2em 0 .5em;
 	padding-top: .2em;
 	border-top: 1px dotted var(--color-gray-L400);

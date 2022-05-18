@@ -1,0 +1,42 @@
+/* Get more rest
+----------------------*/
+
+.get-more-rest .background-visual div {
+  background-image: var(--gradient-blue);
+}
+
+.get-more-rest-pieces .cloud img {
+  width: 15vw;
+  position: absolute;
+}
+
+.get-more-rest-pieces .pillow img {
+  width: 20vw;
+  position: absolute;
+}
+
+.get-more-rest-pieces .cloud1 img {
+  left: calc(50% - 17vw);
+  top: 0;
+}
+.get-more-rest-pieces .cloud2 img {
+  left: calc(50% + 10vw);
+  top: 20%;
+}
+.get-more-rest-pieces .cloud3 img {
+  left: calc(50% - 3vw);
+  top: 70%;
+}
+.get-more-rest-pieces .pillow1 img {
+  left: calc(50% - 10vw);
+  top: 40%;
+}
+.get-more-rest-pieces .cloud4 img {
+  left: calc(50% + 5vw);
+  top: 90%;
+}
+.get-more-rest-pieces .cloud5 img {
+  width: 10vw;
+  left: calc(50% - 3vw);
+  top: 90%;
+}

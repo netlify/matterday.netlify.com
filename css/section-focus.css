@@ -1,14 +1,14 @@
 /* Focus section
 ----------------------*/
 
-.parallax-group.focus .background-visual div {
+.focus .background-visual div {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.parallax-group.focus .background-visual div img {
+.focus .background-visual div img {
   width: calc(var(--overlay-w) + 100px);
   filter: blur(.6em);
   transform: scale(1.1);
@@ -53,13 +53,10 @@
 }
 
 .parallax-group.focus-pieces2 .layer-1 div {
-  /*border: 5px solid white;*/
   box-shadow: 0 0 0 1px rgba(255,255,255,.4),
               0 0 20px rgba(0,0,0,.2);
-/*  box-shadow: inset 0 0 2em rgba(0,0,0,.4),
-              inset 2em 2em 2em rgba(255,255,255,.1),
-              -2em -2em 1em rgba(0,0,0,.4);*/
 }
+
 .parallax-group.focus-pieces .layer-1 div img {
   width: calc(var(--overlay-w) * 2);
   position: absolute;

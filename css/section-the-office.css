@@ -1,8 +1,7 @@
 /* The Office
 ----------------------*/
 
-.parallax-group.the-office .background-visual div {
-  /*background-repeat: repeat-y;*/
+.the-office .background-visual div {
   background-image: url('/images/the-office.jpg');
   background-size: 100% auto;
   background-position: 50% 0;

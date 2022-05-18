@@ -1,6 +1,22 @@
 /* Space Mountain
 ----------------------*/
 
-.parallax-group.space-mountain .background-visual div {
-  background: black;
+.space-mountain .background-visual div {
+  background-color: black;
+  background-image: url('/images/stars2.svg');
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+.space-mountain-pieces .layer-1 {
+  background-image: url('/images/stars.svg');
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.space-mountain-pieces2 .layer-2 img {
+  width: 7vw;
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }

@@ -1,0 +1,6 @@
+/* Make room for play
+----------------------*/
+
+.play .background-visual div {
+  background-image: var(--gradient-purple);
+}

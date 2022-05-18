@@ -42,8 +42,11 @@
   --teal-light: var(--color-teal-T400);
   --teal-light-RGB: 132,243,223;
   --blue-dark: var(--color-blue-B600);
+  --blue-dark-RGB: 24,61,209;
   --blue-medium: var(--color-blue-B400);
+  --blue-medium-RGB: 88,126,248;
   --blue-light: var(--color-blue-B200);
+  --blue-light-RGB: 166,191,253;
   --purple-dark: #6e2ff4;
   --purple-dark-RGB: 110,47,244;
   --purple-medium: #9973fd;
@@ -121,6 +124,10 @@ h3 {
 p {
   margin-bottom: 1em;
   font-size: 1.3em;
+}
+
+a {
+  color: inherit;
 }
 
 button,

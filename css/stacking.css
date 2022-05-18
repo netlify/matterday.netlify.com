@@ -7,6 +7,7 @@
 .parallax-group.pieces {
   width: 50%;
   z-index: 2;
+  margin-top: -100vh;
 }
 .parallax-group.intro-support {
   margin-top: -50vh;
@@ -14,17 +15,8 @@
 .parallax-group.slow-down {
   margin-top: -30vh;
 }
-.parallax-group.slow-down-pieces {
-  margin-top: -100vh;
-}
-.parallax-group.focus {
-  /*margin-top: -40vh;*/
-}
 .parallax-group.focus-pieces {
   margin-top: -75vh;
-}
-.parallax-group.focus-pieces2 {
-  margin-top: -100vh;
 }
 .parallax-group.adds-up {
   margin-top: -25vh;
@@ -32,26 +24,6 @@
 .parallax-group.adds-up-pieces1 {
   margin-top: -70vh;
 }
-.parallax-group.adds-up-pieces {
-  margin-top: -100vh;
-}
-.parallax-group.adds-up-pieces2 {
-  margin-top: -100vh;
-}
 .parallax-group.the-office {
   margin-top: -30vh;
-}
-
-/* this will eventually go away */
-.parallax-group.seventh .background-visual div {
-  background-image: var(--gradient-red);
-}
-.parallax-group.eighth .background-visual div {
-  background-image: var(--gradient-gold);
-}
-.parallax-group.ninth .background-visual div {
-  background-image: var(--gradient-purple);
-}
-.parallax-group.tenth .background-visual div {
-  background-image: var(--gradient-teal);
 }

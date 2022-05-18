@@ -1,0 +1,17 @@
+/* Boeing
+----------------------*/
+
+.boeing .background-visual div {
+  background-image: linear-gradient(to bottom, black, transparent 15%),
+                    linear-gradient(to top, var(--blue-dark), rgba(var(--blue-dark-RGB),0) 15%),
+                    url('/images/map.jpg');
+  background-size: 100% 100%, 100% 100%, 100% auto;
+  background-position: 50% 0;
+}
+
+.boeing-pieces .foreground img {
+  width: 12vw;
+  position: absolute;
+  left: calc(50% - 5vw);
+  top: 45%;
+}

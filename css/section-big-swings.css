@@ -1,0 +1,6 @@
+/* Big Swings
+----------------------*/
+
+.big-swings .background-visual div {
+  background-image: var(--gradient-teal);
+}

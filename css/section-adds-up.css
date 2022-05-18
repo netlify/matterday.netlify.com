@@ -1,11 +1,12 @@
 /* Adds up section
 ----------------------*/
-.parallax-group.adds-up .background-visual div {
+.adds-up .background-visual div {
   /*background-repeat: no-repeat;*/
-  background-image: linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
+  background-image: url('/images/grid-dot.svg'),
+                    linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
 }
 
-.parallax-group.adds-up-pieces2 .addition-front {
+.adds-up-pieces2 .addition-front {
   background-image: linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
                     linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
                     linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
@@ -26,18 +27,18 @@
                        calc(50% + 9vw) 20%,
                        calc(50% + 2vw) 20%;
 }
-.parallax-group.adds-up-pieces2 .addition-front img{
+.adds-up-pieces2 .addition-front img{
   width: 20vw;
   position: absolute;
   left: calc(50% - 8vw);
 }
-.parallax-group.adds-up-pieces1 .addition-back img{
+.adds-up-pieces1 .addition-back img{
   width: 20vw;
   position: absolute;
   left: calc(50% - 8vw);
 }
 
-.parallax-group.adds-up-pieces .addition-receipt {
+.adds-up-pieces .addition-receipt {
   width: 13vw;
   padding: 1em;
   position: absolute;
@@ -48,13 +49,13 @@
   font-family: var(--font-monospace);
 }
 
-.parallax-group.adds-up-pieces .addition-receipt span {
+.adds-up-pieces .addition-receipt span {
   display: block;
   text-align: right;
   font-size: .5em;
 }
 
-.parallax-group.adds-up-pieces .addition-receipt span.total {
+.adds-up-pieces .addition-receipt span.total {
   margin: .2em 0 .5em;
   padding-top: .2em;
   border-top: 1px dotted var(--color-gray-L400);

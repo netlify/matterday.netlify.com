@@ -1,14 +1,14 @@
 /* Slow down
 ----------------------*/
 
-.parallax-group.slow-down {
+.slow-down {
   /*height: 200vh;*/
 }
-.parallax-group.slow-down .background-visual div {
+.slow-down .background-visual div {
   /*margin-top: -30vh;*/
 }
 
-.parallax-group.slow-down .background-visual div {
+.slow-down .background-visual div {
   /*height: 160vh;*/
   background-image: linear-gradient(to bottom, rgba(var(--teal-medium-RGB), 0),
                                                rgba(var(--teal-medium-RGB), 1) 20%,
@@ -16,42 +16,42 @@
   /*background-image: var(--gradient-teal);*/
 }
 
-.parallax-group.slow-down-pieces {
+.slow-down-pieces {
 
 }
 
-.parallax-group.slow-down-pieces .watch {
+.slow-down-pieces .watch {
   display: grid;
   place-content: center;
 }
 
-.parallax-group.slow-down-pieces .watch img {
+.slow-down-pieces .watch img {
   width: 22vw;
   margin-right: -4vw;
 }
 
-.parallax-group.slow-down-pieces .rose img {
+.slow-down-pieces .rose img {
   width: 8vw;
   position: absolute;
   left: calc(50% - 14vw);
   top: 0;
 }
 
-.parallax-group.slow-down-pieces .rose2 img {
+.slow-down-pieces .rose2 img {
   width: 10vw;
   position: absolute;
   left: calc(50% + 14vw);
   top: 40%;
 }
 
-.parallax-group.slow-down-pieces .rose3 img {
+.slow-down-pieces .rose3 img {
   width: 8vw;
   position: absolute;
   left: calc(50% - 3vw);
   top: 80%;
 }
 
-.parallax-group.slow-down-pieces .rose4 img {
+.slow-down-pieces .rose4 img {
   width: 8vw;
   position: absolute;
   left: calc(50%);

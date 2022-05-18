@@ -88,7 +88,7 @@
 }
 
 /* Floating events */
-.intro-support .event-detailed {
+.intro-pieces .event-detailed {
   width: 14vw;
   height: 6vw;
   padding: .6em;
@@ -102,53 +102,53 @@
   color: var(--color-gray-L800);
 }
 
-.intro-support .event-detailed.tall {
+.intro-pieces .event-detailed.tall {
   height: 12vw;
 }
-.intro-support .event-detailed.short {
+.intro-pieces .event-detailed.short {
   height: auto;
 }
 
-.intro-support .event-detailed.teal {
+.intro-pieces .event-detailed.teal {
   background-image: var(--gradient-teal);
 }
-.intro-support .event-detailed.gold {
+.intro-pieces .event-detailed.gold {
   background-image: var(--gradient-gold);
 }
-.intro-support .event-detailed.blue {
+.intro-pieces .event-detailed.blue {
   background-image: var(--gradient-blue);
   color: white;
 }
-.intro-support .event-detailed.purple {
+.intro-pieces .event-detailed.purple {
   background-image: var(--gradient-purple);
   color: white;
 }
 
-.intro-support .event-detailed:not(.short) strong {
+.intro-pieces .event-detailed:not(.short) strong {
   margin-bottom: .4em;
   display: block;
 }
-.intro-support .event-1 {
+.intro-pieces .event-1 {
   left: calc(50% - 18vw);
   top: 0;
 }
-.intro-support .event-2 {
+.intro-pieces .event-2 {
   left: calc(50% + 10vw);
   top: 0;
 }
-.intro-support .event-3 {
+.intro-pieces .event-3 {
   left: 50%;
   top: 30%;
 }
-.intro-support .event-4 {
+.intro-pieces .event-4 {
   left: calc(50% + 12vw);
   top: 50%;
 }
-.intro-support .event-5 {
+.intro-pieces .event-5 {
   left: calc(50% - 10vw);
   top: 50%;
 }
-.intro-support .event-6 {
+.intro-pieces .event-6 {
   left: calc(50% + 5vw);
   top: 80%;
 }

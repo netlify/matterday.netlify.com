@@ -53,9 +53,9 @@
   background-image: var(--gradient-teal);
   background-size: 100% 1px;
   background-position: center bottom 25%;
-  font-family: adobe-handwriting-frank, sans-serif;
+  font-family: 'Caveat', monospace;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-style: normal;
   text-align: center;
 }

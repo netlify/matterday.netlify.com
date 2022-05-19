@@ -38,9 +38,7 @@
   --overlay-w: 35vw;
   --overlay-h: 60vh;
   --header-h: 10vh;
-  --gradient-red: linear-gradient(to bottom, #ff6e63, #ffb49d);
   --gradient-teal: linear-gradient(to bottom, var(--teal-medium), var(--teal-light));
-  --gradient-gold: linear-gradient(to bottom, #ffb916, #ffeba2);
   --gradient-purple: linear-gradient(to bottom, var(--purple-dark), var(--purple-medium));
   --gradient-blue: linear-gradient(to bottom, var(--blue-dark), var(--blue-medium));
   --teal-dark: var(--color-teal-T800);
@@ -62,6 +60,7 @@
   --purple-light: #b7a6fc;
   --purple-light-RGB: 183,166,252;
   --pattern-bg: #22262a;
+  --shadow: 16,17,163;
 }
 
 body {

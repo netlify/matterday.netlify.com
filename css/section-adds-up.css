@@ -32,9 +32,13 @@
   margin-left: -8vw;
 }
 
+.adds-up-pieces2 .addition-front img {
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
 .adds-up-pieces .addition-receipt {
   width: 13vw;
-  padding: 1em;
+  padding: 1vw;
   margin-left: -1.9vw;
   position: absolute;
   left: 50%;
@@ -47,7 +51,7 @@
 .adds-up-pieces .addition-receipt span {
   display: block;
   text-align: right;
-  font-size: .5em;
+  font-size: clamp(.2em, 6vw, .5em);
 }
 
 .adds-up-pieces .addition-receipt span.total {

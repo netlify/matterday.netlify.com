@@ -67,21 +67,21 @@
   --color-red-R050: #fff5eb;
 
   /* Primary colors */
-  --color-pink: #ff6969;
+/*  --color-pink: #ff6969;
   --color-pink-dark: #ff1154;
   --color-pink-accessible: #e8114e;
   --color-orange: #f86816;
-  --color-orange-dark: #b74808;
+  --color-orange-dark: #b74808;*/
 
   /* Secondary colors */
-  --color-blue: #43b4d8;
+/*  --color-blue: #43b4d8;
   --color-blue-dark: #146396;
   --color-blue-dark-b: #133857;
   --color-violet: #c57aa2;
   --color-violet-dark: #7c0c64;
   --color-gold: #f6bc00;
   --color-yellow: #ffad43;
-  --color-yellow-dark: #cc801f;
+  --color-yellow-dark: #cc801f;*/
 
   /* Fonts */
   --font-headline: Pacaembu, sans-serif;
@@ -92,18 +92,18 @@
   --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 
   /* Border radius */
-  --radius-1: 0.125rem;
+/*  --radius-1: 0.125rem;
   --radius-2: 0.25rem;
   --radius-3: 0.5rem;
   --radius-4: 1rem;
   --radius-circle: 50%;
-  --radius-pill: 360px;
+  --radius-pill: 360px;*/
 
   /* Spacing */
-  --space-1: 0.25rem;
+/*  --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 1rem;
-  --space-4: 2rem;
+  --space-4: 2rem;*/
 
   /* Functional */
   --border-radius: 6px;

@@ -1,0 +1,21 @@
+/* Walk to Austin
+----------------------*/
+
+.walking .background-visual div {
+  background-image: url('/images/topography.svg'),
+                    repeating-linear-gradient(to right, rgba(255,255,255,.06),
+                                                        rgba(255,255,255,.06) 2px,
+                                                        transparent 2px,
+                                                        transparent 70px),
+                    repeating-linear-gradient(to bottom, rgba(255,255,255,.06),
+                                                         rgba(255,255,255,.06) 2px,
+                                                         transparent 2px,
+                                                         transparent 70px),
+                    linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
+  background-size: 100% auto;
+}
+
+.walking-pieces img {
+  width: var(--overlay-w);
+  margin-left: -16vw;
+}

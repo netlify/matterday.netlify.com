@@ -2,16 +2,19 @@
 ----------------------*/
 
 .get-more-rest .background-visual div {
-  background-image: var(--gradient-blue);
+  background-image: url('/images/grid-dot.svg'),
+                    linear-gradient(to bottom, var(--blue-medium), var(--blue-dark));
 }
 
 .get-more-rest-pieces .cloud img {
   width: 15vw;
   position: absolute;
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15))
 }
 
 .get-more-rest-pieces .pillow img {
   width: 20vw;
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15))
 }
 
 .get-more-rest-pieces .cloud1 img {

@@ -12,6 +12,7 @@
   width: 22vw;
   top: 50%;
   transform: translate(-9.7vw,-50%);
+  filter: drop-shadow(0 1rem 0.5rem rgba(0,0,0,.1));
 }
 
 .slow-down-pieces .rose img {

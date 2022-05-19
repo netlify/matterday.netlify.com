@@ -3,6 +3,7 @@
 .adds-up .background-visual div {
   background-image: url('/images/grid-dot.svg'),
                     linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
+  background-position: 0 40%, 0 0;
 }
 
 .adds-up-pieces2 .addition-front {

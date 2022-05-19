@@ -4,6 +4,7 @@
 .get-more-rest .background-visual div {
   background-image: url('/images/grid-dot.svg'),
                     linear-gradient(to bottom, var(--blue-medium), var(--blue-dark));
+  background-position: 0 40%, 0 0;
 }
 
 .get-more-rest-pieces .cloud img {

@@ -1,11 +1,8 @@
 .cta {
   background-color: var(--body-bg);
-  z-index: 2;
-  display: grid;
-  place-content: center;
-  text-align: center;
   box-shadow: 0 -1em 1em rgba(0,0,0,.3);
   overflow: hidden;
+  z-index: 2;
 }
 
 .cta::before,
@@ -43,8 +40,13 @@
 }
 
 .cta .content {
+  height: calc(100vh - var(--header-h));
   padding: 2em;
-  z-index: 1;
+  position: relative;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  z-index: 2;
 }
 
 .cta .content .logged-in {
@@ -61,7 +63,6 @@ form fieldset {
 }
 
 form label {
-  /*margin-bottom: 1em;*/
   flex-basis: 100%;
   font-family: var(--font-headline);
   font-weight: 680;

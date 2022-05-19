@@ -8,15 +8,13 @@
   background-position: center top;
 }
 
-.space-mountain-pieces .layer-1 {
+.space-mountain-pieces .foreground {
   background-image: url('/images/stars.svg');
   background-size: 100% auto;
   background-position: center center;
 }
 
-.space-mountain-pieces2 .layer-2 img {
+.space-mountain-pieces2 .foreground img {
   width: 7vw;
-  position: absolute;
-  left: 50%;
   top: 45%;
 }

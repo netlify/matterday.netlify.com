@@ -12,31 +12,30 @@
 
 .get-more-rest-pieces .pillow img {
   width: 20vw;
-  position: absolute;
 }
 
 .get-more-rest-pieces .cloud1 img {
-  left: calc(50% - 17vw);
+  margin-left: -17vw;
   top: 0;
 }
 .get-more-rest-pieces .cloud2 img {
-  left: calc(50% + 10vw);
+  margin-left: 10vw;
   top: 20%;
 }
 .get-more-rest-pieces .cloud3 img {
-  left: calc(50% - 3vw);
-  top: 70%;
+  margin-left: -6vw;
+  top: 60%;
 }
 .get-more-rest-pieces .pillow1 img {
-  left: calc(50% - 10vw);
+  margin-left: -10vw;
   top: 40%;
 }
 .get-more-rest-pieces .cloud4 img {
-  left: calc(50% + 5vw);
+  margin-left: 5vw;
   top: 90%;
 }
 .get-more-rest-pieces .cloud5 img {
   width: 10vw;
-  left: calc(50% - 3vw);
+  margin-left: -3vw;
   top: 90%;
 }

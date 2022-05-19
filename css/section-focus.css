@@ -15,49 +15,37 @@
 }
 
 .parallax-group.focus-pieces {
+  transform: translateZ(-100px) scale(1.4123);
   z-index: 0;
 }
 
-.parallax-group.focus-pieces {
-  transform: translateZ(-100px) scale(1.4123);
-}
-
-.parallax-group.focus-pieces .layer-1 {
+.parallax-group.focus-pieces .foreground {
   transform-origin: center center;
 }
 
-.parallax-group.focus-pieces .layer-1 div {
-  position: absolute;
-  width: 20vw;
-  height: 20vw;
-  left: calc(50% - 10vw);
-  top: 0;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.parallax-group.focus-pieces2 .layer-1 div {
-  position: absolute;
-  width: 20vw;
-  height: 20vw;
-  left: calc(50% - 10vw);
-  top: 0;
-  display: grid;
-  place-content: center;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.parallax-group.focus-pieces2 .layer-1 {
+.parallax-group.focus-pieces2 .foreground {
   transform: translateZ(0);
 }
 
-.parallax-group.focus-pieces2 .layer-1 div {
+.parallax-group.focus-pieces .foreground div,
+.parallax-group.focus-pieces2 .foreground div {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  left: calc(50% - 10vw);
+}
+
+.parallax-group.focus-pieces2 .foreground div {
+  display: grid;
+  place-content: center;
   box-shadow: 0 0 0 1px rgba(255,255,255,.4),
               0 0 20px rgba(0,0,0,.2);
 }
 
-.parallax-group.focus-pieces .layer-1 div img {
+.parallax-group.focus-pieces .foreground div img {
   width: calc(var(--overlay-w) * 2);
   position: absolute;
   left: 50%;

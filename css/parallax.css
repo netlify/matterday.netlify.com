@@ -49,6 +49,11 @@
   width: var(--overlay-w);
 }
 
+.foreground img {
+  position: absolute;
+  left: 50%;
+}
+
 /* Layer depths
 ----------------------*/
 

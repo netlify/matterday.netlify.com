@@ -1,7 +1,6 @@
 /* Adds up section
 ----------------------*/
 .adds-up .background-visual div {
-  /*background-repeat: no-repeat;*/
   background-image: url('/images/grid-dot.svg'),
                     linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
 }
@@ -27,22 +26,18 @@
                        calc(50% + 9vw) 20%,
                        calc(50% + 2vw) 20%;
 }
-.adds-up-pieces2 .addition-front img{
+.adds-up-pieces2 .addition-front img,
+.adds-up-pieces1 .addition-back img {
   width: 20vw;
-  position: absolute;
-  left: calc(50% - 8vw);
-}
-.adds-up-pieces1 .addition-back img{
-  width: 20vw;
-  position: absolute;
-  left: calc(50% - 8vw);
+  margin-left: -8vw;
 }
 
 .adds-up-pieces .addition-receipt {
   width: 13vw;
   padding: 1em;
+  margin-left: -1.9vw;
   position: absolute;
-  left: calc(50% - 1.9vw);
+  left: 50%;
   top: -45vh;
   background-color: white;
   color: var(--color-gray-L800);

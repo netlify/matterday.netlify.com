@@ -129,12 +129,23 @@ h3 {
 }
 
 p {
-  margin-bottom: 1em;
   font-size: clamp(1em, 1.6vw, 2.5em)
+}
+
+p:not(:last-child) {
+  margin-bottom: 1em;
 }
 
 a {
   color: inherit;
+  /*font-weight: 600;*/
+  text-decoration: var(--teal-medium) solid underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+
+a:hover {
+  text-decoration-color: inherit;
 }
 
 button,
@@ -152,6 +163,10 @@ button,
   border: none;
   transition: background-color 200ms;
   white-space: nowrap;
+}
+
+.button.small {
+  font-size: 80%;
 }
 
 button:hover,

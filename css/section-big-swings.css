@@ -30,6 +30,6 @@
 .big-swings-pieces .pinata-pizza {
   width: 24vw;
   margin-left: -10vw;
-  top: 60%;
+  top: 55%;
   filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.1));
 }

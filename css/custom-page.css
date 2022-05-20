@@ -73,7 +73,8 @@
   font-size: 1.5em;
 }
 
-.your-matterday.grid h1 {
+.your-matterday.grid .grid-intro {
+  margin-bottom: 2em;
   text-align: center;
   grid-column: 1 / -1;
 }

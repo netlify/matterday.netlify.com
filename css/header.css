@@ -7,7 +7,7 @@
   align-items: center;
   gap: .9rem;
   font-family: var(--font-headline);
-  font-weight: 680;
+  font-weight: 200;
   line-height: 1;
   z-index: 10;
 }
@@ -17,8 +17,17 @@
 }
 
 .header-main a {
-  color: white;
   text-decoration: none;
+}
+
+.header-main > div {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.header-main .masthead {
+  font-weight: 680;
 }
 
 .header-main a:not(.logo):hover {

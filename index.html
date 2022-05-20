@@ -7,8 +7,7 @@
   <title>Matterday</title>
   <meta name="description" content="">
 
-  <!-- TODO: favicon -->
-  <link rel="shortcut icon" href="/images/squid-icon.png">
+  <link rel="shortcut icon" href="/images/favicon.png">
   <!-- TODO: consolidate CSS files -->
   <link rel="stylesheet" href="/css/variables.css">
   <link rel="stylesheet" href="/css/main.css">
@@ -45,7 +44,14 @@
 <body class="no-js">
   <div class="parallax">
     <header class="header-main">
-      <a href="/">Matterday</a>
+      <div>
+        <a href="/" class="masthead">Matterday</a>
+        <!-- Logged in header stuff -->
+        <!-- <span class="authentication">
+          👋 <span class="github-username">@lynnandtonic</span>
+        </span>
+        <button class="button small">Log out</button> -->
+      </div>
       <a href="https://netlify.com" class="logo">
         <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
       </a>
@@ -449,10 +455,16 @@
         <img src="/images/pinata-pizza.svg" alt="lots of pizza slices falling through the air" class="pinata-pizza" />
       </div>
     </section>
-    <section class="parallax-group cta">
-    <!-- TODO: add "logged in as" copy + log out button -->
+    <section id="share" class="parallax-group cta">
     <header class="header-main">
-      <a href="/">Matterday</a>
+      <div>
+        <a href="/" class="masthead">Matterday</a>
+        <!-- Logged in header stuff -->
+        <!-- <span class="authentication">
+          👋 <span class="github-username">@lynnandtonic</span>
+        </span>
+        <button class="button small">Log out</button> -->
+      </div>
       <a href="https://netlify.com" class="logo">
         <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
       </a>
@@ -463,20 +475,30 @@
       <div class="content">
         <!-- Logged out CTA  -->
         <div class="not-logged-in">
-          <h2>So tell us, what would your Matterday look like?</h2>
-          <p>[Some text explaining things + why they need to log in]</p>
-          <button class="button">Log in with GitHub</button>
+          <h2>So tell us, what does your Matterday look like?</h2>
+          <div class="authentication-cta">
+            <p>Log in to share what you could do with an extra day.</p>
+            <button class="button">Log in with GitHub</button>
+          </div>
+          <div class="nudge">
+            <p>Need some inspiration? <a href="/grid.html">See what others are saying.</a></p>
+          </div>
         </div>
         <!-- Logged in form -->
-<!--         <div class="logged-in">
+        <!-- <div class="logged-in">
           <form>
             <fieldset>
-              <label for="matter">If I had an extra day per week I could...</label>
+              <label for="matter">If I had an extra day a week I could...</label>
               <input type="text" id="matter" />
-              <button type="submit">Submit</button>
+              <footer>
+                <small class="characters">limit 30 characters</small>
+                <button type="submit">Submit</button>
+              </footer>
             </fieldset>
           </form>
-          <p>[Some text]</p>
+          <div class="nudge">
+            <p>Need some inspiration? <a href="/grid.html">See what others are saying.</a></p>
+          </div>
         </div> -->
       </div>
     </section>

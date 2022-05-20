@@ -50,20 +50,19 @@
 }
 
 .cta .content .logged-in {
+  width: 100%;
   max-width: 800px;
 }
 
 form fieldset {
-  margin-bottom: 2em;
+  width: 100%;
   border: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
   text-align: left;
 }
 
 form label {
-  flex-basis: 100%;
+  margin-bottom: 1em;
+  display: block;
   font-family: var(--font-headline);
   font-weight: 680;
   font-size: clamp(1.3rem, 2.5vw, 2rem);
@@ -71,6 +70,8 @@ form label {
 }
 
 form input {
+  width: 100%;
+  margin-bottom: .5em;
   padding: .3em;
   border: none;
   background-color: transparent;
@@ -81,7 +82,7 @@ form input {
   background-position: center center;
   font-family: var(--font-primary);
   font-size: 1.8rem;
-  color: white;
+  color: inherit;
   flex: 1;
 }
 
@@ -89,4 +90,19 @@ form input:focus {
   outline: none;
   background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
                     linear-gradient(to right, var(--blue-dark), var(--blue-medium));
+  box-shadow: 0 0 0 4px rgba(var(--teal-light-RGB), .8);
+}
+
+form footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nudge {
+  width: auto;
+  margin-top: 4em;
+  display: inline-block;
+  padding: 1em;
+  border: 1px dashed var(--teal-medium);
 }

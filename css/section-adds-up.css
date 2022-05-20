@@ -52,7 +52,7 @@
 .adds-up-pieces .addition-receipt span {
   display: block;
   text-align: right;
-  font-size: clamp(.2em, 6vw, .5em);
+  font-size: clamp(.2em, 1.5vw, .7em);
 }
 
 .adds-up-pieces .addition-receipt span.total {

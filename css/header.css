@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: .7rem;
+  gap: .9rem;
   font-family: var(--font-headline);
   font-weight: 680;
   line-height: 1;

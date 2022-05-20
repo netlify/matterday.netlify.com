@@ -117,20 +117,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: clamp(1.8em, 4vw, 3em);
+  font-size: clamp(1.8em, 3.5vw, 6em);
 }
 
 h2 {
-  font-size: clamp(1.5em, 3vw, 2.2em);
+  font-size: clamp(1.5em, 2.5vw, 2.2em);
 }
 
 h3 {
-  font-size: clamp(1.3em, 2.5vw, 2em);
+  font-size: clamp(1.3em, 2.2vw, 2em);
 }
 
 p {
   margin-bottom: 1em;
-  font-size: 1.3em;
+  font-size: clamp(1em, 1.6vw, 2.5em)
 }
 
 a {

@@ -1,6 +1,6 @@
 .cta {
   background-color: var(--body-bg);
-  box-shadow: 0 -1em 1em rgba(0,0,0,.3);
+  box-shadow: 0 -1em 1em rgba(var(--shadow),.15);
   overflow: hidden;
   z-index: 2;
 }

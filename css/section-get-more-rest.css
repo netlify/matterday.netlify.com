@@ -3,7 +3,7 @@
 
 .get-more-rest .background-visual div {
   background-image: url('/images/grid-dot.svg'),
-                    linear-gradient(to bottom, var(--blue-medium), var(--blue-dark));
+                    var(--gradient-blue);
   background-position: 50% 50%, 0 0;
 }
 

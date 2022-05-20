@@ -2,8 +2,11 @@
 ----------------------*/
 
 .backburner .background-visual div {
-  background-image: url('/images/checkbox.svg'),
-                    linear-gradient(to bottom, var(--purple-dark), var(--teal-medium));
-  background-size: auto 5%, 100% 100%;
-  background-position: center top;
+  background-image: var(--gradient-teal);
+}
+
+.backburner-pieces .todo-list img {
+  width: 20vw;
+  margin-left: -9vw;
+  top: 15%;
 }

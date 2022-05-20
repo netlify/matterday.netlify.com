@@ -2,5 +2,30 @@
 ----------------------*/
 
 .play .background-visual div {
-  background-image: var(--gradient-purple);
+  background-image: url('/images/konami.svg'),
+                    var(--gradient-purple);
+  background-size: 100% auto;
+}
+
+.play-pieces .cross-stitch img {
+  width: 13vw;
+  margin-left: 6vw;
+  top: 40%;
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
+.play-pieces .lego1 img {
+  width: 5vw;
+  margin-left: -13vw;
+  top: 20%;
+  transform: rotate(5deg);
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
+.play-pieces .lego2 img {
+  width: 5vw;
+  margin-left: -5vw;
+  top: 70%;
+  transform: rotate(-4deg);
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
 }

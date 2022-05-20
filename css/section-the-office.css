@@ -2,7 +2,42 @@
 ----------------------*/
 
 .the-office .background-visual div {
-  background-image: url('/images/the-office.jpg');
-  background-size: 100% auto;
-  background-position: 50% 0;
+  background-repeat: no-repeat, repeat-y, no-repeat, repeat;
+  background-image: linear-gradient(to bottom, var(--purple-medium), var(--purple-medium)),
+                    radial-gradient(circle at 50% 50%, var(--pattern-bg) 10%,
+                                                       transparent 11%),
+                    repeating-linear-gradient(to bottom, rgba(255,255,255,.2),
+                                                         rgba(255,255,255,.2) 2px,
+                                                         rgba(255,255,255,0) 2px,
+                                                         rgba(255,255,255,0) 30px),
+                    linear-gradient(to bottom, var(--blue-medium), var(--blue-dark));
+  background-size: 2px 100%, 15% 33.333%, 100% 90%, 100% 100%;
+  background-position: 15% 0, 0 0, 50% 100%, 0 0;
+}
+
+.the-office-pieces img {
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
+.the-office-pieces .mug img {
+  width: 20vw;
+  margin-left: -9vw;
+  top: 35%;
+  transform: rotate(-10deg);
+}
+
+.the-office-pieces .airplane1 img {
+  width: 7vw;
+  margin-left: -15vw;
+  top: 10%;
+}
+.the-office-pieces .airplane2 img {
+  width: 7vw;
+  margin-left: 16vw;
+  top: 60%;
+}
+.the-office-pieces .airplane3 img {
+  width: 5vw;
+  margin-left: -8vw;
+  top: 100%;
 }

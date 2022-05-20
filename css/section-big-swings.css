@@ -12,7 +12,7 @@
 .big-swings-pieces .pinata-string {
   width: 1px;
   height: 70vh;
-  margin-left: 4vw;
+  margin-left: 6vw;
   position: absolute;
   left: 50%;
   top: -20%;
@@ -20,9 +20,16 @@
 }
 
 .big-swings-pieces .pinata {
-  width: 25vw;
-  margin-left: -10vw;
+  width: 22vw;
+  margin-left: -6vw;
   top: 10%;
   filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.1));
   transform: rotate(5deg);
+}
+
+.big-swings-pieces .pinata-pizza {
+  width: 24vw;
+  margin-left: -10vw;
+  top: 60%;
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.1));
 }

@@ -8,24 +8,38 @@
 }
 
 .play-pieces .cross-stitch img {
-  width: 13vw;
-  margin-left: 6vw;
-  top: 40%;
+  width: 20vw;
+  top: 25%;
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
+.play-pieces div[class^="lego"] img {
   filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
 }
 
 .play-pieces .lego1 img {
-  width: 5vw;
-  margin-left: -13vw;
-  top: 20%;
+  width: 4.5vw;
+  margin-left: -12vw;
+  top: 17%;
   transform: rotate(5deg);
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
 }
 
 .play-pieces .lego2 img {
-  width: 5vw;
-  margin-left: -5vw;
-  top: 70%;
+  width: 4vw;
+  top: 30%;
   transform: rotate(-4deg);
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+}
+
+.play-pieces .lego3 img {
+  width: 4.5vw;
+  margin-left: -5vw;
+  top: 60%;
+  transform: rotate(6deg);
+}
+
+.play-pieces .lego4 img {
+  width: 4.5vw;
+  margin-left: 3vw;
+  top: 90%;
+  transform: rotate(-10deg);
 }

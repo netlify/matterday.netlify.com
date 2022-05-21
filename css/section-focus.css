@@ -19,27 +19,18 @@
 }
 
 .parallax-group.focus-pieces {
-  transform: translateZ(-100px) scale(1.4123);
   z-index: 0;
-}
-
-.parallax-group.focus-pieces .foreground {
-  transform-origin: center center;
-}
-
-.parallax-group.focus-pieces2 .foreground {
-  transform: translateZ(0);
 }
 
 .parallax-group.focus-pieces .foreground div,
 .parallax-group.focus-pieces2 .foreground div {
   position: absolute;
-  width: 20vw;
-  height: 20vw;
-  top: 6%;
+  width: 17vw;
+  height: 17vw;
+  top: -1%;
   overflow: hidden;
   border-radius: 50%;
-  left: calc(50% - 10vw);
+  left: calc(50% - 6.8vw);
 }
 
 .parallax-group.focus-pieces2 .foreground div {
@@ -55,4 +46,26 @@
   left: 50%;
   top: 50%;
   transform: translate(-40%,-50%);
+}
+
+/* Safari hack please forgive me */
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces {
+  transform: translateZ(-100px) scale(1.4123);
+}
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces .layer-1 {
+  transform: translateZ(100px) scale(0.605);
+  margin-top: 1px;
+  transform-origin: center center;
+}
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces2 .layer-1 {
+  transform: translateZ(0) scale(.85);
+  transform-origin: center center;
+}
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces .foreground div,
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces2 .foreground div {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 6%;
+  left: calc(50% - 10vw);
 }

@@ -13,12 +13,12 @@
   width: 22vw;
   top: 50%;
   transform: translate(-9.7vw,-50%);
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .slow-down-pieces .rose {
   width: 8vw;
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .slow-down-pieces .rose1 {

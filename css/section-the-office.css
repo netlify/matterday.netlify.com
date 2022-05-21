@@ -16,7 +16,7 @@
 }
 
 .the-office-pieces img {
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .the-office-pieces .mug {

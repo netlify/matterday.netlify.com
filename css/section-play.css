@@ -10,11 +10,11 @@
 .play-pieces .cross-stitch {
   width: 20vw;
   top: 25%;
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .play-pieces .lego {
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .play-pieces .lego1 {
@@ -42,4 +42,10 @@
   margin-left: 3vw;
   top: 90%;
   transform: rotate(-10deg);
+}
+
+@media (prefers-reduced-motion) {
+  .play-pieces .lego2 {
+    margin-left: -5vw;
+  }
 }

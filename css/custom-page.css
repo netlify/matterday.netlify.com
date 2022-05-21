@@ -12,7 +12,8 @@
 .your-matterday:not(.grid) .content {
   height: calc(100vh - var(--header-h));
   display: grid;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .your-matterday.grid .content {
@@ -71,6 +72,10 @@
 .your-matterday .matter-item .answer {
   margin-top: .7em;
   font-size: 1.5em;
+}
+
+.your-matterday .container + .nudge {
+  align-self: end;
 }
 
 .your-matterday.grid .grid-intro {

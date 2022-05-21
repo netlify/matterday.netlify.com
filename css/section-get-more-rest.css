@@ -10,12 +10,12 @@
 .get-more-rest-pieces .cloud {
   width: 15vw;
   position: absolute;
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .get-more-rest-pieces .pillow {
   width: 20vw;
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 .get-more-rest-pieces .cloud1 {

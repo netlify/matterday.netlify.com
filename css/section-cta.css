@@ -99,11 +99,6 @@
   align-items: center;
 }
 
-.nudge {
-  width: auto;
+.section-cta .nudge {
   margin-top: 4em;
-  display: inline-block;
-  padding: 1em;
-  border: 1px dashed var(--teal-medium);
-  border-radius: 5px;
 }

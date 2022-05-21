@@ -195,3 +195,17 @@ button:disabled {
 .content > :last-child {
   margin-bottom: 0;
 }
+
+.nudge {
+  width: auto;
+  display: inline-block;
+  padding: 1em 2em;
+  border: 1px dashed var(--teal-medium);
+  border-radius: 5px;
+  font-size: 110%;
+  text-align: center;
+}
+
+.nudge p {
+  font-size: inherit;
+}

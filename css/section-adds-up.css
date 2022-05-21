@@ -8,25 +8,25 @@
 }
 
 .adds-up-pieces2 .addition-front {
-  background-image: linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
-                    linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
-                    linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
-                    linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
-                    linear-gradient(to bottom, rgba(255,255,255,.5) 50%, rgba(255,255,255,0)),
-                    linear-gradient(to bottom, var(--teal-light), var(--teal-medium), var(--purple-medium), rgba(var(--purple-medium-RGB), 0));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.4) 50%, rgba(255,255,255,0)),
+                    linear-gradient(to bottom, rgba(255,255,255,.3) 50%, rgba(255,255,255,0)),
+                    linear-gradient(to bottom, rgba(255,255,255,.4) 50%, rgba(255,255,255,0)),
+                    linear-gradient(to bottom, rgba(255,255,255,.3) 50%, rgba(255,255,255,0)),
+                    linear-gradient(to bottom, rgba(255,255,255,.2) 50%, rgba(255,255,255,0)),
+                    linear-gradient(to bottom, var(--blue-dark), var(--purple-medium), rgba(var(--purple-medium-RGB), 0));
   background-repeat: no-repeat;
-  background-size: .4vw 40%,
-                   .4vw 30%,
-                   .4vw 35%,
-                   .4vw 40%,
-                   .4vw 30%,
-                   17vw 50%;
-  background-position: calc(50% - 4.5vw) 20%,
-                       calc(50% - 3vw) 20%,
-                       calc(50% + 2vw) 20%,
-                       calc(50% + 7vw) 20%,
-                       calc(50% + 9vw) 20%,
-                       calc(50% + 2vw) 20%;
+  background-size: .4vw 60%,
+                   .4vw 50%,
+                   .4vw 55%,
+                   .4vw 60%,
+                   .4vw 50%,
+                   17vw 70%;
+  background-position: calc(50% - 4.5vw) 10vw,
+                       calc(50% - 3vw) 10vw,
+                       calc(50% + 2vw) 10vw,
+                       calc(50% + 7vw) 10vw,
+                       calc(50% + 9vw) 10vw,
+                       calc(50% + 2vw) 10vw;
 }
 .adds-up-pieces2 .addition-front img,
 .adds-up-pieces1 .addition-back img {
@@ -35,7 +35,7 @@
 }
 
 .adds-up-pieces2 .addition-front img {
-  filter: var(--drop-shdow);
+  filter: var(--drop-shadow);
 }
 
 /* Safari hack please forgive me */
@@ -52,11 +52,13 @@ _::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2 .addition-r
 
 .adds-up-pieces .addition-receipt {
   width: 13vw;
+  max-height: calc(100vh - 15vw);
   padding: 1vw;
   margin-left: -1.9vw;
   position: absolute;
   left: 50%;
   top: -45vh;
+  overflow: hidden;
   background-color: white;
   color: var(--color-gray-L800);
   font-family: var(--font-monospace);
@@ -72,4 +74,10 @@ _::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2 .addition-r
   margin: .2em 0 .5em;
   padding-top: .2em;
   border-top: 1px dotted var(--color-gray-L400);
+}
+
+@media (prefers-reduced-motion) {
+  .adds-up-pieces .addition-receipt  {
+    margin-left: -4.4vw;
+  }
 }

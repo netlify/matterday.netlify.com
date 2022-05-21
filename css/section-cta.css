@@ -17,11 +17,11 @@
   height: 80vw;
   aspect-ratio: 1;
   left: 50%;
-  bottom: 0;
+  top: 50%;
   background-image: linear-gradient(140deg, #783AFA 20%, #0076D1);
   border-radius: 50%;
   filter: blur(7em) opacity(.7);
-  transform: translate3d(-40%, 20%, 0);
+  transform: translate3d(-40%, -30%, 0);
 }
 
 .section-cta::before {
@@ -54,13 +54,13 @@
   max-width: 800px;
 }
 
-form fieldset {
+.section-cta form fieldset {
   width: 100%;
   border: none;
   text-align: left;
 }
 
-form label {
+.section-cta form label {
   margin-bottom: 1em;
   display: block;
   font-family: var(--font-headline);
@@ -69,7 +69,7 @@ form label {
   line-height: 1.3;
 }
 
-form input {
+.section-cta form input {
   width: 100%;
   margin-bottom: .5em;
   padding: .3em;
@@ -86,14 +86,14 @@ form input {
   flex: 1;
 }
 
-form input:focus {
+.section-cta form input:focus {
   outline: none;
   background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
                     linear-gradient(to right, var(--blue-dark), var(--blue-medium));
   box-shadow: 0 0 0 4px rgba(var(--teal-light-RGB), .8);
 }
 
-form footer {
+.section-cta form footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,4 +105,5 @@ form footer {
   display: inline-block;
   padding: 1em;
   border: 1px dashed var(--teal-medium);
+  border-radius: 5px;
 }

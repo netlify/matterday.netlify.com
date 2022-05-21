@@ -1,44 +1,44 @@
 /* Get more rest
 ----------------------*/
 
-.get-more-rest .background-visual div {
+.get-more-rest .background-artwork {
   background-image: url('/images/grid-dot.svg'),
                     var(--gradient-blue);
   background-position: 50% 50%, 0 0;
 }
 
-.get-more-rest-pieces .cloud img {
+.get-more-rest-pieces .cloud {
   width: 15vw;
   position: absolute;
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15))
+  filter: var(--drop-shdow);
 }
 
-.get-more-rest-pieces .pillow img {
+.get-more-rest-pieces .pillow {
   width: 20vw;
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15))
+  filter: var(--drop-shdow);
 }
 
-.get-more-rest-pieces .cloud1 img {
+.get-more-rest-pieces .cloud1 {
   margin-left: -17vw;
   top: 0;
 }
-.get-more-rest-pieces .cloud2 img {
+.get-more-rest-pieces .cloud2 {
   margin-left: 8vw;
   top: 20%;
 }
-.get-more-rest-pieces .cloud3 img {
+.get-more-rest-pieces .cloud3 {
   margin-left: -6vw;
   top: 60%;
 }
-.get-more-rest-pieces .pillow1 img {
+.get-more-rest-pieces .pillow1 {
   margin-left: -10vw;
   top: 40%;
 }
-.get-more-rest-pieces .cloud4 img {
+.get-more-rest-pieces .cloud4 {
   margin-left: 5vw;
   top: 90%;
 }
-.get-more-rest-pieces .cloud5 img {
+.get-more-rest-pieces .cloud5 {
   width: 10vw;
   margin-left: -3vw;
   top: 90%;

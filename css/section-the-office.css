@@ -1,7 +1,7 @@
 /* The Office
 ----------------------*/
 
-.the-office .background-visual div {
+.the-office .background-artwork {
   background-repeat: no-repeat, repeat-y, no-repeat, repeat;
   background-image: linear-gradient(to bottom, var(--purple-medium), var(--purple-medium)),
                     radial-gradient(circle at 50% 50%, var(--pattern-bg) 10%,
@@ -16,27 +16,27 @@
 }
 
 .the-office-pieces img {
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+  filter: var(--drop-shdow);
 }
 
-.the-office-pieces .mug img {
+.the-office-pieces .mug {
   width: 20vw;
   margin-left: -9vw;
   top: 35%;
   transform: rotate(-10deg);
 }
 
-.the-office-pieces .airplane1 img {
+.the-office-pieces .airplane1 {
   width: 7vw;
   margin-left: -15vw;
   top: 10%;
 }
-.the-office-pieces .airplane2 img {
+.the-office-pieces .airplane2 {
   width: 7vw;
   margin-left: 16vw;
   top: 60%;
 }
-.the-office-pieces .airplane3 img {
+.the-office-pieces .airplane3 {
   width: 5vw;
   margin-left: -8vw;
   top: 100%;

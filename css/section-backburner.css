@@ -1,11 +1,11 @@
 /* Backburner
 ----------------------*/
 
-.backburner .background-visual div {
+.backburner .background-artwork {
   background-image: var(--gradient-teal);
 }
 
-.backburner-pieces .todo-list img {
+.backburner-pieces .todo-list {
   width: 20vw;
   margin-left: -9vw;
   top: 15%;

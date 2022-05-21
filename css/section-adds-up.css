@@ -1,6 +1,7 @@
 /* Adds up section
 ----------------------*/
-.adds-up .background-visual div {
+
+.adds-up .background-artwork {
   background-image: url('/images/grid-dot.svg'),
                     linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
   background-position: 50% 50%, 0 0;
@@ -34,14 +35,16 @@
 }
 
 .adds-up-pieces2 .addition-front img {
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+  filter: var(--drop-shdow);
 }
 
 /* Safari hack please forgive me */
-_::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2.safari-fix {
+/* Safari doesn’t honor z-index once a translateZ happens,
+   so this layers the artwork properly, but removes the parallax */
+_::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2 {
   transform: translateZ(100px) scale(.71);
 }
-_::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2.safari-fix .addition-receipt {
+_::-webkit-full-page-media, _:future, :root .adds-up-pieces .layer-2 .addition-receipt {
   width: 14vw;
   margin-left: -4.95vw;
   top: -25vh;

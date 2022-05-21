@@ -1,7 +1,7 @@
 /* Slow down
 ----------------------*/
 
-.slow-down .background-visual div {
+.slow-down .background-artwork {
   background-image: url('/images/grid-dot.svg'),
                     linear-gradient(to bottom, rgba(var(--teal-medium-RGB), 0),
                                                rgba(var(--teal-medium-RGB), 1) 20%,
@@ -9,35 +9,35 @@
   background-position: 50% 50%, 0 0;
 }
 
-.slow-down-pieces .watch img {
+.slow-down-pieces .watch {
   width: 22vw;
   top: 50%;
   transform: translate(-9.7vw,-50%);
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+  filter: var(--drop-shdow);
 }
 
-.slow-down-pieces .rose img {
+.slow-down-pieces .rose {
   width: 8vw;
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+  filter: var(--drop-shdow);
 }
 
-.slow-down-pieces .rose1 img {
+.slow-down-pieces .rose1 {
   margin-left: -14vw;
   top: 0;
 }
 
-.slow-down-pieces .rose2 img {
+.slow-down-pieces .rose2 {
   width: 10vw;
   margin-left: 13vw;
   top: 40%;
 }
 
-.slow-down-pieces .rose3 img {
+.slow-down-pieces .rose3 {
   margin-left: -3vw;
   top: 80%;
 }
 
-.slow-down-pieces .rose4 img {
+.slow-down-pieces .rose4 {
   margin-left: 0;
   top: 100%;
 }

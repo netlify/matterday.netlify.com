@@ -21,10 +21,7 @@
   left: 0;
 }
 
-.background-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.background {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3vw;
@@ -36,7 +33,7 @@
   grid-column: 2;
 }
 
-.background-visual {
+.background-container {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -45,7 +42,7 @@
   justify-content: center;
 }
 
-.background-visual div {
+.background-artwork {
   width: var(--overlay-w);
 }
 
@@ -72,11 +69,12 @@
   transform: translateZ(200px) scale(.5);
   transform-origin: center right;
 }
+
 /* remove parallax */
 @media (prefers-reduced-motion) {
   .parallax-layer.foreground.layer-1,
   .parallax-layer.foreground.layer-2,
   .parallax-layer.foreground.layer-3 {
-    transform: translateZ(0);
+    transform: translateZ(100px) scale(.71);
   }
 }

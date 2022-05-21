@@ -1,43 +1,43 @@
 /* Make room for play
 ----------------------*/
 
-.play .background-visual div {
+.play .background-artwork {
   background-image: url('/images/konami.svg'),
                     var(--gradient-purple);
   background-size: 100% auto;
 }
 
-.play-pieces .cross-stitch img {
+.play-pieces .cross-stitch {
   width: 20vw;
   top: 25%;
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+  filter: var(--drop-shdow);
 }
 
-.play-pieces div[class^="lego"] img {
-  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.15));
+.play-pieces .lego {
+  filter: var(--drop-shdow);
 }
 
-.play-pieces .lego1 img {
+.play-pieces .lego1 {
   width: 4.5vw;
   margin-left: -12vw;
   top: 17%;
   transform: rotate(5deg);
 }
 
-.play-pieces .lego2 img {
+.play-pieces .lego2 {
   width: 4vw;
   top: 30%;
   transform: rotate(-4deg);
 }
 
-.play-pieces .lego3 img {
+.play-pieces .lego3 {
   width: 4.5vw;
   margin-left: -5vw;
   top: 60%;
   transform: rotate(6deg);
 }
 
-.play-pieces .lego4 img {
+.play-pieces .lego4 {
   width: 4.5vw;
   margin-left: 3vw;
   top: 90%;

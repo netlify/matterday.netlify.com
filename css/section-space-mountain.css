@@ -1,20 +1,20 @@
 /* Space Mountain
 ----------------------*/
 
-.space-mountain .background-visual div {
+.space-mountain .background-artwork {
   background-color: black;
   background-image: url('/images/stars2.svg');
   background-size: 100% auto;
   background-position: center top;
 }
 
-.space-mountain-pieces .foreground {
+.space-mountain-pieces .stars {
   background-image: url('/images/stars.svg');
   background-size: 100% auto;
   background-position: center center;
 }
 
-.space-mountain-pieces2 .foreground img {
+.space-mountain-pieces .rocket {
   width: 7vw;
   margin-left: 1vw;
   top: 35%;

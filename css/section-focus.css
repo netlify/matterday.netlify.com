@@ -1,14 +1,14 @@
 /* Focus section
 ----------------------*/
 
-.focus .background-visual > div {
+.focus .background-artwork {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.focus .background-visual .focus-shapes {
+.focus .background-artwork .focus-shapes {
   width: var(--overlay-w);
   height: 120%;
   background-image: url('/images/shapes.svg');
@@ -22,8 +22,8 @@
   z-index: 0;
 }
 
-.parallax-group.focus-pieces .foreground div,
-.parallax-group.focus-pieces2 .foreground div {
+.parallax-group.focus-pieces .shapes-container,
+.parallax-group.focus-pieces2 .lens {
   position: absolute;
   width: 17vw;
   height: 17vw;
@@ -33,14 +33,14 @@
   left: calc(50% - 6.8vw);
 }
 
-.parallax-group.focus-pieces2 .foreground div {
+.parallax-group.focus-pieces2 .lens {
   display: grid;
   place-content: center;
   box-shadow: 0 0 0 1px var(--teal-light),
               0 0 20px rgba(var(--shadow),.3);
 }
 
-.parallax-group.focus-pieces .foreground div img {
+.parallax-group.focus-pieces .shapes {
   width: var(--overlay-w);
   position: absolute;
   left: 50%;
@@ -48,7 +48,13 @@
   transform: translate(-40%,-50%);
 }
 
-/* Safari hack please forgive me */
+/* Safari hacks please forgive me */
+/* This reduces lag for the blur */
+_::-webkit-full-page-media, _:future, :root .focus .background-artwork .focus-shapes {
+  transform: translate3d(0, 0, 0) scale(1.3) ;
+}
+/* Safari doesn’t honor z-index once a translateZ happens,
+   so this layers the artwork properly, but removes the parallax */
 _::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces {
   transform: translateZ(-100px) scale(1.4123);
 }
@@ -61,8 +67,8 @@ _::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces2 .layer
   transform: translateZ(0) scale(.85);
   transform-origin: center center;
 }
-_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces .foreground div,
-_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces2 .foreground div {
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces .shapes-container,
+_::-webkit-full-page-media, _:future, :root .parallax-group.focus-pieces2 .lens {
   position: absolute;
   width: 20vw;
   height: 20vw;

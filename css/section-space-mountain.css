@@ -1,3 +1,4 @@
+/*--------------------*/
 /* Space Mountain
 ----------------------*/
 
@@ -14,14 +15,28 @@
   background-position: center center;
 }
 
-.space-mountain-pieces .rocket {
-  width: 7vw;
-  margin-left: 1vw;
-  top: 35%;
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .space-mountain-pieces .rocket {
+    width: 14vw;
+    margin-left: -7vw;
+    top: 0;
+  }
 }
 
-@media (prefers-reduced-motion) {
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
   .space-mountain-pieces .rocket {
-    margin-left: -2vw;
+    width: 7vw;
+    margin-left: 1vw;
+    top: 35%;
+  }
+
+  @media (prefers-reduced-motion) {
+    .space-mountain-pieces .rocket {
+      margin-left: -2vw;
+    }
   }
 }

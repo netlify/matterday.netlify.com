@@ -1,6 +1,6 @@
 .header-main {
   height: var(--header-h);
-  padding: 0 2em;
+  padding: 0 var(--body-padding);
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -40,4 +40,20 @@
 
 .header-main a.logo:hover {
   transform: scale(1.2);
+}
+
+/* hide logos for mobile when logged in (to save space) */
+@media screen and (max-width: 600px) {
+  .header-main.logged-in a.logo {
+    display: none;
+  }
+  .header-main.logged-in > div {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-main.logged-in > div .masthead {
+    margin-right: auto;
+  }
 }

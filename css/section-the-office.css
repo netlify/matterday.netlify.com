@@ -1,3 +1,4 @@
+/*--------------------*/
 /* The Office
 ----------------------*/
 
@@ -19,25 +20,55 @@
   filter: var(--drop-shadow);
 }
 
-.the-office-pieces .mug {
-  width: 20vw;
-  margin-left: -9vw;
-  top: 35%;
-  transform: rotate(-10deg);
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .the-office-pieces .mug {
+    width: 35vw;
+    margin-left: -17vw;
+    top: 10%;
+    transform: rotate(-7deg);
+  }
+
+  .the-office-pieces .airplane1 {
+    width: 14vw;
+    margin-left: -28vw;
+    top: -20%;
+  }
+  .the-office-pieces .airplane2 {
+    display: none;
+  }
+  .the-office-pieces .airplane3 {
+    width: 12vw;
+    margin-left: 25vw;
+    top: 70%;
+  }
 }
 
-.the-office-pieces .airplane1 {
-  width: 7vw;
-  margin-left: -15vw;
-  top: 10%;
-}
-.the-office-pieces .airplane2 {
-  width: 7vw;
-  margin-left: 16vw;
-  top: 60%;
-}
-.the-office-pieces .airplane3 {
-  width: 5vw;
-  margin-left: -8vw;
-  top: 100%;
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .the-office-pieces .mug {
+    width: 20vw;
+    margin-left: -9vw;
+    top: 35%;
+    transform: rotate(-10deg);
+  }
+
+  .the-office-pieces .airplane1 {
+    width: 7vw;
+    margin-left: -15vw;
+    top: 10%;
+  }
+  .the-office-pieces .airplane2 {
+    width: 7vw;
+    margin-left: 16vw;
+    top: 60%;
+  }
+  .the-office-pieces .airplane3 {
+    width: 5vw;
+    margin-left: -8vw;
+    top: 100%;
+  }
+
 }

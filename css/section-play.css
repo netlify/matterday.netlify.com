@@ -1,3 +1,4 @@
+/*--------------------*/
 /* Make room for play
 ----------------------*/
 
@@ -7,45 +8,86 @@
   background-size: 100% auto;
 }
 
-.play-pieces .cross-stitch {
-  width: 20vw;
-  top: 25%;
-  filter: var(--drop-shadow);
-}
-
+.play-pieces .cross-stitch,
 .play-pieces .lego {
   filter: var(--drop-shadow);
 }
 
-.play-pieces .lego1 {
-  width: 4.5vw;
-  margin-left: -12vw;
-  top: 17%;
-  transform: rotate(5deg);
-}
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
 
-.play-pieces .lego2 {
-  width: 4vw;
-  top: 30%;
-  transform: rotate(-4deg);
-}
 
-.play-pieces .lego3 {
-  width: 4.5vw;
-  margin-left: -5vw;
-  top: 60%;
-  transform: rotate(6deg);
-}
+  .play-pieces .cross-stitch {
+    width: 45vw;
+    top: -5%;
+    transform: translateX(-50%);
+  }
 
-.play-pieces .lego4 {
-  width: 4.5vw;
-  margin-left: 3vw;
-  top: 90%;
-  transform: rotate(-10deg);
-}
+  .play-pieces .lego {
+    width: 10vw;
+  }
 
-@media (prefers-reduced-motion) {
+  .play-pieces .lego1 {
+    top: -20%;
+    left: 3%;
+    transform: rotate(-4deg);
+  }
+
   .play-pieces .lego2 {
+    top: -17%;
+    left: 18%;
+    transform: rotate(5deg);
+  }
+
+  .play-pieces .lego3 {
+    margin-left: 27vw;
+    top: 65%;
+    transform: rotate(6deg);
+  }
+
+  .play-pieces .lego4 {
+    display: none;
+  }
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .play-pieces .cross-stitch {
+    width: 20vw;
+    top: 25%;
+  }
+
+  .play-pieces .lego1 {
+    width: 4.5vw;
+    margin-left: -12vw;
+    top: 17%;
+    transform: rotate(5deg);
+  }
+
+  .play-pieces .lego2 {
+    width: 4vw;
+    top: 30%;
+    transform: rotate(-4deg);
+  }
+
+  .play-pieces .lego3 {
+    width: 4.5vw;
     margin-left: -5vw;
+    top: 60%;
+    transform: rotate(6deg);
+  }
+
+  .play-pieces .lego4 {
+    width: 4.5vw;
+    margin-left: 3vw;
+    top: 90%;
+    transform: rotate(-10deg);
+  }
+
+  @media (prefers-reduced-motion) {
+    .play-pieces .lego2 {
+      margin-left: -5vw;
+    }
   }
 }

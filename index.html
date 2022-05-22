@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/parallax.css">
   <link rel="stylesheet" href="/css/overlay.css">
-  <link rel="stylesheet" href="/css/stacking.css">
   <link rel="stylesheet" href="/css/section-intro.css">
   <link rel="stylesheet" href="/css/section-slow-down.css">
   <link rel="stylesheet" href="/css/section-focus.css">
@@ -121,9 +120,6 @@
     </div>
     <section class="parallax-group intro">
       <div class="parallax-layer background">
-        <div class="background-container">
-          <div class="background-artwork"></div>
-        </div>
         <div class="content">
           <h1>What if you had an extra day a week?</h1>
           <!-- TODO: add ROI link -->
@@ -409,7 +405,7 @@
       </div>
     </section>
     <section class="parallax-group pieces backburner-pieces">
-      <div class="parallax-layer foreground layer-1">
+      <div class="parallax-layer foreground layer-1 todo-list-container">
         <img src="/images/todo-list.svg" alt="a Trello todo list with “Someday” crossed out and “Now” as the new header, items on the list include Read new book, Crush tech debt, and Dream vacation" class="todo-list" />
       </div>
     </section>
@@ -438,6 +434,7 @@
       </div>
     </section>
     <section id="share" class="parallax-group section-cta">
+    <!-- TODO: add `logged-in` class to header-main if logged-in? -->
     <header class="header-main">
       <div>
         <a href="/" class="masthead">Matterday</a>

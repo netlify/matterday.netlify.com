@@ -1,80 +1,180 @@
-.parallax {
-  height: 100vh;
-  position: relative;
-  perspective: 300px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  z-index: 1;
+@media screen and (max-width: 600px) {
+
+  :root {
+    /*--body-padding: 1.2em;*/
+    --artwork-h: 250px;
+  }
+
+  .parallax {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parallax-group {
+    margin-bottom: 1em;
+    padding: 0 var(--body-padding);
+    position: relative;
+    z-index: 2;
+  }
+
+  .parallax .content {
+    margin: 3em 0;
+  }
+
+  .background {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .background-container {
+    height: var(--artwork-h);
+    border-radius: .6em;
+    overflow: hidden;
+  }
+
+  .background-artwork {
+    height: 100%;
+  }
+
+  .foreground {
+    width: calc(100% - var(--body-padding) * 2);
+    height: 100%;
+    position: absolute;
+  }
+
+  .foreground img {
+    position: absolute;
+    left: 50%;
+  }
+
+  /* Stacking
+  ----------------------*/
+  .header-main {
+    order: -4;
+  }
+  .intro {
+    order: -3;
+  }
+  .underlay {
+    order: -2;
+  }
+  .overlay {
+    order: -1;
+  }
+  .parallax-group.pieces {
+    height: var(--artwork-h);
+    margin-top: calc(var(--artwork-h) * -1 + 1em);
+  }
 }
 
-.parallax-group {
-  height: 100vh;
-  position: relative;
-  transform-style: preserve-3d;
-}
+@media screen and (min-width: 601px) {
 
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+  .parallax {
+    height: 100vh;
+    position: relative;
+    perspective: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+  }
 
-.background {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3vw;
-}
+  .parallax-group {
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
 
-.content {
-  place-self: center;
-  padding-right: 6vw;
-  grid-column: 2;
-}
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-.background-container {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-}
+  .background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
+  }
 
-.background-artwork {
-  width: var(--overlay-w);
-}
+  .content {
+    place-self: center;
+    padding-right: 6vw;
+    grid-column: 2;
+  }
 
-.foreground img {
-  position: absolute;
-  left: 50%;
-}
+  .background-container {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
 
-/* Layers
-----------------------*/
+  .background-artwork {
+    width: var(--overlay-w);
+  }
 
-.parallax-layer.background {
-  transform: translateZ(0);
-}
-.parallax-layer.foreground.layer-1 {
-  transform: translateZ(100px) scale(.71);
-  transform-origin: center right;
-}
-.parallax-layer.foreground.layer-2 {
-  transform: translateZ(175px) scale(.5);
-  transform-origin: center right;
-}
-.parallax-layer.foreground.layer-3 {
-  transform: translateZ(200px) scale(.5);
-  transform-origin: center right;
-}
+  .foreground img {
+    position: absolute;
+    left: 50%;
+  }
 
-/* remove parallax */
-@media (prefers-reduced-motion) {
-  .parallax-layer.foreground.layer-1,
-  .parallax-layer.foreground.layer-2,
-  .parallax-layer.foreground.layer-3 {
+  /* Layers
+  ----------------------*/
+  .parallax-layer.background {
+    transform: translateZ(0);
+  }
+  .parallax-layer.foreground.layer-1 {
     transform: translateZ(100px) scale(.71);
+    transform-origin: center right;
+  }
+  .parallax-layer.foreground.layer-2 {
+    transform: translateZ(175px) scale(.5);
+    transform-origin: center right;
+  }
+  .parallax-layer.foreground.layer-3 {
+    transform: translateZ(200px) scale(.5);
+    transform-origin: center right;
+  }
+
+  /* remove parallax */
+  @media (prefers-reduced-motion) {
+    .parallax-layer.foreground.layer-1,
+    .parallax-layer.foreground.layer-2,
+    .parallax-layer.foreground.layer-3 {
+      transform: translateZ(100px) scale(.71);
+    }
+  }
+
+  /* Stacking
+  ----------------------*/
+  .parallax-group.intro {
+    margin-top: calc((200vh - var(--header-h)) * -1);
+  }
+  .parallax-group.pieces {
+    width: 50%;
+    z-index: 2;
+    margin-top: -100vh;
+  }
+  .parallax-group.intro-pieces {
+    margin-top: -50vh;
+  }
+  .parallax-group.slow-down {
+    margin-top: -30vh;
+  }
+  .parallax-group.focus-pieces {
+    margin-top: -75vh;
+  }
+  .parallax-group.adds-up {
+    margin-top: -25vh;
+  }
+  .parallax-group.adds-up-pieces1 {
+    margin-top: -70vh;
+  }
+  .parallax-group.the-office {
+    margin-top: -30vh;
   }
 }

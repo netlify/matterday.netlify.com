@@ -1,11 +1,17 @@
 /* Custom page
 ----------------------*/
 
+/*.your-matterday::after {
+  --burst-w: 80vw;
+  --burst-filter: blur(10vw) opacity(.6);
+  --burst-transform: translate3d(-40%, -30%, 0);
+}*/
+
 .your-matterday .content {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 2em;
+  padding: var(--body-padding);
   z-index: 2;
 }
 
@@ -19,7 +25,7 @@
 .your-matterday.grid .content {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  gap: 2em 4em;
+  gap: var(--body-padding);
 }
 
 .your-matterday .eyebrow {
@@ -62,6 +68,10 @@
 }
 
 .your-matterday .matter-item {
+  padding: var(--body-padding);
+  background-color: rgba(var(--blue-dark-RGB),.1);
+  border: 1px solid rgba(var(--teal-dark-RGB),.6);
+  border-radius: .5em;
   font-size: 60%;
 }
 

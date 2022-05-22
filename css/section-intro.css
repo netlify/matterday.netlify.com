@@ -1,8 +1,8 @@
+/*--------------------*/
 /* Intro
 ----------------------*/
 
 .calendar-container {
-  width: var(--overlay-w);
   overflow: hidden;
   display: grid;
   justify-content: center;
@@ -13,9 +13,7 @@
   --slot: 8vh;
   --spacer: .4vh;
   --radius: 4px;
-  width: calc(var(--overlay-w) * 1.3);
-  height: var(--overlay-h);
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: white;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -87,15 +85,8 @@
   margin-top: var(--start);
 }
 
-.intro .content {
-  place-self: start;
-  height: var(--overlay-h);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Floating events */
+  /* Floating events
+  ----------------------*/
 .intro-pieces .event-detailed {
   width: 14vw;
   min-height: 6vw;
@@ -106,7 +97,7 @@
   border: 2px solid;
   box-shadow: 0 .5em 1em rgba(var(--shadow),.1),
               0 2em 2em rgba(var(--shadow),.1);
-  font-size: clamp(.55em, 1vw, 1.2em);
+  font-size: clamp(.6em, 1vw, 1.2em);
   line-height: 1;
   color: var(--color-gray-L800);
 }
@@ -142,27 +133,108 @@
   margin-bottom: .4em;
   display: block;
 }
-.intro-pieces .event-1 {
-  left: calc(50% - 18vw);
-  top: 0;
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  :root {
+    --calendar-h: 320px;
+  }
+
+  .calendar-container {
+    width: calc(100% - var(--body-padding) * 2);
+    height: var(--calendar-h);
+    margin: 0 var(--body-padding) 0;
+    border-radius: .6em;
+  }
+
+  .calendar {
+    width: calc(100vw * 1.2);
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+  }
+
+  .pieces.intro-pieces {
+    height: var(--calendar-h);
+    margin: calc(var(--calendar-h) * -1 + 80px) 0 3em;
+  }
+
+  .intro-pieces .event-detailed {
+    width: 20vw;
+    transform: scale(1.3);
+  }
+  .intro-pieces .event-1 {
+    left: 12%;
+    top: 0;
+  }
+  .intro-pieces .event-2 {
+    left: 60%;
+    top: 10%;
+  }
+  .intro-pieces .event-3 {
+    left: 40%;
+    top: 40%;
+  }
+  .intro-pieces .event-4 {
+    left: 65%;
+    top: 65%;
+  }
+  .intro-pieces .event-5 {
+    left: 20%;
+    top: 70%;
+  }
+  .intro-pieces .event-6 {
+    left: 55%;
+    top: 100%;
+  }
 }
-.intro-pieces .event-2 {
-  left: calc(50% + 8vw);
-  top: 0;
-}
-.intro-pieces .event-3 {
-  left: 50%;
-  top: 30%;
-}
-.intro-pieces .event-4 {
-  left: calc(50% + 11vw);
-  top: 50%;
-}
-.intro-pieces .event-5 {
-  left: calc(50% - 10vw);
-  top: 50%;
-}
-.intro-pieces .event-6 {
-  left: calc(50% + 5vw);
-  top: 80%;
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .calendar-container {
+    width: var(--overlay-w);
+  }
+
+  .calendar {
+    width: calc(var(--overlay-w) * 1.3);
+    height: var(--overlay-h);
+  }
+
+  .intro .content {
+    place-self: start;
+    height: var(--overlay-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-pieces .event-1 {
+    left: calc(50% - 18vw);
+    top: 0;
+  }
+  .intro-pieces .event-2 {
+    left: calc(50% + 8vw);
+    top: 0;
+  }
+  .intro-pieces .event-3 {
+    left: 50%;
+    top: 30%;
+  }
+  .intro-pieces .event-4 {
+    left: calc(50% + 11vw);
+    top: 50%;
+  }
+  .intro-pieces .event-5 {
+    left: calc(50% - 10vw);
+    top: 50%;
+  }
+  .intro-pieces .event-6 {
+    left: calc(50% + 5vw);
+    top: 80%;
+  }
 }

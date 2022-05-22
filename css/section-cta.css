@@ -1,3 +1,7 @@
+/*--------------------*/
+/* Section CTA
+----------------------*/
+
 .section-cta {
   background-color: var(--body-bg);
   box-shadow: 0 -1em 1em rgba(var(--shadow),.15);
@@ -101,4 +105,27 @@
 
 .section-cta .nudge {
   margin-top: 4em;
+}
+
+.section-cta .nudge a {
+  display: inline-block;
+}
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+  .section-cta {
+    margin: 10em 0 0;
+    padding: 0;
+    height: 100vh;
+    box-shadow: 0 -1.5em 1.2em rgba(0,0,0,.5)
+  }
+
+  .section-cta .content {
+    margin-top: 0;
+  }
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
 }

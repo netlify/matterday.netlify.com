@@ -62,7 +62,7 @@
   }
   .parallax-group.pieces {
     height: var(--artwork-h);
-    margin-top: calc(var(--artwork-h) * -1 + 1em);
+    margin-top: calc(var(--artwork-h) * -1 - 1em);
   }
 }
 

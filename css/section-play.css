@@ -19,8 +19,8 @@
 
   .play-pieces .cross-stitch {
     width: 40vw;
-    top: -8%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 
   .play-pieces .lego {
@@ -28,20 +28,20 @@
   }
 
   .play-pieces .lego1 {
-    top: -20%;
+    top: -8%;
     left: 3%;
     transform: rotate(-4deg);
   }
 
   .play-pieces .lego2 {
-    top: -17%;
+    top: -5%;
     left: 18%;
     transform: rotate(5deg);
   }
 
   .play-pieces .lego3 {
     margin-left: 27vw;
-    top: 65%;
+    top: 75%;
     transform: rotate(6deg);
   }
 

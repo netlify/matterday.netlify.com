@@ -34,14 +34,14 @@
   .big-swings-pieces .pinata {
     width: 44vw;
     margin-left: -20vw;
-    top: -10%;
+    top: 5%;
     transform: rotate(5deg);
   }
 
   .big-swings-pieces .pinata-pizza {
     width: 48vw;
     top: 50%;
-    transform: translate(-50%,20%);
+    transform: translate(-50%,30%);
   }
 }
 

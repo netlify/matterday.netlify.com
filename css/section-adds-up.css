@@ -40,23 +40,19 @@
   .adds-up-pieces2 .addition-front img,
   .adds-up-pieces1 .addition-back img {
     width: 40vw;
-    top: 13%;
-    margin-left: -20vw;
+    top: 50%;
+    transform: translate(-50%,-30%);
   }
 
   .adds-up-pieces .addition-receipt {
     width: 28vw;
     max-height: 200px;
     margin-left: -14vw;
-    top: -32%;
+    top: -8%;
   }
 
   .adds-up-pieces .addition-receipt span {
     font-size: .6rem;
-  }
-
-  .pieces.adds-up-pieces2 {
-    margin-top: calc(var(--artwork-h) * -1 + -3em);
   }
 }
 

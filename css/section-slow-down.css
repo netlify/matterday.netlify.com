@@ -29,13 +29,13 @@
 
   .slow-down-pieces .rose1 {
     left: 8%;
-    top: -17%;
+    top: -10%;
   }
 
   .slow-down-pieces .rose2 {
     width: 15vw;
     margin-left: 27vw;
-    top: 0;
+    top: 5%;
   }
 
   .slow-down-pieces .rose3 {
@@ -44,7 +44,7 @@
 
   .slow-down-pieces .rose4 {
     margin-left: 18vw;
-    top: 65%;
+    top: 70%;
   }
 }
 

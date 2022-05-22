@@ -25,15 +25,14 @@
 
   .the-office-pieces .mug {
     width: 35vw;
-    margin-left: -17vw;
-    top: 10%;
-    transform: rotate(-7deg);
+    top: 50%;
+    transform: rotate(-7deg) translate(-50%,-50%);
   }
 
   .the-office-pieces .airplane1 {
     width: 14vw;
-    margin-left: -28vw;
-    top: -20%;
+    margin-left: -35vw;
+    top: -8%;
   }
   .the-office-pieces .airplane2 {
     display: none;
@@ -41,7 +40,7 @@
   .the-office-pieces .airplane3 {
     width: 12vw;
     margin-left: 25vw;
-    top: 70%;
+    top: 80%;
   }
 }
 

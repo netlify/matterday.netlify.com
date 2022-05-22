@@ -25,7 +25,7 @@
     margin-bottom: 0;
     height: calc(100% + 3em);
     overflow: hidden;
-    top: -5em;
+    top: -3em;
   }
 
   .backburner-pieces .todo-list {

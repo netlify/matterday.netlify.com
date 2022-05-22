@@ -20,8 +20,8 @@
 
   .space-mountain-pieces .rocket {
     width: 14vw;
-    margin-left: -7vw;
-    top: 0;
+    top: 50%;
+    transform: translate(-50%,-39%);
   }
 }
 

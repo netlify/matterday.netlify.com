@@ -23,32 +23,32 @@
 
   .get-more-rest-pieces .pillow {
     width: 45vw;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%,-50%);
   }
 
   .get-more-rest-pieces .cloud1 {
     left: -5%;
-    top: -20%;
+    top: -8%;
   }
   .get-more-rest-pieces .cloud2 {
     left: 10%;
-    top: 20%;
+    top: 30%;
   }
   .get-more-rest-pieces .cloud3 {
     width: 20vw;
     margin-left: 26vw;
-    top: 10%;
+    top: 20%;
   }
   .get-more-rest-pieces .cloud4 {
     left: 30%;
-    top: 72%;
+    top: 82%;
   }
 
   .get-more-rest-pieces .cloud5 {
     width: 15vw;
     margin-left: 15vw;
-    top: 95%;
+    top: 96%;
   }
 
 }

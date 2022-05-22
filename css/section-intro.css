@@ -141,6 +141,10 @@
     --calendar-h: 320px;
   }
 
+  .intro .content {
+    margin-bottom: 5vw;
+  }
+
   .calendar-container {
     width: calc(100% - var(--body-padding) * 2);
     height: var(--calendar-h);

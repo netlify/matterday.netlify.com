@@ -19,9 +19,9 @@
 @media screen and (max-width: 600px) {
 
   .walking-pieces .route {
-    height: 150%;
+    height: 145%;
     top: 40%;
-    transform: translate(-50%, -52%);
+    transform: translate(-50%, -51%);
   }
 }
 

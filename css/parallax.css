@@ -1,7 +1,6 @@
 @media screen and (max-width: 600px) {
 
   :root {
-    /*--body-padding: 1.2em;*/
     --artwork-h: 250px;
   }
 
@@ -18,7 +17,7 @@
   }
 
   .parallax .content {
-    margin: 3em 0;
+    margin: 15vw 0 10vw;
   }
 
   .background {

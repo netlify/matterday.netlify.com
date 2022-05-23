@@ -227,8 +227,8 @@ button:disabled {
   width: auto;
   display: inline-block;
   padding: 1em 2em;
-  background-color: rgba(var(--teal-dark-RGB),.2);
-  border: 1px solid rgba(var(--teal-medium-RGB),.5);
+  background-color: rgba(0,0,0,.1);
+  backdrop-filter: blur(.2em);
   border-radius: 5px;
   font-size: 100%;
   text-align: center;

@@ -1,11 +1,15 @@
 /* Custom page
 ----------------------*/
 
-/*.your-matterday::after {
-  --burst-w: 80vw;
+.your-matterday::after {
+  /*--burst-w: 80vw;*/
   --burst-filter: blur(10vw) opacity(.6);
   --burst-transform: translate3d(-40%, -30%, 0);
-}*/
+}
+
+.your-matterday::before {
+  width: 100vw;
+}
 
 .your-matterday .content {
   width: 100%;
@@ -70,8 +74,10 @@
 .your-matterday .matter-item {
   padding: var(--body-padding);
   background-color: rgba(var(--blue-dark-RGB),.1);
-  border: 1px solid rgba(var(--teal-dark-RGB),.6);
+  border: 1px solid rgba(var(--teal-dark-RGB),.5);
   border-radius: .5em;
+  box-shadow: .5em .5em 1em rgba(0,0,0,.1);
+  backdrop-filter: blur(.2em);
   font-size: 60%;
 }
 

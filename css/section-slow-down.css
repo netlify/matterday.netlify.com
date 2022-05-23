@@ -89,3 +89,10 @@
     top: 100%;
   }
 }
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .slow-down-pieces .watch {
+    transform: translate(-9.7vw,-50%) scale(.7);
+  }
+}

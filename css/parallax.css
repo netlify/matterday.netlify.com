@@ -177,3 +177,11 @@
     margin-top: -30vh;
   }
 }
+
+/* very wide, very short screens */
+/* see individual sections for one-offs */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .foreground img {
+    transform: scale(.7);
+  }
+}

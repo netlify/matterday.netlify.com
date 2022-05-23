@@ -71,6 +71,12 @@
   }
 }
 
+@media screen and (max-height: 480px) {
+  :root {
+    --header-h: 50px;
+  }
+}
+
 body {
   min-height: 100vh;
   position: relative;

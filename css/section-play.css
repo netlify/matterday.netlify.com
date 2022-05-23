@@ -75,7 +75,6 @@
     width: 4.5vw;
     margin-left: -5vw;
     top: 60%;
-    transform: rotate(6deg);
   }
 
   .play-pieces .lego4 {
@@ -89,5 +88,18 @@
     .play-pieces .lego2 {
       margin-left: -5vw;
     }
+  }
+}
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .play-pieces .lego1 {
+    transform: rotate(5deg) scale(.7);
+  }
+  .play-pieces .lego2 {
+    transform: rotate(-4deg) scale(.7);
+  }
+  .play-pieces .lego4 {
+    transform: rotate(-10deg) scale(.7);
   }
 }

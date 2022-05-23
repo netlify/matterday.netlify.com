@@ -67,3 +67,10 @@
     top: 55%;
   }
 }
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .big-swings-pieces .pinata {
+    transform: rotate(5deg) scale(.7);
+  }
+}

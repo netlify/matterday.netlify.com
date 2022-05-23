@@ -153,8 +153,10 @@
   }
 
   .calendar {
+    --slot: 50px;
+    --spacer: 10px;
     width: calc(100vw * 1.2);
-    height: 100%;
+    height: var(--calendar-h);
     overflow: hidden;
     background-color: white;
     display: grid;
@@ -240,5 +242,12 @@
   .intro-pieces .event-6 {
     left: calc(50% + 5vw);
     top: 80%;
+  }
+}
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .intro-pieces .event-detailed {
+    transform: scale(.7);
   }
 }

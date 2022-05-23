@@ -113,3 +113,19 @@
     }
   }
 }
+
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .adds-up-pieces2 .addition-front img,
+  .adds-up-pieces1 .addition-back img {
+    transform: translate(0,-30%) scale(.7);
+  }
+  .adds-up-pieces .addition-receipt {
+    max-height: calc(100vh - 10vw);
+    transform: scale(.7);
+  }
+  .adds-up-pieces2 .addition-front {
+    background-image: none;
+  }
+}

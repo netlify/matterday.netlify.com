@@ -69,5 +69,11 @@
     margin-left: -8vw;
     top: 100%;
   }
+}
 
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .the-office-pieces .mug {
+    transform: rotate(-10deg) scale(.7);
+  }
 }

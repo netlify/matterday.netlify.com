@@ -126,10 +126,9 @@ body::before {
                                               rgba(21,26,30, 0) 30%,
                                               rgba(21,26,30, 0) 70%,
                                               rgba(21,26,30,.7) 80%),
-                    url('/images/grid-dot.svg'),
-                    url('/images/grid-lines.svg');
-  background-size: 100% 100%, 60px auto, 959px auto;
-  background-position: center center, left center, 4vw center;
+                    url('/images/grid-dot.svg');
+  background-size: 100% 100%, 60px auto;
+  background-position: center center, left center;
 }
 
 h1, h2, h3, h4 {

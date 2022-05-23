@@ -41,7 +41,7 @@
 
   .play-pieces .lego3 {
     margin-left: 27vw;
-    top: 75%;
+    bottom: -7%;
     transform: rotate(6deg);
   }
 

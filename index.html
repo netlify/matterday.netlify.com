@@ -40,15 +40,11 @@
 </head>
 
 <body class="no-js">
+  <div class="share-anchor"><a href="#share">Plan yours</a></div>
   <div class="parallax">
     <header class="header-main">
       <div>
         <a href="/" class="masthead">Matterday</a>
-        <!-- Logged in header stuff -->
-        <!-- <span class="authentication">
-          👋 <span class="github-username">@lynnandtonic</span>
-        </span>
-        <button class="button small">Log out</button> -->
       </div>
       <a href="https://netlify.com" class="logo">
         <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
@@ -434,15 +430,10 @@
       </div>
     </section>
     <section id="share" class="parallax-group section-cta">
-    <!-- TODO: add `logged-in` class to header-main if logged-in? -->
+    <!-- TODO: add `logged-in` class to header-main if logged-in only for this CTA section -->
     <header class="header-main">
       <div>
         <a href="/" class="masthead">Matterday</a>
-        <!-- Logged in header stuff -->
-        <!-- <span class="authentication">
-          👋 <span class="github-username">@lynnandtonic</span>
-        </span>
-        <button class="button small">Log out</button> -->
       </div>
       <a href="https://netlify.com" class="logo">
         <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
@@ -453,7 +444,7 @@
     </header>
       <div class="content">
         <!-- Logged out CTA  -->
-        <div class="not-logged-in">
+<!--         <div class="not-logged-in">
           <h2>So tell us, what does your Matterday look like?</h2>
           <div class="authentication-cta">
             <p>Log in to share what you could do with an extra day.</p>
@@ -462,9 +453,13 @@
           <div class="nudge">
             <p>Need some inspiration? <a href="/grid.html">See what others are saying.</a></p>
           </div>
-        </div>
+        </div> -->
         <!-- Logged in form -->
-        <!-- <div class="logged-in">
+        <div class="logged-in">
+          <span class="authentication">
+            <span>👋&nbsp;<span class="github-username">@lynnandtonic</span></span>
+            <a href="#" class="text">Log out</a>
+          </span>
           <form>
             <fieldset>
               <label for="matter">If I had an extra day a week I could...</label>
@@ -478,7 +473,7 @@
           <div class="nudge">
             <p>Need some inspiration? <a href="/grid.html">See what others are saying.</a></p>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
   </div>

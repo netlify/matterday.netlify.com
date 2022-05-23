@@ -1,15 +1,16 @@
 .header-main {
   height: var(--header-h);
-  padding: 0 var(--body-padding);
+  padding: 0 calc(var(--share-anchor-w) + .9rem) 0 var(--body-padding);
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: .9rem;
   font-family: var(--font-headline);
+  font-size: clamp(.9em, 2vw, 1.1em);
   font-weight: 200;
   line-height: 1;
-  z-index: 10;
+  z-index: var(--header-z);
 }
 
 .header-main > :first-child {
@@ -30,7 +31,7 @@
   font-weight: 680;
 }
 
-.header-main a:not(.logo):hover {
+.header-main .masthead:hover {
   text-decoration: underline;
 }
 
@@ -40,20 +41,4 @@
 
 .header-main a.logo:hover {
   transform: scale(1.2);
-}
-
-/* hide logos for mobile when logged in (to save space) */
-@media screen and (max-width: 600px) {
-  .header-main.logged-in a.logo {
-    display: none;
-  }
-  .header-main.logged-in > div {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .header-main.logged-in > div .masthead {
-    margin-right: auto;
-  }
 }

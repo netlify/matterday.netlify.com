@@ -39,6 +39,8 @@
   --overlay-w: 35vw;
   --overlay-h: 60vh;
   --header-h: 10vh;
+  --header-z: 10;
+  --share-anchor-w: 5.5rem;
   --gradient-teal: linear-gradient(to bottom, var(--teal-medium), var(--teal-light));
   --gradient-purple: linear-gradient(to bottom, var(--purple-dark), var(--purple-medium));
   --gradient-blue: linear-gradient(to bottom, var(--blue-dark), var(--blue-medium));
@@ -164,14 +166,14 @@ p:not(:last-child) {
   margin-bottom: 1em;
 }
 
-a {
+a:not(.button) {
   color: inherit;
   text-decoration-line: underline;
   text-decoration-color: var(--teal-medium);
   text-decoration-skip: ink;
 }
 
-a:hover {
+a:not(.button):hover {
   text-decoration-color: inherit;
 }
 
@@ -223,11 +225,57 @@ button:disabled {
   margin-bottom: 0;
 }
 
+.share-anchor {
+  width: var(--share-anchor-w);
+  height: var(--header-h);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: calc(var(--header-z) + 10);
+}
+
+.share-anchor a {
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--blue-dark-RGB),.95);
+  -webkit-backdrop-filter: blur(.2em);
+  backdrop-filter: blur(.2em);
+  text-decoration: none;
+  font-size: 75%;
+  font-weight: 500;
+  transition: background-color 200ms, color 200ms;
+}
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .share-anchor a {
+    background-color: rgba(var(--blue-dark-RGB),.65);
+  }
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .share-anchor a {
+    background-color: rgba(var(--blue-dark-RGB),.65);
+  }
+}
+
+.share-anchor a:hover {
+  background-color: var(--color-teal-T500);
+  color: var(--color-teal-T900);
+}
+
 .nudge {
   width: auto;
   display: inline-block;
   padding: 1em 2em;
   background-color: rgba(0,0,0,.1);
+  -webkit-backdrop-filter: blur(.2em);
   backdrop-filter: blur(.2em);
   border-radius: 5px;
   font-size: 100%;

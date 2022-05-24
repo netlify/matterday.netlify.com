@@ -94,6 +94,10 @@
   flex: 1;
 }
 
+.section-cta form input {
+  caret-color: var(--color-teal-T400);
+}
+
 .section-cta form input:focus {
   outline: none;
   background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),

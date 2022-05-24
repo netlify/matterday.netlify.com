@@ -7,7 +7,7 @@ const Matter = ({ matter }) => {
 
 export const getServerSideProps = async ({ params: { id } }) => {
   const { data: matter } = await supabase
-    .from("matters")
+    .from("matters_with_user")
     .select("*")
     .match({ id })
     .single();

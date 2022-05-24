@@ -13,7 +13,7 @@ const Admin = ({ matters }) => {
 
 export const getServerSideProps = async () => {
   const { data: matters } = await supabase
-    .from("matters_with_avatar")
+    .from("matters_with_user")
     .select("*")
     .match({ status: "new" });
 

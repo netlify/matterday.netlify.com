@@ -1,11 +1,14 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import supabase from "utils/supabase";
+import { useUser } from "context/user";
 
 const MatterForm = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const user = useUser();
+  const username = user?.user?.user_metadata?.user_name || null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,13 +35,25 @@ const MatterForm = () => {
     router.push(`/matters/${newMatter.id}`);
   };
 
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+  };
+
   return (
     <div class="logged-in">
       <span class="authentication">
-        {/* TODO: change to their GitHub username */}
-        <span>👋&nbsp;<span class="github-username">@lynnandtonic</span></span>
-        {/* TODO: Functional log out button */}
-        <a href="#" class="text">Log out</a>
+        <span>
+          👋&nbsp;
+          {username ? (
+            <span class="github-username">
+              {user.user.user_metadata.user_name}
+            </span>
+          ) : null}
+        </span>
+        {/* TODO: Make this one 👇 a button element as it does not need to navigate - I didn't want to break styling so just added the onClick handler! 👍 */}
+        <a href="#" class="text" onClick={handleSignOut}>
+          Log out
+        </a>
       </span>
       <form onSubmit={handleSubmit} disabled={isLoading}>
         <fieldset>

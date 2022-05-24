@@ -35,9 +35,12 @@ const NiceMattersGrid = ({ matters }) => {
           {matters.map((matter) => (
             <div class="matter-item">
               <div class="eyebrow">
-                {/* TODO: swap in user's avatar and username */}
-                <img src="https://avatars.githubusercontent.com/u/871315" class="gh-avatar" alt="lynnandtonic" />
-                <span class="gh-username">@lynnandtonic</span>
+                <img
+                  src={matter.avatar_url}
+                  class="gh-avatar"
+                  alt={matter.username}
+                />
+                <span class="gh-username">@{matter.username}</span>
               </div>
               <h2>
                 <span class="prompt">If I had an extra day a week I could...</span>

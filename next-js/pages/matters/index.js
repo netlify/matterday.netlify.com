@@ -7,7 +7,7 @@ const Matters = ({ matters }) => {
 
 export const getStaticProps = async () => {
   const { data: matters } = await supabase
-    .from("matters_with_avatar")
+    .from("matters_with_user")
     .select("*")
     .match({ status: "approved" });
 

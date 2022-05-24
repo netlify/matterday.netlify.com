@@ -28,9 +28,12 @@ const NiceMatter = ({ matter }) => {
         <section class="content">
           <div class="container">
             <div class="eyebrow">
-              {/* TODO: replace with user's avatar and username */}
-              <img src="https://avatars.githubusercontent.com/u/871315" class="gh-avatar" alt="lynnandtonic" />
-              <span class="gh-username">@lynnandtonic</span>
+              <img
+                src={matter.avatar_url}
+                class="gh-avatar"
+                alt={matter.username}
+              />
+              <span class="gh-username">@{matter.username}</span>
             </div>
             <h1>
               <span class="prompt">If I had an extra day a week I could…</span>

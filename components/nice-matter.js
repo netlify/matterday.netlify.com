@@ -13,7 +13,6 @@ const NiceMatter = ({ matter }) => {
         <meta content="https://res.cloudinary.com/netlify/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_760,c_fit,co_rgb:ffffff,g_south_west/l_fetch:aHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91Lzg3MTMxNT92PTQ=/w_65,h_65/r_max/fl_layer_apply,x_48,y_45,g_north_west/l_text:roboto_26:@lynnandtonic,co_rgb:9ce9db,g_north_west,x_128,y_66/l_text:caveat_68:eat%2520some%2520pizza,co_rgb:ffffff,y_115/matter-day/og-template" property="og:image" />
         <meta content="https://res.cloudinary.com/netlify/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_760,c_fit,co_rgb:ffffff,g_south_west/l_fetch:aHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91Lzg3MTMxNT92PTQ=/w_65,h_65/r_max/fl_layer_apply,x_48,y_45,g_north_west/l_text:roboto_26:@lynnandtonic,co_rgb:9ce9db,g_north_west,x_128,y_66/l_text:caveat_68:eat%2520some%2520pizza,co_rgb:ffffff,y_115/matter-day/og-template" name="twitter:image" />
       </Head>
-      {/*<pre>{JSON.stringify(matter, null, 2)}</pre>*/}
       <div className="share-anchor">
         <Link href="/#share">
           <a>Plan yours</a>

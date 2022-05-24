@@ -73,7 +73,6 @@ const MatterForm = () => {
           />
         ) : null}
         {username ? <span className="github-username">@{username}</span> : null}
-        {/* TODO: I made this a button but wasn’t sure what else to do! */}
         <button className="text" onClick={handleSignOut}>
           Log out
         </button>

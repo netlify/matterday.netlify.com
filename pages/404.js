@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export default function FourOhFour() {
   return <>
     <div className="share-anchor"><a href="/#share">Plan yours</a></div>
     <div className="four-oh-four">
       <header className="header-main">
         <div>
-          <a href="/" className="masthead">Matterday</a>
+         <Link a href="/"><a className="masthead">Matterday</a></Link>
         </div>
         <a href="https://netlify.com" className="logo">
           <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
@@ -16,7 +18,7 @@ export default function FourOhFour() {
       <section className="content">
         <div className="container">
           <h1>404 - Page Not Found</h1>
-          <a href="/">Head back home</a>
+         <Link a href="/"><a>Head back home</a></Link>
         </div>
       </section>
     </div>

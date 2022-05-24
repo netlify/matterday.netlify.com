@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link';
+import Header from './header'
 
 const NiceMatter = ({ matter }) => {
   return (
@@ -19,17 +20,7 @@ const NiceMatter = ({ matter }) => {
         </Link>
       </div>
       <div className="your-matterday">
-        <header className="header-main">
-          <div>
-            <Link href="/"><a className="masthead">Matterday</a></Link>
-          </div>
-          <a href="https://netlify.com" className="logo">
-            <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
-          </a>
-          <a href="https://supabase.com/" className="logo">
-            <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
-          </a>
-        </header>
+        <Header />
         <section className="content">
           <div className="container">
             <div className="eyebrow">

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link';
+import Header from './header'
 
 const NiceMattersGrid = ({ matters }) => {
   return (
@@ -19,17 +20,7 @@ const NiceMattersGrid = ({ matters }) => {
         </Link>
       </div>
       <div className="your-matterday grid">
-        <header className="header-main">
-          <div>
-            <Link href="/"><a className="masthead">Matterday</a></Link>
-          </div>
-          <a href="https://netlify.com" className="logo">
-            <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
-          </a>
-          <a href="https://supabase.com/" className="logo">
-            <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
-          </a>
-        </header>
+        <Header />
         <section className="content">
           <div className="grid-intro">
             <h1>How would you spend your <Link href="/"><a>Matterday</a></Link>?</h1>
@@ -38,7 +29,7 @@ const NiceMattersGrid = ({ matters }) => {
             </div>
           </div>
           {matters.map((matter) => (
-            <div className="matter-item">
+            <div key={matter.id} className="matter-item">
               <div className="eyebrow">
                 <img
                   src={matter.avatar_url}

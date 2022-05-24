@@ -1,6 +1,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from 'next/link';
+import Header from './header'
 
 // Form component requires a user that is stored in localStorage
 const Form = dynamic(() => import("components/form"), { ssr: false });
@@ -22,17 +23,7 @@ const NiceLandingPage = () => {
         </Link>
       </div>
       <div className="parallax">
-        <header className="header-main">
-          <div>
-            <Link href="/"><a className="masthead">Matterday</a></Link>
-          </div>
-          <a href="https://netlify.com" className="logo">
-            <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
-          </a>
-          <a href="https://supabase.com/" className="logo">
-            <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
-          </a>
-        </header>
+        <Header />
         <div className="overlay">
           <div></div>
         </div>
@@ -409,17 +400,7 @@ const NiceLandingPage = () => {
           </div>
         </section>
         <section id="share" className="parallax-group section-cta">
-        <header className="header-main">
-          <div>
-            <Link href="/"><a className="masthead">Matterday</a></Link>
-          </div>
-          <a href="https://netlify.com" className="logo">
-            <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
-          </a>
-          <a href="https://supabase.com/" className="logo">
-            <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
-          </a>
-        </header>
+        <Header />
           <div className="content">
             <Form />
           </div>

@@ -93,8 +93,7 @@ const NiceLandingPage = () => {
           <div className="parallax-layer background">
             <div className="content">
               <h1>What if you had an extra day a week?</h1>
-              {/*  TODO: add ROI link */}
-              <p>A recent <a href="">ROI study</a> found that Netlify saves development teams a work day per week so they can spend that time on what matters.</p>
+              <p>A recent <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/">ROI study</a> found that Netlify saves development teams a work day per week so they can spend that time on what matters.</p>
               <p>What could you do with it?</p>
             </div>
           </div>
@@ -377,7 +376,7 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces backburner-pieces">
           <div className="parallax-layer foreground layer-1 todo-list-container">
-            <img src="/images/todo-list.svg" width="" height="" alt="a Trello todo list with “Someday” crossed out and “Now” as the new header, items on the list include Read new book, Crush tech debt, and Dream vacation" className="todo-list" />
+            <img src="/images/todo-list.svg" width="350" height="752" alt="a Trello todo list with “Someday” crossed out and “Now” as the new header, items on the list include Read new book, Crush tech debt, and Dream vacation" className="todo-list" />
           </div>
         </section>
         <section className="parallax-group big-swings">

@@ -31,7 +31,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Netlify" />
         <title>Matterday</title>
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta content="@netlify" name="twitter:site" />
         <meta content="@netlify" name="twitter:creator" />
         <meta content="Matterday" name="twitter:title" property="og:title" />

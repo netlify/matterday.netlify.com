@@ -6,7 +6,7 @@ export default function Header() {
       <div>
        <Link href="/"><a className="masthead">Matterday</a></Link>
       </div>
-      <a href="https://netlify.com" className="logo">
+      <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" className="logo">
         <img 
           src="/images/logomark-netlify.svg"
           width="26"

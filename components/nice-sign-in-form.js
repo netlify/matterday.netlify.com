@@ -19,10 +19,7 @@ const NiceSignInForm = () => {
       </div>
       <div className="nudge">
         <p>
-          Need some inspiration? 
-          <Link href="/matters">
-            <a>See what others are saying.</a>
-          </Link>
+          Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link>
         </p>
       </div>
     </div>

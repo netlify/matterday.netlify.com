@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="330" height="374" viewBox="0 0 330 374">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #0f6a80;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-2 {
-        fill: #31c8c9;
-      }
-
-      .cls-3 {
-        fill: #0f6a80;
-      }
-    </style>
-  </defs>
-  <rect class="cls-2" x="30.36" y="2" width="269.29" height="53.18"/>
-  <line class="cls-1" x1="30.36" y1="2" x2="299.64" y2="2"/>
-  <rect class="cls-3" x="30.36" y="15.85" width="269.29" height="39.33"/>
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="330" height="374" viewBox="0 0 330 374">
+  <path style="fill:#31c8c9" d="M30.36 2h269.29v53.18H30.36z"/>
+  <path style="fill:none;stroke:#0f6a80;stroke-miterlimit:10;stroke-width:3px" d="M30.36 2h269.28"/>
+  <path style="fill:#0f6a80" d="M30.36 15.85h269.29v39.33H30.36z"/>
 </svg>

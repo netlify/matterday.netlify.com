@@ -32,6 +32,8 @@ const NiceMatter = ({ matter }) => {
                 src={matter.avatar_url}
                 className="gh-avatar"
                 alt={matter.username}
+                width="100"
+                height="100"
               />
               <span className="gh-username">@{matter.username}</span>
             </div>

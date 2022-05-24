@@ -152,19 +152,19 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces slow-down-pieces">
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/stopwatch.svg" alt="stopwatch" className="watch" />
+            <img src="/images/stopwatch.svg" width="400" height="400" alt="stopwatch" className="watch" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/rose-purple.svg" alt="purple rose" className="rose rose1" />
+            <img src="/images/rose-purple.svg" width="218" height="204" alt="purple rose" className="rose rose1" />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/rose-purple.svg" alt="purple rose" className="rose rose2"  />
+            <img src="/images/rose-purple.svg" width="218" height="204" alt="purple rose" className="rose rose2"  />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/rose-purple.svg" alt="purple rose" className="rose rose3"  />
+            <img src="/images/rose-purple.svg" width="218" height="204" alt="purple rose" className="rose rose3"  />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/rose-blue.svg" alt="blue rose" className="rose rose4"  />
+            <img src="/images/rose-blue.svg" width="218" height="204" alt="blue rose" className="rose rose4"  />
           </div>
         </section>
         <section className="parallax-group focus">
@@ -184,7 +184,7 @@ const NiceLandingPage = () => {
         <section className="parallax-group pieces focus-pieces">
           <div className="parallax-layer foreground layer-1">
             <div className="shapes-container">
-              <img src="/images/shapes.svg" className="shapes" alt="geometric shapes" />
+              <img src="/images/shapes.svg" width="196" height="344"className="shapes" alt="geometric shapes" />
             </div>
           </div>
         </section>
@@ -208,7 +208,7 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces adds-up-pieces1">
           <div className="parallax-layer foreground layer-1 addition-back">
-            <img src="/images/addition-back.svg" alt="" />
+            <img src="/images/addition-back.svg" width="330" height="374" alt="" />
           </div>
         </section>
         <section className="parallax-group pieces adds-up-pieces">
@@ -242,7 +242,7 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces adds-up-pieces2">
           <div className="parallax-layer foreground layer-1 addition-front">
-            <img src="/images/addition-front.svg" alt="addition machine" />
+            <img src="/images/addition-front.svg" width="330" height="374" alt="addition machine" />
           </div>
         </section>
         <section className="parallax-group the-office">
@@ -257,16 +257,16 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces the-office-pieces">
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/the-office-mug.svg" alt="World’s Best Boss mug" className="mug" />
+            <img src="/images/the-office-mug.svg" width="237" height="214" alt="World’s Best Boss mug" className="mug" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/paper-airplane.svg" alt="paper airplane" className="airplane1" />
+            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane1" />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/paper-airplane.svg" alt="paper airplane" className="airplane2" />
+            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane2" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/paper-airplane.svg" alt="paper airplane" className="airplane3" />
+            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane3" />
           </div>
         </section>
         <section className="parallax-group space-mountain">
@@ -283,7 +283,7 @@ const NiceLandingPage = () => {
           <div className="parallax-layer foreground layer-1 stars">
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/rocket.svg" alt="rocket ship" className="rocket" />
+            <img src="/images/rocket.svg" width="215" height="1051" alt="rocket ship" className="rocket" />
           </div>
         </section>
         <section className="parallax-group walking">
@@ -299,7 +299,7 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces walking-pieces">
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/route.svg" alt="dashed, winding path from one marker to another" className="route" />
+            <img src="/images/route.svg" width="800" height="1193" alt="dashed, winding path from one marker to another" className="route" />
           </div>
         </section>
         <section className="parallax-group get-more-rest">
@@ -316,22 +316,22 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces get-more-rest-pieces">
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/cloud1.svg" alt="cloud" className="cloud cloud1" />
+            <img src="/images/cloud1.svg" width="212" height="112" alt="cloud" className="cloud cloud1" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/cloud2.svg" alt="cloud" className="cloud cloud2" />
+            <img src="/images/cloud2.svg" width="190" height="112" alt="cloud" className="cloud cloud2" />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/pillow.svg" alt="pillow" className="pillow pillow1" />
+            <img src="/images/pillow.svg" width="332" height="206" alt="pillow" className="pillow pillow1" />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/cloud3.svg" alt="cloud" className="cloud cloud3" />
+            <img src="/images/cloud3.svg" width="182" height="110" alt="cloud" className="cloud cloud3" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/cloud1.svg" alt="cloud" className="cloud cloud4" />
+            <img src="/images/cloud1.svg" width="212" height="112" alt="cloud" className="cloud cloud4" />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/cloud1.svg" alt="cloud" className="cloud cloud5" />
+            <img src="/images/cloud1.svg" width="212" height="112" alt="cloud" className="cloud cloud5" />
           </div>
         </section>
         <section className="parallax-group play">
@@ -348,19 +348,19 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces play-pieces">
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/lego-up.svg" alt="LEGO brick" className="lego lego1" />
+            <img src="/images/lego-up.svg" width="70" height="122" alt="LEGO brick" className="lego lego1" />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/lego-up.svg" alt="LEGO brick" className="lego lego2" />
+            <img src="/images/lego-up.svg" width="70" height="122" alt="LEGO brick" className="lego lego2" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/lego-up.svg" alt="LEGO brick" className="lego lego3" />
+            <img src="/images/lego-up.svg" width="70" height="122" alt="LEGO brick" className="lego lego3" />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/lego-up.svg" alt="LEGO brick" className="lego lego4" />
+            <img src="/images/lego-up.svg" width="70" height="122" alt="LEGO brick" className="lego lego4" />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/cross-stitch.svg" alt="cross stitch hoop embroidered with “Hello World” next to a spool of thread" className="cross-stitch" />
+            <img src="/images/cross-stitch.svg" width="218" height="252" alt="cross stitch hoop embroidered with “Hello World” next to a spool of thread" className="cross-stitch" />
           </div>
         </section>
         <section className="parallax-group backburner">
@@ -377,7 +377,7 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces backburner-pieces">
           <div className="parallax-layer foreground layer-1 todo-list-container">
-            <img src="/images/todo-list.svg" alt="a Trello todo list with “Someday” crossed out and “Now” as the new header, items on the list include Read new book, Crush tech debt, and Dream vacation" className="todo-list" />
+            <img src="/images/todo-list.svg" width="" height="" alt="a Trello todo list with “Someday” crossed out and “Now” as the new header, items on the list include Read new book, Crush tech debt, and Dream vacation" className="todo-list" />
           </div>
         </section>
         <section className="parallax-group big-swings">
@@ -398,10 +398,10 @@ const NiceLandingPage = () => {
             <div className="pinata-string"></div>
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/pinata.svg" alt="a colorful donkey piñata" className="pinata" />
+            <img src="/images/pinata.svg" width="341" height="400" alt="a colorful donkey piñata" className="pinata" />
           </div>
           <div className="parallax-layer foreground layer-1">
-            <img src="/images/pinata-pizza.svg" alt="lots of pizza slices falling through the air" className="pinata-pizza" />
+            <img src="/images/pinata-pizza.svg" width="354" height="600" alt="lots of pizza slices falling through the air" className="pinata-pizza" />
           </div>
         </section>
         <section id="share" className="parallax-group section-cta">

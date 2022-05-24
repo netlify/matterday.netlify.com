@@ -1,5 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from 'next/link';
 
 // Form component requires a user that is stored in localStorage
 const Form = dynamic(() => import("components/form"), { ssr: false });
@@ -15,11 +16,15 @@ const NiceLandingPage = () => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" property="og:image" />
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
-      <div className="share-anchor"><a href="/#share">Plan yours</a></div>
+      <div className="share-anchor">
+        <Link href="/#share">
+          <a>Plan yours</a>
+        </Link>
+      </div>
       <div className="parallax">
         <header className="header-main">
           <div>
-            <a href="/" className="masthead">Matterday</a>
+            <Link href="/"><a className="masthead">Matterday</a></Link>
           </div>
           <a href="https://netlify.com" className="logo">
             <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
@@ -406,7 +411,7 @@ const NiceLandingPage = () => {
         <section id="share" className="parallax-group section-cta">
         <header className="header-main">
           <div>
-            <a href="/" className="masthead">Matterday</a>
+            <Link href="/"><a className="masthead">Matterday</a></Link>
           </div>
           <a href="https://netlify.com" className="logo">
             <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />

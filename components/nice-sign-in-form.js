@@ -1,4 +1,5 @@
 import supabase from "utils/supabase";
+import Link from 'next/link';
 
 const NiceSignInForm = () => {
   const handleSignIn = async () => {
@@ -17,7 +18,12 @@ const NiceSignInForm = () => {
         </button>
       </div>
       <div className="nudge">
-        <p>Need some inspiration? <a href="/matters">See what others are saying.</a></p>
+        <p>
+          Need some inspiration? 
+          <Link href="/matters">
+            <a>See what others are saying.</a>
+          </Link>
+        </p>
       </div>
     </div>
   );

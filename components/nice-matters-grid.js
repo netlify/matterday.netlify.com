@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link';
 
 const NiceMattersGrid = ({ matters }) => {
   return (
@@ -12,11 +13,15 @@ const NiceMattersGrid = ({ matters }) => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
       {/*<pre>{JSON.stringify(matters, null, 2)}</pre>*/}
-      <div className="share-anchor"><a href="/#share">Plan yours</a></div>
+      <div className="share-anchor">
+        <Link href="/#share">
+          <a>Plan yours</a>
+        </Link>
+      </div>
       <div className="your-matterday grid">
         <header className="header-main">
           <div>
-            <a href="/" className="masthead">Matterday</a>
+            <Link href="/"><a className="masthead">Matterday</a></Link>
           </div>
           <a href="https://netlify.com" className="logo">
             <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
@@ -27,9 +32,9 @@ const NiceMattersGrid = ({ matters }) => {
         </header>
         <section className="content">
           <div className="grid-intro">
-            <h1>How would you spend your <a href="/">Matterday</a>?</h1>
+            <h1>How would you spend your <Link href="/"><a>Matterday</a></Link>?</h1>
             <div className="nudge">
-              <p>Already know? <a href="/#share">Share what matters to you.</a></p>
+              <p>Already know? <Link href="/#share"><a>Share what matters to you.</a></Link></p>
             </div>
           </div>
           {matters.map((matter) => (

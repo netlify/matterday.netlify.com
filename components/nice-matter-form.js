@@ -3,6 +3,7 @@ import { useState } from "react";
 import supabase from "utils/supabase";
 import { useUser } from "context/user";
 import Filter from "bad-words";
+import Link from 'next/link';
 
 const MatterForm = () => {
   const [error, setError] = useState(null);
@@ -97,7 +98,7 @@ const MatterForm = () => {
         </fieldset>
       </form>
       <div className="nudge">
-        <p>Need some inspiration? <a href="/matters">See what others are saying.</a></p>
+        <p>Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link></p>
       </div>
     </div>
   );

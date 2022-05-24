@@ -1,0 +1,45 @@
+/*--------------------*/
+/* Backburner
+----------------------*/
+
+.backburner .background-artwork {
+  background-image: var(--gradient-teal);
+}
+
+.backburner-pieces .todo-list {
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.1));
+}
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .backburner .background-container {
+    margin-top: 2em;
+  }
+
+  .backburner-pieces {
+    margin-bottom: 0;
+  }
+
+  .backburner-pieces .todo-list-container {
+    margin-bottom: 0;
+    height: calc(100% + 3em);
+    overflow: hidden;
+    top: -3em;
+  }
+
+  .backburner-pieces .todo-list {
+    height: 150%;
+    transform: translateX(-50%);
+  }
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .backburner-pieces .todo-list {
+    width: 20vw;
+    margin-left: -9vw;
+    top: 15%;
+  }
+}

@@ -1,0 +1,42 @@
+/*--------------------*/
+/* Space Mountain
+----------------------*/
+
+.space-mountain .background-artwork {
+  background-color: black;
+  background-image: url('/images/stars2.svg');
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+.space-mountain-pieces .stars {
+  background-image: url('/images/stars.svg');
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .space-mountain-pieces .rocket {
+    width: 14vw;
+    top: 50%;
+    transform: translate(-50%,-39%);
+  }
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .space-mountain-pieces .rocket {
+    width: 7vw;
+    margin-left: 1vw;
+    top: 35%;
+  }
+
+  @media (prefers-reduced-motion) {
+    .space-mountain-pieces .rocket {
+      margin-left: -2vw;
+    }
+  }
+}

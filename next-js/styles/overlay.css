@@ -1,0 +1,49 @@
+/*--------------------*/
+/* Overlay / underlay
+----------------------*/
+
+@media screen and (max-width: 600px) {
+
+  .overlay {
+    display: none;
+  }
+
+  .underlay {
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 601px){
+
+  .overlay,
+  .underlay {
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  .overlay {
+    z-index: 1;
+    --bg-position: calc(50% - 30vh);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, var(--body-bg) var(--bg-position),
+                                                 transparent var(--bg-position)),
+                      linear-gradient(to top, var(--body-bg) var(--bg-position),
+                                              transparent var(--bg-position));
+    background-size: calc(var(--overlay-w) + 1em) 100%;
+    background-position: top center;
+  }
+
+  .overlay div {
+    width: var(--overlay-w);
+    height: var(--overlay-h);
+    border-radius: 1em;
+    box-shadow: 0 0 0 .5em var(--body-bg);
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+
+  /* Bonus stage Color Palette */
+  --color-teal-T900: #054861;
+  --color-teal-T800: #0f6a80;
+  --color-teal-T700: #139cab;
+  --color-teal-T600: #30c8c9;
+  --color-teal-T500: #5cebdf;
+  --color-teal-T400: #84f3df;
+  --color-teal-T300: #9ef9e0;
+  --color-teal-T200: #bffde7;
+  --color-teal-T100: #dffef0;
+  --color-teal-T050: #f2fef5;
+
+  --color-blue-B900: #061475;
+  --color-blue-B800: #0a1e8d;
+  --color-blue-B700: #112caf;
+  --color-blue-B600: #183dd1;
+  --color-blue-B500: #2250f4;
+  --color-blue-B400: #587ef8;
+  --color-blue-B300: #799cfb;
+  --color-blue-B200: #a6bffd;
+  --color-blue-B100: #d2e0fe;
+  --color-blue-B050: #e5edff;
+
+  --color-gray-L800: #151a1e;
+  --color-gray-L700: #33373b;
+  --color-gray-L600: #676c70;
+  --color-gray-L500: #80858a;
+  --color-gray-L400: #a3a7ac;
+  --color-gray-L300: #e7eaed;
+  --color-gray-L200: #f2f5f8;
+  --color-gray-L100: #fafbfb;
+  --color-gray-L000: #ffffff;
+
+  /* Fonts */
+  --font-headline: Pacaembu, sans-serif;
+  --font-headline-feature-settings: "salt" 1;
+  --font-primary: Pacaembu, sans-serif;
+  --font-primary-feature-settings: "salt" 1;
+  --font-secondary: Mulish, sans-serif;
+  --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}

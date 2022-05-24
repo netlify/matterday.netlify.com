@@ -2,10 +2,14 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import supabase from "utils/supabase";
 import { useUser } from "context/user";
+import Filter from "bad-words";
 
 const MatterForm = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [matter, setMatter] = useState("");
+  const [isRude, setIsRude] = useState(false);
+  const filter = new Filter();
   const router = useRouter();
   const user = useUser();
   const username = user?.user?.user_metadata?.user_name || null;
@@ -39,6 +43,18 @@ const MatterForm = () => {
     await supabase.auth.signOut();
   };
 
+  const handleChange = (e) => {
+    setError(null);
+
+    const matter = e.currentTarget.value;
+    setMatter(matter);
+
+    if (filter.isProfane(matter)) {
+      // TODO: add better copy for when profanity is detected
+      setError("is there a nicer way you could put that?");
+    }
+  };
+
   return (
     <div class="logged-in">
       <span class="authentication">
@@ -55,15 +71,23 @@ const MatterForm = () => {
           Log out
         </a>
       </span>
-      <form onSubmit={handleSubmit} disabled={isLoading}>
+      <form onSubmit={handleSubmit} disabled={isLoading || isRude}>
         <fieldset>
-        <label htmlFor="matter">If I had an extra day a week I could...</label>
-        <input type="text" name="matter" maxLength={30} />
-        <footer>
-          <small class="characters">limit 30 characters</small>
-          <button type="submit">Submit</button>
-        </footer>
-        {error ? <p>{error}</p> : null}
+          <label htmlFor="matter">
+            If I had an extra day a week I could...
+          </label>
+          <input
+            type="text"
+            name="matter"
+            maxLength={30}
+            onChange={handleChange}
+            value={matter}
+          />
+          <footer>
+            <small class="characters">limit 30 characters</small>
+            <button type="submit">Submit</button>
+          </footer>
+          {error ? <p>{error}</p> : null}
         </fieldset>
       </form>
       <div class="nudge">

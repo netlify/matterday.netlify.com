@@ -184,7 +184,7 @@ const NiceLandingPage = () => {
         <section className="parallax-group pieces focus-pieces">
           <div className="parallax-layer foreground layer-1">
             <div className="shapes-container">
-              <img src="/images/shapes.svg" width="196" height="344"className="shapes" alt="geometric shapes" />
+              <img src="/images/shapes.svg" width="197" height="345" className="shapes" alt="geometric shapes" />
             </div>
           </div>
         </section>

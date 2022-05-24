@@ -31,6 +31,7 @@
 }
 
 .parallax-group.focus-pieces .shapes {
+  width: 150%;
   position: absolute;
   left: 50%;
   top: 50%;

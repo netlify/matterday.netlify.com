@@ -54,7 +54,6 @@
 
 .your-matterday .gh-avatar {
   width: clamp(40px, 10vw, 80px);
-  height: auto;
   border-radius: 50%;
 }
 

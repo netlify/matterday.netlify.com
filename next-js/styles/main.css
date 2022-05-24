@@ -217,20 +217,14 @@ button:disabled {
   filter: grayscale(100%);
 }
 
-.button.blue {
-  background-color: var(--color-blue-B500);
-  color: var(--color-blue-B050);
-}
-
-.button.blue:hover {
-  background-color: var(--color-blue-B700);
-  color: var(--color-blue-B050);
-}
-
 button.text {
   padding: 0;
   background-color: transparent;
   font-weight: inherit;
+}
+
+img {
+  height: auto;
 }
 
 .content > :last-child {

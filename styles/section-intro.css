@@ -134,6 +134,10 @@
   display: block;
 }
 
+.intro-pieces .event-detailed.short strong {
+  margin-right: .3em;
+}
+
 /* mobile stacked view */
 @media screen and (max-width: 600px) {
 

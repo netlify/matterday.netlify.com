@@ -89,7 +89,7 @@ const NiceLandingPage = () => {
           <div className="parallax-layer background">
             <div className="content">
               <h1>What if you had an extra day a week?</h1>
-              <p>A recent <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/">ROI study</a> found that Netlify saves development teams a work day per week so they can spend that time on what matters.</p>
+              <p>Netlify saves development teams <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday">a work day per week</a> so they can spend that time on what matters.</p>
               <p>What could you do with it?</p>
             </div>
           </div>
@@ -337,7 +337,7 @@ const NiceLandingPage = () => {
             <div className="content">
               <h2>You could play.</h2>
               <p>Doing things just for fun can help us feel more motivated and creative in other aspects of our lives, too.</p>
-              <p>Like adding a <a href="https://netlify.com">Konami code Phil mode to your website</a>, just as a random example.</p>
+              <p>Like adding a <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday">Konami code Phil mode to your website</a>, just as a random example.</p>
             </div>
           </div>
         </section>

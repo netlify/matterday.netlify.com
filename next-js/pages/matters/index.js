@@ -1,8 +1,8 @@
-import supabase from "../../utils/supabase";
+import supabase from "utils/supabase";
+import NiceMattersGrid from "components/nice-matters-grid";
 
 const Matters = ({ matters }) => {
-  // TODO: Implement nicely designed page for grid of matters
-  return <pre>{JSON.stringify(matters, null, 2)}</pre>;
+  return <NiceMattersGrid matters={matters} />;
 };
 
 export const getStaticProps = async () => {

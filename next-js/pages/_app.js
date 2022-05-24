@@ -1,13 +1,12 @@
 import UserProvider from "../context/user";
 import Head from "next/head";
 
-import "../styles/globals.css";
-import "../styles/header.css";
+import "styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>{/* TODO: Add any page specific <head> content */}</Head>
+      <Head>{/* TODO: Add any global <head> content */}</Head>
       <UserProvider>
         <Component {...pageProps} />
       </UserProvider>

@@ -69,7 +69,7 @@ const MatterForm = () => {
         ) : null}
         {username ? (
           <span className="github-username">
-            {user.user.user_metadata.user_name}
+            @{user.user.user_metadata.user_name}
           </span>
         ) : null}
         {/* TODO: I made this a button but wasn’t sure what else to do! */}

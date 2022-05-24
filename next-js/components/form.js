@@ -13,6 +13,7 @@ const Form = () => {
 
     const { data } = await supabase.from("matters").insert({
       content: matter,
+      content_encoded: escape(encodeURIComponent(matter)),
     });
 
     // TODO: handle errors

@@ -7,10 +7,9 @@ const Matters = ({ matters }) => {
 
 export const getStaticProps = async () => {
   const { data: matters } = await supabase
-    .from("matters")
+    .from("matters_with_avatar")
     .select("*")
-    .match({ status: "approved" })
-    .order("created_at", { ascending: false });
+    .match({ status: "approved" });
 
   return {
     props: {

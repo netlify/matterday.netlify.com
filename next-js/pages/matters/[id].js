@@ -7,8 +7,14 @@ const Matter = ({ matter }) => {
   useEffect(() => {
     const subscription = supabase
       .from(`matters:id=eq.${liveMatter.id}`)
-      .on("UPDATE", (payload) => {
-        setLiveMatter(payload.new);
+      .on("UPDATE", async (payload) => {
+        // we are fetching this again to attach the avatar
+        const { data } = await supabase
+          .from("matters_with_avatar")
+          .select("*")
+          .match({ id: payload.id })
+          .single();
+        setLiveMatter(data);
       })
       .subscribe();
 
@@ -23,7 +29,7 @@ const Matter = ({ matter }) => {
 
 export const getServerSideProps = async ({ params: { id } }) => {
   const { data: matter } = await supabase
-    .from("matters")
+    .from("matters_with_avatar")
     .select("*")
     .match({ id })
     .single();

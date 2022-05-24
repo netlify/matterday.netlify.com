@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function FourOhFour() {
   return <>
-    <div className="share-anchor"><a href="/#share">Plan yours</a></div>
+    <div className="share-anchor"><Link href="/#share"><a>Plan yours</a></Link></div>
     <div className="four-oh-four">
       <header className="header-main">
         <div>

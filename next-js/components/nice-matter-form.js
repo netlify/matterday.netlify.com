@@ -56,20 +56,20 @@ const MatterForm = () => {
   };
 
   return (
-    <div class="logged-in">
-      <span class="authentication">
+    <div className="logged-in">
+      <span className="authentication">
         <span>
-          👋&nbsp;
+          👋&nbsp;@
           {username ? (
-            <span class="github-username">
+            <span className="github-username">
               {user.user.user_metadata.user_name}
             </span>
           ) : null}
         </span>
-        {/* TODO: Make this one 👇 a button element as it does not need to navigate - I didn't want to break styling so just added the onClick handler! 👍 */}
-        <a href="#" class="text" onClick={handleSignOut}>
+        {/* TODO: I made this a button but wasn’t sure what else to do! */}
+        <button className="text" onClick={handleSignOut}>
           Log out
-        </a>
+        </button>
       </span>
       <form onSubmit={handleSubmit} disabled={isLoading || isRude}>
         <fieldset>
@@ -84,13 +84,13 @@ const MatterForm = () => {
             value={matter}
           />
           <footer>
-            <small class="characters">limit 30 characters</small>
+            <small className="characters">limit 30 characters</small>
             <button type="submit">Submit</button>
           </footer>
-          {error ? <p>{error}</p> : null}
+          {error ? <small className="error">{error}</small> : null}
         </fieldset>
       </form>
-      <div class="nudge">
+      <div className="nudge">
         <p>Need some inspiration? <a href="/matters">See what others are saying.</a></p>
       </div>
     </div>

@@ -12,39 +12,39 @@ const NiceMattersGrid = ({ matters }) => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
       {/*<pre>{JSON.stringify(matters, null, 2)}</pre>*/}
-      <div class="share-anchor"><a href="#share">Plan yours</a></div>
-      <div class="your-matterday grid">
-        <header class="header-main">
+      <div className="share-anchor"><a href="#share">Plan yours</a></div>
+      <div className="your-matterday grid">
+        <header className="header-main">
           <div>
-            <a href="/" class="masthead">Matterday</a>
+            <a href="/" className="masthead">Matterday</a>
           </div>
-          <a href="https://netlify.com" class="logo">
+          <a href="https://netlify.com" className="logo">
             <img src="/images/logomark-netlify.svg" width="26" height="26" alt="Netlify logomark" />
           </a>
-          <a href="https://supabase.com/" class="logo">
+          <a href="https://supabase.com/" className="logo">
             <img src="/images/logomark-supabase.svg" width="26" height="26" alt="Supabase logomark" />
           </a>
         </header>
-        <section class="content">
-          <div class="grid-intro">
+        <section className="content">
+          <div className="grid-intro">
             <h1>How would you spend your <a href="/">Matterday</a>?</h1>
-            <div class="nudge">
+            <div className="nudge">
               <p>Already know? <a href="/#share">Share what matters to you.</a></p>
             </div>
           </div>
           {matters.map((matter) => (
-            <div class="matter-item">
-              <div class="eyebrow">
+            <div className="matter-item">
+              <div className="eyebrow">
                 <img
                   src={matter.avatar_url}
-                  class="gh-avatar"
+                  className="gh-avatar"
                   alt={matter.username}
                 />
-                <span class="gh-username">@{matter.username}</span>
+                <span className="gh-username">@{matter.username}</span>
               </div>
               <h2>
-                <span class="prompt">If I had an extra day a week I could...</span>
-                <span class="answer">{matter.content}</span>
+                <span className="prompt">If I had an extra day a week I could...</span>
+                <span className="answer">{matter.content}</span>
               </h2>
             </div>
           ))}

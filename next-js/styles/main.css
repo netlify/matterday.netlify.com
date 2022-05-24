@@ -166,14 +166,16 @@ p:not(:last-child) {
   margin-bottom: 1em;
 }
 
-a:not(.button) {
+a:not(.button),
+button.text {
   color: inherit;
   text-decoration-line: underline;
   text-decoration-color: var(--teal-medium);
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
 }
 
-a:not(.button):hover {
+a:not(.button):hover,
+button.text:hover {
   text-decoration-color: inherit;
 }
 
@@ -219,6 +221,12 @@ button:disabled {
 .button.blue:hover {
   background-color: var(--color-blue-B700);
   color: var(--color-blue-B050);
+}
+
+button.text {
+  padding: 0;
+  background-color: transparent;
+  font-weight: inherit;
 }
 
 .content > :last-child {

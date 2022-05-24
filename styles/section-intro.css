@@ -159,7 +159,7 @@
   .calendar {
     --slot: 50px;
     --spacer: 10px;
-    width: calc(100vw * 1.2);
+    width: calc(100vw * 1.1);
     height: var(--calendar-h);
     overflow: hidden;
     background-color: white;

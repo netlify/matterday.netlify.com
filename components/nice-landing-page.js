@@ -31,6 +31,7 @@ const NiceLandingPage = () => {
           <div className="calendar-container">
             <ol className="calendar">
               <li className="calendar-day">
+                <span>Wednesday</span>
                 <small className="calendar-event short"></small>
                 <small className="calendar-event short"></small>
                 <small className="calendar-event"></small>
@@ -73,6 +74,7 @@ const NiceLandingPage = () => {
                 <small className="calendar-event"></small>
               </li>
               <li className="calendar-day">
+                <span>Saturday</span>
                 <small className="calendar-event short"></small>
                 <small className="calendar-event short"></small>
                 <small className="calendar-event tall"></small>

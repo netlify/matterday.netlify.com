@@ -1,0 +1,76 @@
+/*--------------------*/
+/* Big Swings
+----------------------*/
+
+.big-swings .background-artwork {
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0),
+                                                     rgba(255,255,255,0) 5px,
+                                                     rgba(255,255,255,.06) 5px,
+                                                     rgba(255,255,255,.06) 10px),
+                    linear-gradient(to bottom, var(--teal-medium), var(--purple-dark));
+}
+
+.big-swings-pieces .pinata-string {
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  background-image: linear-gradient(to bottom, rgba(var(--teal-medium-RGB), 0), var(--teal-medium) 20%);
+}
+
+.big-swings-pieces .pinata,
+.big-swings-pieces .pinata-pizza {
+  filter: drop-shadow(0 1rem 0.5rem rgba(var(--shadow),.1));
+}
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .big-swings-pieces .pinata-string {
+    height: 40vw;
+    margin-left: 6vw;
+    top: -10vw;
+  }
+
+  .big-swings-pieces .pinata {
+    width: 44vw;
+    margin-left: -20vw;
+    top: 5%;
+    transform: rotate(5deg);
+  }
+
+  .big-swings-pieces .pinata-pizza {
+    width: 48vw;
+    top: 50%;
+    transform: translate(-50%,30%);
+  }
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .big-swings-pieces .pinata-string {
+    height: 30vw;
+    margin-left: 6vw;
+    top: -5vw;
+  }
+
+  .big-swings-pieces .pinata {
+    width: 22vw;
+    margin-left: -6vw;
+    top: 10%;
+    transform: rotate(5deg);
+  }
+
+  .big-swings-pieces .pinata-pizza {
+    width: 24vw;
+    margin-left: -11vw;
+    top: 55%;
+  }
+}
+
+/* very wide, very short screens */
+@media screen and (max-height: 400px) and (min-width: 1000px) {
+  .big-swings-pieces .pinata {
+    transform: rotate(5deg) scale(.7);
+  }
+}

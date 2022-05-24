@@ -33,13 +33,29 @@ const MatterForm = () => {
   };
 
   return (
-    // TODO: Add nicely styled matter form
-    <form onSubmit={handleSubmit} disabled={isLoading}>
-      <label htmlFor="matter">What will you do with your extra day?</label>
-      <input type="text" name="matter" />
-      <button type="submit">Submit</button>
-      {error ? <p>{error}</p> : null}
-    </form>
+    <div class="logged-in">
+      <span class="authentication">
+        {/* TODO: change to their GitHub username */}
+        <span>👋&nbsp;<span class="github-username">@lynnandtonic</span></span>
+        {/* TODO: Functional log out button */}
+        <a href="#" class="text">Log out</a>
+      </span>
+      <form onSubmit={handleSubmit} disabled={isLoading}>
+        <fieldset>
+        <label htmlFor="matter">If I had an extra day a week I could...</label>
+        <input type="text" name="matter" />
+        <footer>
+          {/* TODO: change to actual character limit */}
+          <small class="characters">limit 30 characters</small>
+          <button type="submit">Submit</button>
+        </footer>
+        {error ? <p>{error}</p> : null}
+        </fieldset>
+      </form>
+      <div class="nudge">
+        <p>Need some inspiration? <a href="/matters">See what others are saying.</a></p>
+      </div>
+    </div> 
   );
 };
 

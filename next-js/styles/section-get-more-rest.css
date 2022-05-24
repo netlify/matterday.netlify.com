@@ -1,0 +1,90 @@
+/*--------------------*/
+/* Get more rest
+----------------------*/
+
+.get-more-rest .background-artwork {
+  background-image: url('/images/grid-dot.svg'),
+                    var(--gradient-blue);
+  background-position: 50% 50%, 0 0;
+}
+
+.get-more-rest-pieces .cloud,
+.get-more-rest-pieces .pillow {
+  filter: var(--drop-shadow);
+}
+
+/* mobile stacked view */
+@media screen and (max-width: 600px) {
+
+  .get-more-rest-pieces .cloud {
+    width: 24vw;
+    z-index: 2;
+  }
+
+  .get-more-rest-pieces .pillow {
+    width: 45vw;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .get-more-rest-pieces .cloud1 {
+    left: -2%;
+    top: -8%;
+  }
+  .get-more-rest-pieces .cloud2 {
+    left: 10%;
+    top: 30%;
+  }
+  .get-more-rest-pieces .cloud3 {
+    width: 20vw;
+    margin-left: 26vw;
+    top: 20%;
+  }
+  .get-more-rest-pieces .cloud4 {
+    left: 30%;
+    top: 82%;
+  }
+
+  .get-more-rest-pieces .cloud5 {
+    width: 15vw;
+    margin-left: 15vw;
+    top: 96%;
+  }
+
+}
+
+/* desktop parallax view */
+@media screen and (min-width: 601px) {
+
+  .get-more-rest-pieces .cloud {
+    width: 15vw;
+  }
+
+  .get-more-rest-pieces .pillow {
+    width: 20vw;
+    margin-left: -10vw;
+    top: 40%;
+  }
+
+  .get-more-rest-pieces .cloud1 {
+    margin-left: -17vw;
+    top: 0;
+  }
+  .get-more-rest-pieces .cloud2 {
+    margin-left: 8vw;
+    top: 20%;
+  }
+  .get-more-rest-pieces .cloud3 {
+    margin-left: -6vw;
+    top: 60%;
+  }
+  .get-more-rest-pieces .cloud4 {
+    margin-left: 5vw;
+    top: 90%;
+  }
+  .get-more-rest-pieces .cloud5 {
+    width: 10vw;
+    margin-left: -3vw;
+    top: 90%;
+  }
+}

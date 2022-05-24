@@ -51,8 +51,7 @@ const MatterForm = () => {
     setMatter(matter);
 
     if (filter.isProfane(matter)) {
-      // TODO: add better copy for when profanity is detected
-      setError("is there a nicer way you could put that?");
+      setError("Whoops, you did a swear! Let’s keep it family-friendly, kind, and inclusive please.");
     }
   };
 

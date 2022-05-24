@@ -112,7 +112,8 @@
 }
 
 .section-cta .error {
-  margin-top: .5em;
+  width: 100%;
+  margin-top: 1em;
   padding: .5em .8em;
   display: inline-block;
   border: 1px solid var(--color-red-R500);

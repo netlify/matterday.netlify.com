@@ -1,0 +1,17 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="173" height="215" viewBox="0 0 173 215">
+  <defs>
+    <linearGradient id="a" x1="62.72" y1="107.5" x2="86.5" y2="107.5" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".27" stop-color="#f7f7f7"/>
+      <stop offset=".7" stop-color="#e6e6e6"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="b" x1="86.5" y1="107.5" x2="109.21" y2="107.5" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".03" stop-color="#f7f7f7"/>
+      <stop offset=".39" stop-color="#e6e6e6"/>
+      <stop offset=".83" stop-color="#ccc"/>
+    </linearGradient>
+  </defs>
+  <path style="fill:#fff;stroke:#c4c4c4;stroke-linejoin:round;stroke-width:3px" d="M86.5 2.75 3.75 190.67h165.5L86.5 2.75z"/>
+  <path style="stroke:#c4c4c4;stroke-linejoin:round;stroke-width:3px;fill:url(#a)" d="M86.5 2.75v209.5l-23.78-21.58L86.5 2.75z"/>
+  <path style="fill:url(#b);stroke:#c4c4c4;stroke-linejoin:round;stroke-width:3px" d="M86.5 2.75v209.5l22.71-21.58L86.5 2.75z"/>
+</svg>

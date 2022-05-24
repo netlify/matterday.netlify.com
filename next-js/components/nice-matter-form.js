@@ -12,6 +12,7 @@ const MatterForm = () => {
   const filter = new Filter();
   const router = useRouter();
   const user = useUser();
+  const userAvatar = user?.user?.user_metadata?.avatar_url || null;
   const username = user?.user?.user_metadata?.user_name || null;
 
   const handleSubmit = async (e) => {
@@ -58,14 +59,20 @@ const MatterForm = () => {
   return (
     <div className="logged-in">
       <span className="authentication">
-        <span>
-          👋&nbsp;@
-          {username ? (
-            <span className="github-username">
-              {user.user.user_metadata.user_name}
-            </span>
-          ) : null}
-        </span>
+        {username ? (
+          <img
+            src={user.user.user_metadata.avatar_url}
+            className="gh-avatar"
+            alt={user.user.user_metadata.user_name}
+            width="100"
+            height="100"
+          />
+        ) : null}
+        {username ? (
+          <span className="github-username">
+            {user.user.user_metadata.user_name}
+          </span>
+        ) : null}
         {/* TODO: I made this a button but wasn’t sure what else to do! */}
         <button className="text" onClick={handleSignOut}>
           Log out

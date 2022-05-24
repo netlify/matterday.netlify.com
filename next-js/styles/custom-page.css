@@ -28,8 +28,13 @@
 
 .your-matterday.grid .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap: var(--body-padding);
+}
+
+@media screen and (min-width: 321px) {
+  .your-matterday.grid .content {
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  }
 }
 
 .your-matterday .eyebrow {
@@ -48,7 +53,8 @@
 }
 
 .your-matterday .gh-avatar {
-  width: 60px;
+  width: clamp(40px, 10vw, 80px);
+  height: auto;
   border-radius: 50%;
 }
 

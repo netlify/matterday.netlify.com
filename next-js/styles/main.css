@@ -159,7 +159,11 @@ h3 {
 }
 
 p {
-  font-size: clamp(1.1em, 1.6vw, 2.5em)
+  font-size: clamp(1.1em, 1.6vw, 2.5em);
+}
+
+small {
+  font-size: clamp(.7em, 1.4vw, 1em)
 }
 
 p:not(:last-child) {

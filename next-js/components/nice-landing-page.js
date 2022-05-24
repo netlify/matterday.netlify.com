@@ -15,7 +15,7 @@ const NiceLandingPage = () => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" property="og:image" />
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
-      <div className="share-anchor"><a href="#share">Plan yours</a></div>
+      <div className="share-anchor"><a href="/#share">Plan yours</a></div>
       <div className="parallax">
         <header className="header-main">
           <div>

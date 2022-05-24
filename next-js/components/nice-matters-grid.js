@@ -12,7 +12,7 @@ const NiceMattersGrid = ({ matters }) => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
       {/*<pre>{JSON.stringify(matters, null, 2)}</pre>*/}
-      <div className="share-anchor"><a href="#share">Plan yours</a></div>
+      <div className="share-anchor"><a href="/#share">Plan yours</a></div>
       <div className="your-matterday grid">
         <header className="header-main">
           <div>

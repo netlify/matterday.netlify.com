@@ -1,0 +1,11 @@
+.four-oh-four .content {
+  width: 100%;
+  height: calc(100vh - var(--header-h));
+  padding: var(--body-padding);
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

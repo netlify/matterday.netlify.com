@@ -1,12 +1,22 @@
 .admin-container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: var(--body-padding);
+  position: relative;
+  display: grid;
   align-items: center;
   justify-content: center;
+  gap: var(--body-padding);
+  z-index: 1;
+}
+
+@media screen and (min-width: 321px) {
+  .admin-container {
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  }
 }
 
 .admin-matter {
+  width: 100%;
   padding: 2rem 0;
   border-bottom: 1px solid #afafaf;
 }

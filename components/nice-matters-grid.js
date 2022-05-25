@@ -6,8 +6,6 @@ const NiceMattersGrid = ({ matters }) => {
   return (
     <>
       <Head>
-        <meta name="description" content="What could you do with an extra day a week to spend on what matters?" />
-        <meta content="What could you do with an extra day a week to spend on what matters?" name="twitter:description" property="og:description" />
         <meta content="https://matterday.netlify.com/matters" property="og:url" />
         <meta content="https://matterday.netlify.com/matters" property="twitter:url" />
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" property="og:image" />

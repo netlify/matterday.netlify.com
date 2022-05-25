@@ -6,8 +6,6 @@ const NiceMatter = ({ matter }) => {
   return (
     <>
       <Head>
-        <meta name="description" content="If I had an extra day a week, I could..." />
-        <meta content="If I had an extra day a week, I could..." name="twitter:description" property="og:description" />
         <meta content={"https://matterday.netlify.com/matters/" + matter.id} property="og:url" />
         <meta content={"https://matterday.netlify.com/matters/" + matter.id} property="twitter:url" />
         <meta content={matter.og_image} property="og:image" />

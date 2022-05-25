@@ -30,7 +30,8 @@ function MyApp({ Component, pageProps }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Netlify" />
-        <title>Matterday</title>
+        <title>Matterday: What could you do with an extra day a week? | Netlify</title>
+        <meta name="description" content="Imagine all the ways you could spend an extra day per week on what matters to you! Netlify saves development teams one work day per week. How would you spend that time?" />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -38,6 +39,7 @@ function MyApp({ Component, pageProps }) {
         <meta content="@netlify" name="twitter:site" />
         <meta content="@netlify" name="twitter:creator" />
         <meta content="Matterday" name="twitter:title" property="og:title" />
+        <meta content="What could you do with an extra day a week to spend on what matters?" name="twitter:description" property="og:description" />
       </Head>
       <UserProvider>
         <Component {...pageProps} />

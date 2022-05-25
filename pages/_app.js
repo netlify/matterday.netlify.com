@@ -1,5 +1,6 @@
 import UserProvider from "../context/user";
 import Head from "next/head";
+import Script from 'next/script'
 
 import "styles/main.css";
 import "styles/variables.css";
@@ -39,8 +40,18 @@ function MyApp({ Component, pageProps }) {
         <meta content="@netlify" name="twitter:site" />
         <meta content="@netlify" name="twitter:creator" />
         <meta content="Matterday" name="twitter:title" property="og:title" />
-        <meta content="What could you do with an extra day a week to spend on what matters?" name="twitter:description" property="og:description" />
+        <meta content="Join the Netlify community in celebrating what matters." name="twitter:description" property="og:description" />
       </Head>
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WNHHKD2');
+        `}
+      </Script>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNHHKD2" height="0" width="0" style={{display: "none", visibility: "hidden"}}></iframe></noscript>
       <UserProvider>
         <Component {...pageProps} />
       </UserProvider>

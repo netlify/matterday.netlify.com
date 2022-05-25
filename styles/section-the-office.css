@@ -11,7 +11,7 @@
                                                          rgba(255,255,255,.2) 2px,
                                                          rgba(255,255,255,0) 2px,
                                                          rgba(255,255,255,0) 30px),
-                    linear-gradient(to bottom, var(--blue-medium), var(--blue-dark));
+                    linear-gradient(to bottom, var(--blue-medium), var(--teal-medium));
   background-size: 2px 100%, 15% 33.333%, 100% 90%, 100% 100%;
   background-position: 15% 0, 0 0, 50% 100%, 0 0;
 }
@@ -23,24 +23,27 @@
 /* mobile stacked view */
 @media screen and (max-width: 600px) {
 
-  .the-office-pieces .mug {
-    width: 35vw;
+  .the-office-pieces .jello {
+    width: 45vw;
     top: 50%;
-    transform: rotate(-7deg) translate(-50%,-50%);
+    transform: translate(-45%,-50%);
   }
 
-  .the-office-pieces .airplane1 {
-    width: 14vw;
-    margin-left: -35vw;
-    top: -8%;
-  }
-  .the-office-pieces .airplane2 {
+  .the-office-pieces .airplane {
     display: none;
   }
-  .the-office-pieces .airplane3 {
-    width: 12vw;
+
+  .the-office-pieces .mug {
+    width: 20vw;
+    transform: rotate(2deg);
     margin-left: 25vw;
     bottom: -10%;
+  }
+
+  .the-office-pieces .beet {
+    width: 20vw;
+    margin-left: -35vw;
+    top: -10%;
   }
 }
 
@@ -54,18 +57,24 @@
     transform: rotate(-10deg);
   }
 
-  .the-office-pieces .airplane1 {
+  .the-office-pieces .jello {
+    width: 20vw;
+    margin-left: -8vw;
+    top: 35%;
+  }
+
+  .the-office-pieces .airplane {
     width: 7vw;
     margin-left: -15vw;
     top: 10%;
   }
-  .the-office-pieces .airplane2 {
+  .the-office-pieces .mug {
     width: 7vw;
     margin-left: 16vw;
     top: 60%;
   }
-  .the-office-pieces .airplane3 {
-    width: 5vw;
+  .the-office-pieces .beet {
+    width: 10vw;
     margin-left: -8vw;
     top: 100%;
   }

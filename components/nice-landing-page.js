@@ -252,16 +252,16 @@ const NiceLandingPage = () => {
         </section>
         <section className="parallax-group pieces the-office-pieces">
           <div className="parallax-layer foreground layer-1">
+            <img src="/images/the-office-jello.svg" width="237" height="148" alt="a stapler stuck in a Jello mold" className="jello" />
+          </div>
+          <div className="parallax-layer foreground layer-2">
+            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane" />
+          </div>
+          <div className="parallax-layer foreground layer-3">
             <img src="/images/the-office-mug.svg" width="237" height="214" alt="World’s Best Boss mug" className="mug" />
           </div>
           <div className="parallax-layer foreground layer-2">
-            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane1" />
-          </div>
-          <div className="parallax-layer foreground layer-3">
-            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane2" />
-          </div>
-          <div className="parallax-layer foreground layer-2">
-            <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane3" />
+            <img src="/images/the-office-beet.svg" width="200" height="274" alt="a beet" className="beet" />
           </div>
         </section>
         <section className="parallax-group space-mountain">

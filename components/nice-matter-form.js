@@ -45,6 +45,8 @@ const MatterForm = () => {
     await supabase.auth.signOut();
   };
 
+  filter.addWords('longfakeword');
+
   const handleChange = (e) => {
     setIsRude(false);
     setError(null);

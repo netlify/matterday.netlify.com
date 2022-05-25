@@ -258,7 +258,7 @@ const NiceLandingPage = () => {
             <img src="/images/paper-airplane.svg" width="173" height="215" alt="paper airplane" className="airplane" />
           </div>
           <div className="parallax-layer foreground layer-3">
-            <img src="/images/the-office-mug.svg" width="237" height="214" alt="World’s Best Boss mug" className="mug" />
+            <img src="/images/the-office-mug.svg" width="160" height="145" alt="World’s Best Boss mug" className="mug" />
           </div>
           <div className="parallax-layer foreground layer-2">
             <img src="/images/the-office-beet.svg" width="200" height="274" alt="a beet" className="beet" />

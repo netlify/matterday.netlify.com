@@ -91,7 +91,9 @@ const MatterForm = () => {
           />
           <footer>
             <small className="characters">limit 30 characters</small>
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={isLoading || isRude}>
+              Submit
+            </button>
           </footer>
           {error ? <small className="error">{error}</small> : null}
         </fieldset>

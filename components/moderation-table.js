@@ -40,6 +40,13 @@ const ModerationTable = () => {
 
         setLiveMatters((current) => [...current, data]);
       })
+      .on("UPDATE", (payload) => {
+        if (payload.new.status !== "new") {
+          setLiveMatters((current) =>
+            current.filter((matter) => matter.id !== payload.new.id)
+          );
+        }
+      })
       .subscribe();
 
     return () => {

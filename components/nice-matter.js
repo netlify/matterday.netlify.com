@@ -13,7 +13,6 @@ const NiceMatter = ({ matter }) => {
         <meta content={matter.og_image} property="og:image" />
         <meta content={matter.og_image} name="twitter:image" />
       </Head>
-      {/*<pre>{JSON.stringify(matter, null, 2)}</pre>*/}
       <div className="share-anchor">
         <Link href="/#share">
           <a>Plan yours</a>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import supabase from "utils/supabase";
 import { useUser } from "context/user";
 import Filter from "bad-words";
-import Link from 'next/link';
+import Link from "next/link";
 
 const MatterForm = () => {
   const [error, setError] = useState(null);
@@ -46,34 +46,33 @@ const MatterForm = () => {
   };
 
   const handleChange = (e) => {
+    setIsRude(false);
     setError(null);
 
     const matter = e.currentTarget.value;
     setMatter(matter);
 
     if (filter.isProfane(matter)) {
-      setError("Whoops, you did a swear! Let’s keep it family-friendly, kind, and inclusive please.");
+      setIsRude(true);
+      setError(
+        "Whoops, you did a swear! Let’s keep it family-friendly, kind, and inclusive please."
+      );
     }
   };
 
   return (
     <div className="logged-in">
       <span className="authentication">
-        {username ? (
+        {username && userAvatar ? (
           <img
-            src={user.user.user_metadata.avatar_url}
+            src={userAvatar}
             className="gh-avatar"
-            alt={user.user.user_metadata.user_name}
+            alt={username}
             width="100"
             height="100"
           />
         ) : null}
-        {username ? (
-          <span className="github-username">
-            @{user.user.user_metadata.user_name}
-          </span>
-        ) : null}
-        {/* TODO: I made this a button but wasn’t sure what else to do! */}
+        {username ? <span className="github-username">@{username}</span> : null}
         <button className="text" onClick={handleSignOut}>
           Log out
         </button>
@@ -98,7 +97,12 @@ const MatterForm = () => {
         </fieldset>
       </form>
       <div className="nudge">
-        <p>Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link></p>
+        <p>
+          Need some inspiration?{" "}
+          <Link href="/matters">
+            <a>See what others are saying.</a>
+          </Link>
+        </p>
       </div>
     </div>
   );

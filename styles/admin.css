@@ -1,0 +1,20 @@
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-matter {
+  padding: 2rem 0;
+  border-bottom: 1px solid #afafaf;
+}
+
+.admin-matter-image {
+  margin-bottom: 1rem;
+}
+
+.admin-buttons > * + * {
+  margin-left: 1rem;
+}

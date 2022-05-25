@@ -36,8 +36,9 @@ const NiceMatter = ({ matter }) => {
             </h1>
           </div>
           <footer className="share nudge">
-            {/* TODO: Should the share button form a tweet? or just copy URL? */}
-            <p><a href="#">Tweet your #Matterday</a> + <Link href="/matters"><a>See what others are saying</a></Link></p>
+            <p>
+              <a href={"https://twitter.com/intent/tweet?text=Matterday is the new “someday.” Here’s what I’d do if I had an extra day a week.&url=https://matterday.netlify.com/matters/" + matter.id}>Tweet your #Matterday</a> + <Link href="/matters"><a>See what others are saying</a></Link>
+            </p>
           </footer>
         </section>
       </div>

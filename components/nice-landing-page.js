@@ -405,6 +405,15 @@ const NiceLandingPage = () => {
         <Header />
           <div className="content">
             <Form />
+            <noscript>
+              <h2>So tell us, what does your Matterday look like?</h2>
+              <p>Enable JavaScript to submit! <br/ >Or add #Matterday to a social media post.</p>
+              <div className="nudge">
+                <p>
+                  Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link>
+                </p>
+              </div>
+            </noscript>
           </div>
         </section>
       </div>

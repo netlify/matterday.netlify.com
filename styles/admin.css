@@ -16,12 +16,12 @@
 }
 
 .admin-matter {
-  width: 100%;
   padding: 2rem 0;
   border-bottom: 1px solid #afafaf;
 }
 
 .admin-matter-image {
+  width: 100%;
   margin-bottom: 1rem;
 }
 

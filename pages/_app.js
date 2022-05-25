@@ -21,6 +21,7 @@ import "styles/section-big-swings.css";
 import "styles/section-cta.css";
 import "styles/custom-page.css";
 import "styles/four-oh-four.css";
+import "styles/admin.css";
 
 function MyApp({ Component, pageProps }) {
   return (

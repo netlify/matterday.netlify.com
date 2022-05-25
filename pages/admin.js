@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import supabase from "../utils/supabase";
 
 // ModerationTable component requires a user that is stored in localStorage
 const ModerationTable = dynamic(
@@ -7,19 +6,8 @@ const ModerationTable = dynamic(
   { ssr: false }
 );
 
-const Admin = ({ matters }) => {
-  return <ModerationTable matters={matters} />;
-};
-
-export const getServerSideProps = async () => {
-  const { data: matters } = await supabase
-    .from("matters_with_user")
-    .select("*")
-    .match({ status: "new" });
-
-  return {
-    props: { matters },
-  };
+const Admin = () => {
+  return <ModerationTable />;
 };
 
 export default Admin;

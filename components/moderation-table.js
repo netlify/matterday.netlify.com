@@ -84,7 +84,7 @@ const ModerationTable = () => {
                 <a href={`https://github.com/${matter.username}`}>
                   @{matter.username}
                 </a>{" "}
-                would "{matter.content}"
+                would &quot;{matter.content}&quot;
               </p>
               <div className="admin-buttons">
                 <button

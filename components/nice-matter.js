@@ -35,7 +35,7 @@ const NiceMatter = ({ matter }) => {
               </h1>
               <div className="share nudge">
                 <p>
-                  <a href={"https://twitter.com/intent/tweet?text=Matterday is the new “someday.” Here’s what I’d do if I had an extra day a week.&hashtags=Matterday&url=https://matterday.netlify.com/matters/" + matter.id}>Tweet your #Matterday</a> + <Link href="/matters"><a>See what others are saying</a></Link>
+                  <a href={"https://twitter.com/intent/tweet?text=Matterday is the new “someday.” Here’s what I’d do if I had an extra day a week.&hashtags=Matterday&url=https://matterday.netlify.com/matters/" + matter.id}>Tweet your #Matterday</a> or <Link href="/matters"><a>see what others are saying</a></Link>
                 </p>
               </div>
             </div>

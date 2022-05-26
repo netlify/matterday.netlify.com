@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Header from "./header";
 import Credit from "./credit";
+import ShareAnchor from "./share-anchor";
 
 const NiceMatter = ({ matter }) => {
   return (
@@ -12,11 +13,7 @@ const NiceMatter = ({ matter }) => {
         <meta content={matter.og_image} property="og:image" />
         <meta content={matter.og_image} name="twitter:image" />
       </Head>
-      <div className="share-anchor">
-        <Link href="/#share">
-          <a>Plan yours</a>
-        </Link>
-      </div>
+      <ShareAnchor />
       <div className="your-matterday">
         <Header />
         <section className="content">

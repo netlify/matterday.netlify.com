@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Header from "./header";
 import Credit from "./credit";
+import ShareAnchor from "./share-anchor";
 
 const NiceMattersGrid = ({ matters }) => {
   return (
@@ -12,11 +13,7 @@ const NiceMattersGrid = ({ matters }) => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" property="og:image" />
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
-      <div className="share-anchor">
-        <Link href="/#share">
-          <a>Plan yours</a>
-        </Link>
-      </div>
+      <ShareAnchor />
       <div className="your-matterday grid">
         <Header />
         <section className="content">

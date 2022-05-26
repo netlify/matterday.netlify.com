@@ -13,8 +13,8 @@ const NiceMatter = ({ matter }) => {
         <meta content={matter.og_image} property="og:image" />
         <meta content={matter.og_image} name="twitter:image" />
       </Head>
-      <ShareAnchor />
       <div className="your-matterday">
+        <ShareAnchor />
         <Header />
         <section className="content">
           <div className="container">

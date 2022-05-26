@@ -40,7 +40,7 @@
   --overlay-h: 60vh;
   --header-h: 10vh;
   --header-z: 10;
-  --share-anchor-w: 5.5rem;
+  --share-anchor-w: 90px;
   --gradient-teal: linear-gradient(to bottom, var(--teal-medium), var(--teal-light));
   --gradient-purple: linear-gradient(to bottom, var(--purple-dark), var(--purple-medium));
   --gradient-blue: linear-gradient(to bottom, var(--blue-dark), var(--blue-medium));
@@ -236,7 +236,7 @@ img {
   height: var(--header-h);
   position: fixed;
   top: 0;
-  right: 0;
+  left: calc(100vw - (var(--share-anchor-w) + var(--body-padding)));
   display: flex;
   justify-content: right;
   align-items: center;
@@ -246,13 +246,14 @@ img {
 .share-anchor a {
   width: 100%;
   height: auto;
-  padding: 1em 0;
+  padding: .8em 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(var(--blue-dark-RGB),.95);
   -webkit-backdrop-filter: blur(.2em);
   backdrop-filter: blur(.2em);
+  border-radius: 4px;
   text-decoration: none;
   font-size: 75%;
   font-weight: 500;

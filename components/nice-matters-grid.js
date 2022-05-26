@@ -13,8 +13,8 @@ const NiceMattersGrid = ({ matters }) => {
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" property="og:image" />
         <meta content="https://matterday.netlify.com/images/matterday-og-default.png" name="twitter:image" />
       </Head>
-      <ShareAnchor />
       <div className="your-matterday grid">
+        <ShareAnchor />
         <Header />
         <section className="content">
           <div className="grid-intro">

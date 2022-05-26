@@ -1,4 +1,4 @@
-.four-oh-four .content {
+.error-page .content {
   width: 100%;
   height: calc(100vh - var(--header-h));
   padding: var(--body-padding);

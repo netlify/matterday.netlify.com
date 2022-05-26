@@ -1,5 +1,5 @@
 import supabase from "utils/supabase";
-import Link from 'next/link';
+import Link from "next/link";
 
 const NiceSignInForm = () => {
   const handleSignIn = async () => {

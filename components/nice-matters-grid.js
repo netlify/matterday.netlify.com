@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from "./header";
-import Credit from './credit';
+import Credit from "./credit";
 
 const NiceMattersGrid = ({ matters }) => {
   return (

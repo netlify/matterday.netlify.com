@@ -22,9 +22,9 @@
 
 .your-matterday:not(.grid) .content {
   height: calc(100vh - var(--header-h));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: var(--body-padding);
 }
 
 .your-matterday:not(.grid) .content .container {
@@ -60,7 +60,7 @@
 }
 
 .your-matterday .gh-avatar {
-  width: clamp(40px, 10vw, 80px);
+  width: clamp(30px, 9vw, 70px);
   border-radius: 50%;
 }
 
@@ -105,22 +105,6 @@
 
 .your-matterday .container .nudge {
   width: 100%;
-}
-
-/* Footer "built with" credit */
-.your-matterday .credit {
-  width: 100%;
-  padding: calc(var(--body-padding) / 3) var(--body-padding);
-  align-self: end;
-  font-size: 90%;
-  background-color: rgba(0,0,0,.1);
-  grid-column: 1 / -1;
-}
-
-.your-matterday .credit p {
-  font-size: inherit;
-  text-align: center;
-  opacity: .9;
 }
 
 .your-matterday.grid .grid-intro {

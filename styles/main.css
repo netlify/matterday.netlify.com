@@ -292,6 +292,25 @@ img {
   font-size: inherit;
 }
 
+/* Footer "built with" credit */
+.credit {
+  width: 100%;
+  margin-top: auto;
+  padding: calc(var(--body-padding) / 3) var(--body-padding);
+  align-self: end;
+  font-size: 90%;
+  background-color: rgba(0,0,0,.1);
+  -webkit-backdrop-filter: blur(.13em);
+  backdrop-filter: blur(.13em);
+  grid-column: 1 / -1;
+}
+
+.credit p {
+  font-size: inherit;
+  text-align: center;
+  opacity: .9;
+}
+
 .supabase-mark,
 .netlify-mark {
   padding-right: 1.3em;

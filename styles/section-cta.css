@@ -45,11 +45,19 @@
 .section-cta .content {
   height: calc(100vh - var(--header-h));
   padding: var(--body-padding);
+  padding-bottom: 0;
   position: relative;
   display: grid;
-  place-content: center;
+  grid-template-rows: 1fr auto;
+  gap: var(--body-padding);
   text-align: center;
   z-index: 10;
+}
+
+.section-cta .container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-cta .content .logged-in {

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Link from 'next/link';
-import Header from './header';
+import Link from "next/link";
+import Header from "./header";
+import Credit from "./credit";
 
 // Form component requires a user that is stored in localStorage
 const Form = dynamic(() => import("components/form"), { ssr: false });
@@ -400,18 +401,21 @@ const NiceLandingPage = () => {
           </div>
         </section>
         <section id="share" className="parallax-group section-cta">
-        <Header />
+          <Header />
           <div className="content">
-            <Form />
-            <noscript>
-              <h2>So tell us, what does your Matterday look like?</h2>
-              <p>Enable JavaScript to submit! <br/ >Or add #Matterday to a social media post.</p>
-              <div className="nudge">
-                <p>
-                  Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link>
-                </p>
-              </div>
-            </noscript>
+            <div className="container">
+              <Form />
+              <noscript>
+                <h2>So tell us, what does your Matterday look like?</h2>
+                <p>Enable JavaScript to submit! <br/ >Or add #Matterday to a social media post.</p>
+                <div className="nudge">
+                  <p>
+                    Need some inspiration? <Link href="/matters"><a>See what others are saying.</a></Link>
+                  </p>
+                </div>
+              </noscript>
+            </div>
+            <Credit />
           </div>
         </section>
       </div>

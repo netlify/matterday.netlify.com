@@ -246,7 +246,7 @@ const NiceLandingPage = () => {
               <div className="background-artwork"></div>
             </div>
             <div className="content">
-              <h3>Watch all 9 seasons of <em>The Office</em> 4 times through.</h3>
+              <h3>Watch all 9 seasons of <em>The Office</em> four times through.</h3>
             </div>
           </div>
         </section>

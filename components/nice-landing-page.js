@@ -91,7 +91,6 @@ const NiceLandingPage = () => {
               <h1>What if you had an extra day a week?</h1>
               <p>Netlify saves development teams <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday">a work day per week</a> so they can spend that time on what matters.</p>
               <p>What could you do with it?</p>
-              {/*<small className="psst">We have some ideas (take a scroll with us)!</small>*/}
             </div>
           </div>
         </section>

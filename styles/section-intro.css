@@ -141,6 +141,10 @@
 /* mobile stacked view */
 @media screen and (max-width: 600px) {
 
+  .intro .content .psst {
+    display: none;
+  }
+
   :root {
     --calendar-h: 320px;
   }
@@ -205,6 +209,13 @@
 
 /* desktop parallax view */
 @media screen and (min-width: 601px) {
+
+  .intro .content .psst {
+    margin-top: 2em;
+    opacity: .8;
+    font-size: clamp(.8em, 1.4vw, 1em);
+    font-style: italic;
+  }
 
   .calendar-container {
     width: var(--overlay-w);

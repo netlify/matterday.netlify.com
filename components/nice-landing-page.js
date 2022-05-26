@@ -1,7 +1,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from 'next/link';
-import Header from './header'
+import Header from './header';
 
 // Form component requires a user that is stored in localStorage
 const Form = dynamic(() => import("components/form"), { ssr: false });

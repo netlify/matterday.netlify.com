@@ -291,3 +291,29 @@ img {
 .nudge p {
   font-size: inherit;
 }
+
+.supabase-mark,
+.netlify-mark {
+  padding-right: 1.3em;
+  position: relative;
+}
+
+.netlify-mark::after,
+.supabase-mark::after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.netlify-mark::after {
+  background-image: url('/images/logomark-netlify.svg');
+}
+.supabase-mark::after {
+  background-image: url('/images/logomark-supabase.svg');
+}

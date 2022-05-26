@@ -16,6 +16,10 @@
 /* mobile stacked view */
 @media screen and (max-width: 600px) {
 
+  .get-more-rest {
+    margin-top: 1.8em;
+  }
+
   .get-more-rest-pieces .cloud {
     width: 24vw;
     z-index: 2;

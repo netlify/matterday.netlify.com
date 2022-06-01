@@ -9,6 +9,8 @@ export const getStaticProps = async () => {
   const { data: matters } = await supabase
     .from("matters_with_user")
     .select("*")
+    .order("created_at", { ascending: false })
+    .limit(1000)
     .match({ status: "approved" });
 
   return {

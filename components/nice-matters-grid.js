@@ -32,6 +32,7 @@ const NiceMattersGrid = ({ matters }) => {
                   alt={matter.username}
                   width="100"
                   height="100"
+                  loading="lazy"
                 />
                 <span className="gh-username">@{matter.username}</span>
               </div>

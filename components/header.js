@@ -14,7 +14,7 @@ export default function Header() {
           alt="Netlify logomark"
         />
       </a>
-      <a href="https://supabase.com/" className="logo supabase">
+      <a href="https://supabase.com/?utm_source=matterday&utm_medium=referral" className="logo supabase">
         <img
           src="/images/logomark-supabase.svg"
           width="26"

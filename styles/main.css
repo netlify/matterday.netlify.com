@@ -129,14 +129,16 @@ body::before {
   height: 100vh;
   right: 0;
   top: 0;
-  background-repeat: no-repeat, repeat, repeat-y;
+  background-repeat: no-repeat, no-repeat, repeat;
   background-image: linear-gradient(to right, rgba(21,26,30,.7) 20%,
                                               rgba(21,26,30, 0) 30%,
                                               rgba(21,26,30, 0) 70%,
                                               rgba(21,26,30,.7) 80%),
+                    radial-gradient(circle at 20% 100%, rgba(21,26,30, 0) 60%,
+                                                           rgba(21,26,30,.9) 80%),
                     url('/images/grid-dot.svg');
-  background-size: 100% 100%, 60px auto;
-  background-position: center center, left center;
+  background-size: 100% 100%, 100% 100%, 60px auto;
+  background-position: center center, right top, left center;
 }
 
 h1, h2, h3, h4 {

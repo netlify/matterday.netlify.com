@@ -2,7 +2,6 @@
 ----------------------*/
 
 .your-matterday::after {
-  /*--burst-w: 80vw;*/
   --burst-filter: blur(10vw) opacity(.6);
   --burst-transform: translate3d(-40%, -30%, 0);
 }

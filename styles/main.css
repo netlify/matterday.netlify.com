@@ -135,7 +135,7 @@ body::before {
                                               rgba(21,26,30, 0) 70%,
                                               rgba(21,26,30,.7) 80%),
                     radial-gradient(circle at 20% 100%, rgba(21,26,30, 0) 60%,
-                                                           rgba(21,26,30,.9) 80%),
+                                                           rgba(21,26,30,.75) 80%),
                     url('/images/grid-dot.svg');
   background-size: 100% 100%, 100% 100%, 60px auto;
   background-position: center center, right top, left center;

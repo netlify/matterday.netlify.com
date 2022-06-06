@@ -80,7 +80,7 @@
   background-image: var(--gradient-teal);
   background-size: 100% 1px;
   background-position: center bottom;
-  font-family: 'Caveat', monospace;
+  font-family: 'Caveat', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.3em;
   font-style: normal;

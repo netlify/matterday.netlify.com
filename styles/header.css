@@ -1,9 +1,11 @@
 .header-main {
   height: var(--header-h);
-  padding: 0 var(--body-padding) 0 var(--body-padding);
+  padding: 0 var(--body-padding);
   position: relative;
   display: flex;
   align-items: center;
+  /*justify-content: flex-end;*/
+  /*gap: 1em;*/
   font-family: var(--font-headline);
   font-size: clamp(.9em, 2vw, 1.1em);
   font-weight: 200;
@@ -13,9 +15,11 @@
 
 .header-main a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .header-main > div {
+  margin-right: auto;
   display: flex;
   align-items: center;
   gap: .6rem;
@@ -29,19 +33,47 @@
   text-decoration: underline;
 }
 
+.header-main {
+  --netlify-logo-w: 4.53333rem;
+  --supabase-logo-w: 6.24rem;
+  --logo-h: 1.1rem;
+}
+
 .header-main a.logo {
   position: absolute;
+  height: var(--logo-h);
   transition: transform .2s ease-in-out;
 }
 
+.header-main a.logo img {
+  width: auto;
+  height: 100%;
+}
+
 .header-main a.logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* to accommodate sometimes having scrollbars */
 .header-main a.logo.netlify {
-  left: calc((100vw - (var(--share-anchor-w) + var(--body-padding))) - 5rem);
+  left: calc((100vw - (var(--share-anchor-w) + var(--body-padding)) - var(--netlify-logo-w) - var(--supabase-logo-w) - (var(--logo-h) * .5)));
 }
 .header-main a.logo.supabase {
-  left: calc((100vw - (var(--share-anchor-w) + var(--body-padding))) - 2.5rem);
+  left: calc((100vw - (var(--share-anchor-w) + var(--body-padding)) - var(--supabase-logo-w) - (var(--logo-h) * .2)));
+}
+
+@media screen and (max-width: 400px) {
+  .header-main {
+    --logo-h: 1.4rem;
+  }
+  .header-main a.logo {
+    width: var(--logo-h);
+    overflow: hidden;
+  }
+  .header-main a.logo.netlify {
+    left: calc((100vw - (var(--share-anchor-w) + var(--body-padding)) - (var(--logo-h) * 2 + 1.5rem)));
+  }
+  .header-main a.logo.supabase {
+    left: calc((100vw - (var(--share-anchor-w) + var(--body-padding)) - (var(--logo-h) + .8rem)));
+  }
 }

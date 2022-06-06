@@ -21,7 +21,7 @@ const NiceMattersGrid = ({ matters }) => {
             <h1>How would you spend your <Link href="/"><a>Matterday</a></Link>?</h1>
             <div className="nudge">
               <p><Link href="/#share"><a className="button">Share your Matterday</a></Link></p>
-              <p>or <a href="https://netlify-roi-calculator.netlify.app/">calculate your time saved</a></p>
+              <p>or <a href="https://netlify-roi-calculator.netlify.app/">calculate the value of your time saved</a></p>
             </div>
           </div>
           {matters.map((matter) => (

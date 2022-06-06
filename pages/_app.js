@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
         <meta content="@netlify" name="twitter:site" />
         <meta content="@netlify" name="twitter:creator" />
         <meta content="Matterday" name="twitter:title" property="og:title" />
-        <meta content="Join the Netlify community in celebrating what matters." name="twitter:description" property="og:description" />
+        <meta content="What could you do with an extra day a week? Join the Netlify community in celebrating what matters." name="twitter:description" property="og:description" />
         <script
           dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

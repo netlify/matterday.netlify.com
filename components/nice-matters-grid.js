@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from "./header";
-import Credit from "./credit";
 import ShareAnchor from "./share-anchor";
 
 const NiceMattersGrid = ({ matters }) => {
@@ -47,7 +46,10 @@ const NiceMattersGrid = ({ matters }) => {
               </h2>
             </div>
           ))}
-          <Credit />
+          <footer className="credit">
+            <p className="built-with">Matterday is built with <a href="https://supabase.com/?utm_source=matterday&utm_medium=referral" className="supabase-mark">Supabase</a> on <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" className="netlify-mark">Netlify</a></p>
+            <p><a href="https://netlify-roi-calculator.netlify.app/" className="calculate">Calculate the value of your time saved</a></p>
+          </footer>
         </section>
       </div>
     </>

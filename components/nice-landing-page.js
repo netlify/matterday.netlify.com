@@ -2,7 +2,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Header from "./header";
-import Credit from "./credit";
 import ShareAnchor from "./share-anchor";
 
 // Form component requires a user that is stored in localStorage
@@ -412,7 +411,9 @@ const NiceLandingPage = () => {
                 </div>
               </noscript>
             </div>
-            <Credit />
+            <footer className="credit">
+              <p><a href="https://netlify-roi-calculator.netlify.app/" className="calculate">Calculate the value of your time saved</a></p>
+            </footer>
           </div>
         </section>
       </div>

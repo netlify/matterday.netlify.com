@@ -6,6 +6,7 @@ import "styles/main.css";
 import "styles/variables.css";
 import "styles/main.css";
 import "styles/header.css";
+import "styles/credit.css";
 import "styles/parallax.css";
 import "styles/overlay.css";
 import "styles/section-intro.css";

@@ -87,12 +87,12 @@ const MatterForm = () => {
           <input
             type="text"
             name="matter"
-            maxLength={30}
+            maxLength={28}
             onChange={handleChange}
             value={matter}
           />
           <footer>
-            <small className="characters">limit 30 characters</small>
+            <small className="characters">limit 28 characters</small>
             <button type="submit" disabled={isLoading || isRude}>
               Submit
             </button>

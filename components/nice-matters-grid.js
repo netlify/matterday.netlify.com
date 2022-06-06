@@ -26,15 +26,19 @@ const NiceMattersGrid = ({ matters }) => {
           {matters.map((matter) => (
             <div key={matter.id} className="matter-item">
               <div className="eyebrow">
-                <img
-                  src={matter.avatar_url}
-                  className="gh-avatar"
-                  alt={matter.username}
-                  width="100"
-                  height="100"
-                  loading="lazy"
-                />
-                <span className="gh-username">@{matter.username}</span>
+                <a href={"https://github.com/" + matter.username}>
+                  <img
+                    src={matter.avatar_url}
+                    className="gh-avatar"
+                    alt={matter.username}
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  />
+                </a>
+                <span className="gh-username">
+                  @<a href={"https://github.com/" + matter.username}>{matter.username}</a>
+                </span>
               </div>
               <h2>
                 <span className="prompt">If I had an extra day a week I could...</span>

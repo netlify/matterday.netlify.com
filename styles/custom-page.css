@@ -63,6 +63,13 @@
   color: var(--teal-medium);
 }
 
+.your-matterday .gh-username a {
+  text-decoration-color: transparent;
+}
+.your-matterday .gh-username a:hover {
+  text-decoration-color: inherit;
+}
+
 .your-matterday .gh-avatar {
   width: clamp(30px, 9vw, 70px);
   border-radius: 50%;

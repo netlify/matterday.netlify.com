@@ -411,9 +411,9 @@ const NiceLandingPage = () => {
                 </div>
               </noscript>
             </div>
-            <footer className="credit">
+            {/*<footer className="credit">
               <p><a href="https://netlify-roi-calculator.netlify.app/" className="calculate">Calculate the value of your time saved</a></p>
-            </footer>
+            </footer>*/}
           </div>
         </section>
       </div>

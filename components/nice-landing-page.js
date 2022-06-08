@@ -86,7 +86,7 @@ const NiceLandingPage = () => {
           <div className="parallax-layer background">
             <div className="content">
               <h1>What if you had an extra day a week?</h1>
-              <p>Netlify saves development teams <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday">a work day per week</a> so they can spend that time on what matters.</p>
+              <p>Netlify saves development teams <a href="https://www.netlify.com/resources/ebooks/accelerate-digital-growth-with-netlify/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" id="cta-intro">a work day per week</a> so they can spend that time on what matters.</p>
               <p>What could you do with it?</p>
             </div>
           </div>
@@ -191,7 +191,7 @@ const NiceLandingPage = () => {
               <div className="background-artwork"></div>
             </div>
             <div className="content">
-              <h2>The time really <a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday">adds up</a>.</h2>
+              <h2>The time really <a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday" id="cta-adds-up">adds up</a>.</h2>
               <p>How much total time are we really talking here?</p>
               <p>One work day saved per week means 52 days (416 hours or 24,960 minutes) per year.</p>
               <p>In that time, you could...</p>
@@ -334,7 +334,7 @@ const NiceLandingPage = () => {
             <div className="content">
               <h2>You could play.</h2>
               <p>Doing things just for fun can help us feel more motivated and creative in other aspects of our lives, too.</p>
-              <p>Like adding a <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday">Konami code Phil mode to your website</a>, just as a random example.</p>
+              <p>Like adding a <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" id="cta-konami">Konami code Phil mode to your website</a>, just as a random example.</p>
             </div>
           </div>
         </section>

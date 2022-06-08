@@ -20,7 +20,7 @@ const NiceMattersGrid = ({ matters }) => {
             <h1>How would you spend your <Link href="/"><a>Matterday</a></Link>?</h1>
             <div className="nudge">
               <p><Link href="/#share"><a className="button">Share your Matterday</a></Link></p>
-              <p>or <a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday">calculate your team’s savings</a></p>
+              <p>or <a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday" id="cta-hero-calculate">calculate your team’s savings</a></p>
             </div>
           </div>
           {matters.map((matter) => (
@@ -47,8 +47,8 @@ const NiceMattersGrid = ({ matters }) => {
             </div>
           ))}
           <footer className="credit">
-            <p className="built-with">Matterday is built with <a href="https://supabase.com/?utm_source=matterday&utm_medium=referral" className="supabase-mark">Supabase</a> on <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" className="netlify-mark">Netlify</a></p>
-            <p><a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday" className="calculate">Calculate your team’s savings</a></p>
+            <p className="built-with">Matterday is built with <a href="https://supabase.com/?utm_source=matterday&utm_medium=referral" className="supabase-mark" id="cta-footer-supabase">Supabase</a> on <a href="https://www.netlify.com/?utm_campaign=website_launch_2022_05_rework_your_workweek&utm_content=matterday" className="netlify-mark" id="cta-footer-netlify">Netlify</a></p>
+            <p><a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday" className="calculate" id="cta-footer-calculate">Calculate your team’s savings</a></p>
           </footer>
         </section>
       </div>

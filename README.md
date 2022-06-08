@@ -1,7 +1,7 @@
 # Matterday
 What could you do with an extra day a week to spend on what matters?
 
-🕰️ [matterday.netlify.com](https://matterday.netlify.com)
+[matterday.netlify.com](https://matterday.netlify.com)
 
 ## Run the site locally
 

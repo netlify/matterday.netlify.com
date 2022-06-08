@@ -191,7 +191,7 @@ const NiceLandingPage = () => {
               <div className="background-artwork"></div>
             </div>
             <div className="content">
-              <h2>The time really <a href="https://netlify-roi-calculator.netlify.app/">adds up</a>.</h2>
+              <h2>The time really <a href="https://www.netlify.com/roi-calculator/?utm_campaign=2022_06_roi_calculator_launch&utm_content=matterday">adds up</a>.</h2>
               <p>How much total time are we really talking here?</p>
               <p>One work day saved per week means 52 days (416 hours or 24,960 minutes) per year.</p>
               <p>In that time, you could...</p>
@@ -411,9 +411,6 @@ const NiceLandingPage = () => {
                 </div>
               </noscript>
             </div>
-            {/*<footer className="credit">
-              <p><a href="https://netlify-roi-calculator.netlify.app/" className="calculate">Calculate the value of your time saved</a></p>
-            </footer>*/}
           </div>
         </section>
       </div>
